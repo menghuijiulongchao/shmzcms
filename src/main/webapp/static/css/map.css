@@ -1,0 +1,516 @@
+.bg {
+	width: 1259px;
+	height: 880px;
+	margin: auto
+}
+.map_main_wrapper{
+	margin: 50px auto;
+	width: 1260px;
+	font-size: 0;
+}
+.map_main_wrapper:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.map_searchbar_wrapper{
+	width: 100%;
+	text-align: center;
+	
+}
+.map_searchbar_wrapper input{
+	background-color: #84bde7;
+	border-radius: 5px;
+}
+.leftarea {
+	display: inline-block;
+	width: 810px;
+	height: 880px;
+	
+	position: relative;
+	vertical-align: top;
+	
+}
+.map_bg_item {
+	position: absolute;
+	filter: Alpha(Opacity=0);
+	opacity: 0;
+}
+.mask {
+	position: absolute;
+	opacity: 0.01
+}
+.leftarea .area {
+	position: absolute;
+/*	z-index: 1;*/
+}
+.leftlist {
+	position: absolute;
+	width: 246px;
+	top: 80px;
+	left: 20px;
+}
+.leftlist li {
+	list-style: none;
+	font-size: 14px;
+	font-family: "黑体";
+	text-indent: 40px;
+	color: #4e6b9d
+}
+.leftareaDetail {
+	width: 810px;
+	height: 880px;
+	float: left
+}
+.leftareaDetail_page {
+	width: 810px;
+	height: 748px;
+	padding-top: 132px;
+	float: left;
+	background: #96bbe8 url(../img/map/page_bk.png) no-repeat left top;
+}
+.gohome {
+	width: 47px;
+	padding: 308px 19px 0 19px;
+	float: left;
+}
+.rightarea {
+	display: inline-block;
+	padding: 0 0 50px 0;
+	width: 449px;
+	min-height: 850px;
+	background: url(../img/map/rightareabg.png);
+	vertical-align: top;
+}
+.map_returntohome_item{
+	padding: 20px;
+	font-size: 16px;
+	text-align: right;
+	
+}
+.map_returntohome_item a{
+	color: #fff;
+}
+.map_returntohome_item a:hover{
+	color: #ddd;
+}
+.l1 {
+	background: url(../img/map/l1.png) no-repeat 0 6px;
+	height: 35px;
+	line-height: 35px
+}
+.l2 {
+	background: url(../img/map/l2.png) no-repeat 0 6px;
+	height: 35px;
+	line-height: 35px
+}
+.l3 {
+	background: url(../img/map/l3.png) no-repeat 0 6px;
+	height: 35px;
+	line-height: 35px
+}
+.l4 {
+	background: url(../img/map/l4.png) no-repeat 0 6px;
+	height: 35px;
+	line-height: 35px
+}
+.l5 {
+	background: url(../img/map/l5.png) no-repeat 0 6px;
+	height: 35px;
+	line-height: 35px
+}
+.chongming {
+	top: 54px;
+	left: 302px;
+	width: 476px;
+	height: 371px;
+}
+.jiading {
+	top: 260px;
+	left: 189px;
+	width: 198px;
+	height: 222px;
+}
+.baoshan {
+	top: 254px;
+	left: 326px;
+	width: 169px;
+	height: 192px;
+}
+.putuo {
+	top: 392px;
+	left: 324px;
+	width: 121px;
+	height: 92px;
+}
+.zhabei {
+	top: 374px;
+	left: 400px;
+	width: 68px;
+	height: 90px;
+}
+.hongkou {
+	top: 380px;
+	left: 436px;
+	width: 63px;
+	height: 85px;
+}
+.yangpu {
+	top: 354px;
+	left: 456px;
+	width: 84px;
+	height: 104px;
+}
+.pudong {
+	top: 339px;
+	left: 433px;
+	width: 353px;
+	height: 423px;
+}
+.qingpu {
+	top: 409px;
+	left: 15px;
+	width: 328px;
+	height: 278px;
+}
+.songjiang {
+	top: 509px;
+	left: 133px;
+	width: 253px;
+	height: 211px;
+}
+.minhang {
+	top: 439px;
+	left: 269px;
+	width: 250px;
+	height: 229px;
+}
+.changnin {
+	top: 443px;
+	left: 332px;
+	width: 101px;
+	height: 76px;
+}
+.jingan {
+	top: 374px;
+	left: 399px;
+	width: 72px;
+	height: 118px;
+}
+.huangpu {
+	top: 440px;
+	left: 435px;
+	width: 60px;
+	height: 71px;
+}
+.xuhui {
+	top: 462px;
+	left: 377px;
+	width: 89px;
+	height: 123px;
+}
+.jinshan {
+	top: 653px;
+	left: 109px;
+	width: 343px;
+	height: 215px;
+}
+.fengxian {
+	top: 618px;
+	left: 362px;
+	width: 315px;
+	height: 189px;
+}
+.selecttype {
+	background: url(../img/map/selecttypebg.png) no-repeat;
+	background-color: transparent;
+	border: 0;
+	width: 212px;
+	height: 33px;
+	margin: 32px 0 0 40px;
+	font-size: 16px;
+	color: #fff;
+	font-family: "黑体";
+	text-indent: 6px;
+}
+.querytxt {
+	background-color: transparent;
+	border: 0;
+	width: 212px;
+	height: 33px;
+	margin: 32px 0 0 6px;
+	font-size: 16px;
+	color: #fff;
+	font-family: "黑体";
+	text-indent: 30px;
+}
+.querybtn {
+	width: 63px;
+	height: 33px;
+	border: 0;
+	font-size: 16px;
+	color: #fff;
+	font-family: "黑体";
+	margin: 32px 0 0 6px;
+}
+.listb {
+	margin: 46px 0 46px 123px;
+	clear: both;
+}
+.title {
+	font-family: "黑体";
+	font-size: 22px;
+	color: #fff;
+	background: url(../img/map/titlelogo.png) no-repeat;
+	text-indent: 36px;
+	margin-left: 40px
+}
+.map_schoollist_wrapper ul {
+	width: 300px;
+	margin-bottom: 30px;
+}
+.map_schoollist_wrapper li {
+	font-size: 16px;
+	line-height: 40px;
+	color: #fff;
+	border-bottom: dotted 1px #99b2da;
+	list-style: none;
+	width: 300px;
+}
+.map_schoollist_wrapper li label {
+	margin-right: 10px
+}
+.map_schoollist_wrapper li a {
+	color: #fff;
+	margin-right: 10px
+}
+.map_schoollist_wrapper li a, .map_schoollist_wrapper li a:visited, .map_schoollist_wrapper li a:active {
+	color: #fff;
+	margin-right: 10px;
+}
+.map_schoollist_wrapper li a:hover {
+	color: #d5ff70;
+	margin-right: 10px;
+}
+.map_mapselector_wrapper{
+	width: 100%;
+	height: 100%;
+	background: url(../img/map/leftareabg1.png);
+}
+.map_mapselector_wrapper .area{
+	display: none;
+}
+.map_mapselector_wrapper .active, .map_mapselector_wrapper .hover{
+	display: block;
+}
+.map_mapdetail_wrapper{
+	display: none;
+	width: 100%;
+	height: 100%;
+	background: url(../img/map/page_bk.png) #96bbe8;
+}
+.map_mapdetail_wrapper .mapdetail{
+	margin: 0 auto;
+	width: 675px;
+	height: 717px;
+	position: relative;
+	left: 13px;
+	top: 127px;
+	
+}
+.map_mapdetail_wrapper .back{
+	position: absolute;
+	left: 10px;
+	top: 460px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.nextpage {
+	width: 102px;
+	height: 33px;
+	border: 0;
+	font-size: 16px;
+	font-family: "黑体";
+	color: #fff;
+	float: right;
+	margin-right: 48px
+}*/
+
+.details {
+	font: normal 14px/30px "Lucida Sans Unicode", "Lucida Grande", sans-serif, "宋体";
+}
+.unit {
+	margin: 0 auto;
+	clear: both;
+}
+.unit_tit {
+	color: #577bb8;
+	float: left;
+}
+.unit_con {
+	float: right;
+}
+#name {
+	font-weight: bold;
+}
+#number {
+	background: url(../img/map/icon_number.png) no-repeat 0 3px;
+	padding-left: 25px;
+}
+#address {
+	background: url(../img/map/icon_address.png) no-repeat 0 3px;
+	padding-left: 25px;
+}
+#headmaster {
+	background: url(../img/map/icon_headmaster.png) no-repeat 0 3px;
+	padding-left: 25px;
+}
+#type {
+	background: url(../img/map/icon_type.png) no-repeat 0 3px;
+	padding-left: 25px;
+}
+#content {
+	background: url(../img/map/icon_content.png) no-repeat 0 3px;
+	padding-left: 25px;
+}
+#division {
+	background: url(../img/map/icon_division.png) no-repeat 0 3px;
+	padding-left: 25px;
+}
+#time {
+	background: url(../img/map/icon_time.png) no-repeat 0 3px;
+	padding-left: 25px;
+}
+#remark {
+	background: url(../img/map/icon_remark.png) no-repeat 0 3px;
+	padding-left: 25px;
+}
+.map_schoollist_wrapper .pagination {
+	color: #264e8c;
+	font-size: 17px;
+}
+.map_schoollist_wrapper .pagination p{
+	display: inline-block;
+}
+.map_schoollist_wrapper .pagination label {
+	color: #031128;
+}
+.map_schoollist_wrapper .pagination a, .pagination a:visited, .pagination a:active {
+	color: #fff;
+}
+.map_schoollist_wrapper .pagination a:hover {
+	color: #d5ff70;
+}
+a.off, a.off:visited, a.off:active {
+	color: #264e8c;
+}
+a.off:hover {
+	color: #264e8c;
+}
+.map_schooltypelist_wrapper {
+	width: 119px;
+	float: left;
+}
+.map_schooltypelist_wrapper li{
+	position: relative;
+}
+.map_schooltypelist_wrapper li a{
+	display: block;
+}
+.map_schooltypelist_wrapper li a p{
+	color: #fff;
+	position: absolute;
+	bottom: 15px;
+	left: 10px;
+	font-size: 12px;
+}
+
+.map_schoollist_wrapper {
+	width: 330px;
+	float: left;
+}
+.types {
+	width: 104px;
+	height: 92px;
+}
+#all {
+	width: 94px;
+	height: 44px;
+	padding: 48px 0 0 10px;
+	color: #fff;
+	font-size: 14px;
+	background: url(../img/map/all.png) no-repeat left top;
+}
+#colleges {
+	width: 94px;
+	height: 44px;
+	padding: 48px 0 0 10px;
+	color: #fff;
+	font-size: 14px;
+	background: url(../img/map/colleges.png) no-repeat left top;
+}
+#primaryschool {
+	width: 94px;
+	height: 44px;
+	padding: 48px 0 0 10px;
+	color: #fff;
+	font-size: 14px;
+	background: url(../img/map/primaryschool.png) no-repeat left top;
+}
+#kindergarten {
+	width: 94px;
+	height: 34px;
+	padding: 58px 0 0 10px;
+	color: #fff;
+	font-size: 14px;
+	background: url(../img/map/kindergarten.png) no-repeat left top;
+}
+#train {
+	width: 94px;
+	height: 34px;
+	padding: 58px 0 0 10px;
+	color: #fff;
+	font-size: 14px;
+	background: url(../img/map/train.png) no-repeat left top;
+}
+.baidu {
+	color: #2755a3;
+	font: bold 14px/33px "Lucida Sans Unicode", "Lucida Grande", sans-serif, "宋体";
+	width: 110px;
+	height: 33px;
+	background: #fdd859;
+	border-radius: 5px;
+	display: block;
+	text-align: center;
+}
+a.sh, a.sh:visited, a.sh:active {
+	color: #fff;
+}
+a.sh:hover {
+	color: #d5ff70;
+}
