@@ -318,12 +318,13 @@
 			this.ajaxRequest(this.assembleUrl(para));
 		},
 		firstLoad: function() {
-
+			this.ajaxRequest(this.queryOptions);
 		},
 		init: function() {
 			this.searching();
 			this.mapHover();
 			this.schoolList();
+			this.firstLoad();
 		}
 	}
 	map.init();
