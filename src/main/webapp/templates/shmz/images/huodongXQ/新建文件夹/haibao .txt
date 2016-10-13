@@ -1,0 +1,18 @@
+<!--banner-->
+		<div class="banner">
+			<ul class='swiper-wrapper'>
+				<li class="b_img swiper-slide">
+					<a href="javascript:void(0);" style="background-image:url(../images/shmz_banner.jpg);"></a>
+				</li>
+				<li class="b_img swiper-slide">
+					<a href="javascript:viod(0);" style="background-image:url(../images/banner_02.png);"></a>
+				</li>
+				
+			</ul>
+			<div class='banner_paginator_wrapper'>
+				<div class='banner_icon'></div>
+				
+			</div>
+		</div>
+
+		<!--banner½áÊø-->

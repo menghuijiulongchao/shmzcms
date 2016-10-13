@@ -1,0 +1,226 @@
+.ad_box{
+	width: 1200px;
+	margin: 20px auto 0px;
+}
+h2.ad_title{
+	font-family: "microsoft yahei";
+	font-size:20px;
+	color: #333;
+	width: 1200px;
+	margin-bottom: 10px;
+}
+.ad_clip{
+	overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.ad_navTetail{
+	
+}
+.ad_navTetail span{
+	font-size: 12px;
+	line-height: 18px;
+	color: #666666;
+	font-family: "microsoft yahei";
+}
+.ad_navTetail span.ad_nav02{
+	margin-left: 30px;
+}
+
+/*基地内容页*/
+.ad_container{
+	overflow: hidden;
+	margin:20px auto;
+}
+.ad_con_left{
+	float: left;
+	width: 882px;
+}
+.ad_leftImg {	
+	padding:40px 0px;
+	background: #fff;
+	margin-bottom:16px ;
+}
+.ad_leftImg img{
+	max-width: 826px;
+	text-align: center;	
+}
+.ad_conChange{
+	background: #fff;
+}
+.ad_conTag{
+	overflow: hidden;
+}
+.ad_conTag li{
+	float: left;
+	display: inline;
+	cursor: pointer;
+    font-family: "microsoft yahei";
+    font-size: 16px;
+    padding: 17px 0 8px;
+    text-align: center;
+    width: 294px;
+    border-bottom: 1px solid #e0e2e3;
+}
+
+.ad_conTag li:hover,.ad_conTag li.ad_currentLi {
+	border-bottom: 1px solid #ffa400;
+}
+.ad_conTag li:hover a,
+.ad_conTag  li.ad_currentLi a{
+	color: #ffa400;
+}
+.ad_conTag li a{
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	border-right: 1px solid #e0e2e3;
+}
+.ad_conTag li.ad_tagLast a{
+	border-right: 0px;
+}
+
+/*tag内容部分*/
+.ad_conUl{
+	padding: 10px;
+}
+.ad_conUl tr{
+	height: 30px;
+}
+.ad_tdLeft{
+	width: 200px;
+	text-align: right;
+}
+.ad_conUl td.ad_tdRStyle01{
+	color: #636363;
+}
+.ad_conUl td.ad_tdRStyle02{
+	color: #0268B1;
+}
+
+/*右边模块*/
+.ad_con_right{
+	float: right; 
+	width: 300px;
+}
+.ad_con_right .ad_rCommon{
+	background: #fff;
+	margin-bottom: 10px;
+}
+.ad_con_right .ad_rCommon .ad_rightTit{
+	border-top:1px solid #dad6d6;
+    font-size: 16px;
+    height: 49px;
+    line-height: 49px;
+    text-indent: 10px;
+    background: #f6f6f6 url(../images/ad_rightBg.png) no-repeat center bottom;
+}
+.ad_con_right .ad_rightCon{
+	background: #fff;
+	padding:10px 10px 10px 20px;
+}
+
+/*基地联系人*/
+.ad_atten .ad_rightCon li{
+	font-family: "microsoft yahei";
+	font-size: 14px;
+	line-height: 28px;
+	color:#333333;
+}
+.ad_atten .ad_rightCon li.ad_rName{
+	font-size: 18px;
+	line-height: 36px;
+	color: #0268B1;
+}
+.ad_atten .ad_rightCon a.ad_rMail,
+.ad_position .ad_rightCon a{
+	background: #ffa400;
+	text-align: center;
+	display: block;
+	width: 100px;
+	padding:6px 10px; 
+	border-radius: 4px;
+	color: #fff;
+	font-size: 14px;
+	font-family:"microsoft yahei";
+	margin:10px auto;
+}
+/*基地二维码*/
+.ad_baseQR img{
+	max-width: 200px;
+	margin: 0px auto;
+}
+/*基地分享*/
+.ad_shareLi01{
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.ad_shareLi01 p{
+	float: left;
+	width: 100px;
+	margin:0px 5px;
+}
+.ad_shareLi01 p a{
+	float: left;
+	display: inline-block;
+	width: 30px;
+	height: 24px;
+	
+}
+.ad_shareLi01 p span{
+	font-size: 12px;
+	float: left;
+	display: inline;
+	margin-left: 4px;
+	line-height: 24px;
+}
+.ad_shareLi01 p.ad_shareFol{
+	border: 1px solid #0268B1;
+	
+}
+.ad_shareLi01 p.ad_shareFol a{
+	background: #0268B1 url(../images/list_icost.png) no-repeat center ;
+}
+.ad_shareLi01 p.ad_shareFab{
+	border: 1px solid #ffa400;
+}
+.ad_shareLi01 p.ad_shareFab a{
+	background: #ffa400 url(../images/list_iconst3.png) no-repeat center ;
+}
+	/*分享*/
+.ad_shareLi02{
+	overflow: hidden;
+}
+.ad_shareLi02 span{
+	line-height: 40px;
+	margin-right: 10px;
+}
+.ad_shareLi02 span,
+.ad_shareLi02 a{
+	float: left;
+	display: inline;
+}
+.ad_shareLi02 a{
+	width: 40px;
+	height: 40px;
+	margin-left: 10px;
+}
+.ad_shareLi02 a.ad_shareAdd01{
+	background: url(../images/QQ.png) no-repeat center;
+}
+.ad_shareLi02 a.ad_shareAdd02{
+	background: url(../images/weibo.png) no-repeat center;
+}
+.ad_shareLi02 a.ad_shareAdd03{
+	background: url(../images/wechat.png) no-repeat center;
+}
+/*基地位置*/
+.ad_position .ad_rightCon p{
+	font-family: "microsoft yahei";
+	font-size: 14px;
+	line-height: 28px;
+	color:#333333;
+}
+.ad_position .ad_rightCon a{
+	margin-left: 0px;
+}

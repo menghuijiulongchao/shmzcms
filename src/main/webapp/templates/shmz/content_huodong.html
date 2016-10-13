@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="${CTPATH}/css/reset.css" />
+		<link rel="stylesheet" href="${CTPATH}/css/xqy00.css" />	
+		<link rel="stylesheet" href="${CTPATH}/css/common.css" />
+		<script src="${CTPATH}/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="${CTPATH}/js/base.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	
+	<body>
+		<!--头部-->
+		<div class="container">				
+				<div class="h_header" >
+					<div class="h_logo">
+						<img src="${CTPATH}/images/logo.png" alt="logo" class="logo_img" />
+					</div>
+					<div class="h_nav">
+						<ul>
+							<li>
+								<a href="${CPATH}">首页</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">志愿活动</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">志愿组织</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">亲子体验</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">时长公示</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">帮助中心</a>
+							</li>
+						</ul>
+					</div>
+					<div class="h_login_reg">
+						<a class="h_login" href="javascript:void(0)">登录</a>
+						<a class="h_reg" href="javascript:void(0)">注册</a>
+					</div>
+				</div>
+			</div>
+		<!--头部结束-->
+
+
+		
+		
+<!--详情页内容-->
+<!--标题-->
+		<div class="details">
+			<div class="detailsBox">
+				<h2>${content.title!}</h2>
+			</div>
+		</div>
+<!--标题结束-->
+<!--副标题-->
+		<div class="details-TBox">
+			<div class="details-T">
+				<ul>
+					<li>
+						<span>分类：</span>
+						<em class="">${content.metadata('_meta3')}</em>
+					</li>
+					<li>
+						<span>组织：</span>
+						<em class="">${content.metadata('_meta4')}</em>
+					</li>					
+				</ul>
+			</div>
+		</div>
+<!--副标题结束-->
+<!--详情页主体-->
+		<div class="dConBox">
+	    	<div class="dConBox-In">
+	        	<div class="dConBox-L">	            	
+	            	<div class="dConBox-Top">
+	                	<p align="center">
+	                	 	<img src="${(content.thumbnail)!}"/>
+			            </p>	                	
+	                </div>
+	            	<div class="dConBox-Bottom">
+	                	<div class="dConBox-Btit">
+	                    	<ul>
+	                    		<li class="btit_c"><a href="javascript:void(0)">项目详情</a></li>
+	                    		<li class=""><a href="javascript:void(0)">参与者</a></li>
+	                    		<li class=""><a href="javascript:void(0)">赞助者</a></li>
+	                    		<li class=""><a style="border: none;" href="javascript:void(0)">话题</a></li>
+	                    	</ul>
+	                    </div>
+	                    <div class="dConBox_xmxq btit_select btit_sl">
+		                	
+		                	${content.text!}
+		                	
+		                </div>
+	                    <div class="dConBox_cyz btit_select">
+	                     	<div style="width: 20px; height: 20px; background-color: red;">
+	                     	 	
+	                     	</div>
+	                    </div>
+	                    <div class="dConBox_zzz btit_select">
+	                     	<div style="width: 20px; height: 20px; background-color: yellow;">
+	                     	 	
+	                     	</div> 
+	                    </div>
+	                    <div class="dConBox_ht btit_select">
+	                     	<form id="topicForm" method="" action="">
+								<div class="xingming">
+									姓名:	<input type="text" class="text" name="name" id="name"/>									
+								</div>			                	
+								<div class="tishi">
+									还可以输入<b limit=140>140</b>字								
+								</div>
+								<textarea class="textarea required wordNum140" name="content" id="content"></textarea>
+								<div class="liuyan">									
+									<a href="javascript:void(0)" onclick="" class="btn_suit">我要留言</a>
+								</div>
+							</form>
+	                    </div>
+	                    <div class="dConBox_btn">
+	                		<a href="" class="canyu">我要参与</a>
+	                		<a href="" class="zanzhu">我要赞助</a>
+		                </div>
+	                </div>        
+		        </div>    
+	            <div class="dConBox-R">
+		           	<div class="dConBoxr01 dConBoxr_9g">
+			            <div class="enrollment">				           
+				            <p class="activity-item-progress" starttime="" createTime = "" endtime="">
+					        	<i class="activity-item-progress-ing"></i>
+				            </p>
+				            <span id="">剩<em>125</em>天</span>
+			            </div>		                                 
+		                <div class="cyzz canyuin">
+			                <h2><b>0</b>位参与者</h2>
+	                		<a href="" >我要参与</a>
+		                </div>
+		                <div class="cyzz zanzhuin">		                	              	
+	                		<h2><b>￥0.00</b>赞助金额</h2>
+	                		<a href="" >我要赞助</a>
+		                </div>	                
+		            </div>
+	              	<div class="dConBoxr02 dConBoxr_9g">
+	              		<div class="gzz">
+	              			<span id="guanzhu">
+	              				<em></em>
+	              				关注（0）
+	              			</span>
+	              			<span id="zan">
+	              				<em></em>
+	              				赞（0）
+	              			</span>
+	              		</div>
+	              		<div class="share">	              			
+							<h2>分享</h2>
+							<a class="sina" title="分享到微博"></a>
+							<a class="qq" title="分享到腾讯微博"></a>
+							<a class="weixin" title="分享到微信"></a>							              			
+	              		</div>
+	              	</div>
+	              	<div class="dConBoxr03 dConBoxr_9g dConBoxr_356g">
+	              		<div class="title_aa">
+	              			<h2>专家评语</h2>
+	              			<a href="">详情</a>
+	              		</div>
+	              		<div class="neirong">
+	              			
+	              		</div>
+	              	</div>	              	
+	              	<div class="dConBoxr04 dConBoxr_9g dConBoxr_356g">
+	                    <div class="title_aa">
+	              			<h2>项目发起者</h2>	              			
+	              		</div>
+	                    <div class="dConBoxrBli">
+	                    	<div class="fqz">
+								<div class="dConBoxrbImg">
+									<img src="${CTPATH}/images/huodongXQ/gq.jpg" width="80" height="80" />
+								</div>
+								<div class="dConBoxrbcon">
+									<a href="">玉溪市青少年事务社会工作服务中心</a>
+								</div>	                    		
+	                    	</div>
+		                    <div class="erweima">
+	                        	<div class="dConBoxrbImg">
+	                        		<img src="${CTPATH}/images/huodongXQ/activityCodePng.png" width="80" height="80" />
+	                        	</div>
+	                            <div class="dConBoxrbcon">
+	                            	<h3>关注项目二维码</h3>
+	                                <p>时刻把握动态</p>
+	                            </div>	
+		                    </div>
+	                    </div>
+	                </div>
+	                <div class="dConBoxr05 dConBoxr_9g dConBoxr_356g">
+	              		<div class="title_aa">
+	              			<h2>项目进度</h2>
+	              			<a href="">详情</a>
+	              		</div>
+	              		<div class="neirong">
+	              			
+	              		</div>
+	              	</div>
+	              	<div class="dConBoxr06 dConBoxr_9g dConBoxr_356g">
+	              		<div class="title_aa">
+	              			<h2>支出记录</h2>
+	              			<a href="">详情</a>
+	              		</div>
+	              		<div class="neirong">
+	              			
+	              		</div>
+	              	</div>
+	              	<div class="dConBoxr07 dConBoxr_9g">
+	              		<h2>公益上海 APP下载</h2>
+	              		<div class="xiazaiewm ip"> 
+	                        <i class="iphone"></i>
+	                        <h2>下载 APP FOR IPHONE</h2>
+	                    </div>                    
+	                    <div class="xiazaiewm"> 
+	                        <i class="android"></i>
+	                        <h2>下载 APP FOR Android</h2>
+	                    </div>
+	              	</div>
+	              	<div class="dConBoxr08 dConBoxr_9g">
+	              		<div class="guanggao"> 
+	                        <a href=""><img src="${CTPATH}/images/huodongXQ/ad01.jpg" /></a>
+	                    </div>	                    
+	                    <div class="guanggao"> 
+	                       <a href=""><img src="${CTPATH}/images/huodongXQ/ad02.jpg" /></a>
+	                    </div>
+	              	</div>	  
+	            </div>
+	        </div>
+    	</div>
+<!--详情页主体结束-->	
+<!--详情页内容结束-->
+	
+	
+<!--底部-->
+		<div class="footer">
+				<div class="footer_con">
+				<div class="footer_ewm">
+					<img class="footer_ewm_img01" src="${CTPATH}/images/erweima.png">
+					<img class="footer_ewm_img02" src="${CTPATH}/images/ewm_bg.png">
+					<p class="footer_ewm_text">扫描二维码下载App</p>
+				</div>
+					<p class="copyright">${OPTION('web_copyright')!'暂未填写版权信息'}${OPTION('web_icp_number')!}</p>
+					<ul class="enjon_icon">
+						<li><a href="#" class="icon_01"></a></li>
+						<li><a href="#" class="icon_02"></a></li>
+						<li><a href="#" class="icon_03"></a></li>
+					</ul>
+				</div>
+			</div>
+		<!--底部-->
+	</body>
+</html>

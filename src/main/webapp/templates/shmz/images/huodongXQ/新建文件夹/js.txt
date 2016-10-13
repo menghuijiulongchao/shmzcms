@@ -1,0 +1,8 @@
+function swiper() {
+		var swiper = new Swiper('.banner', {
+			loop: true,
+			pagination: '.banner_icon',
+			paginationClickable: true,
+			autoplay: 5000
+		})
+	}

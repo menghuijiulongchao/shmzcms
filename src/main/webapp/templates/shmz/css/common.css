@@ -1,0 +1,184 @@
+﻿body{
+	background: #eaeaea;
+}
+.container{
+	width: 100%;
+	min-width:1200px;
+	height:70px;	
+	background: #0b52a1;
+	border-bottom: 3px solid rgba(23,23,23,0.5);
+}
+.h_header{
+	width: 1200px;	
+	margin:0px auto;
+	overflow: hidden;
+}
+.h_logo{
+	width: 177px;
+	height: 70px;
+	
+	float: left;
+}
+.h_logo img{
+	margin-top:15px;
+}
+.h_nav{
+	float:left;
+	margin-left: 87px;
+}
+.h_nav li{
+	float:left;
+	padding:3px 8px;
+	margin:0px 10px;
+	line-height: 70px;
+}
+.h_nav li a{
+	color:#fff;
+}
+.h_login_reg{
+	float: right;
+	line-height: 77px;
+	margin-right: 22px;
+	
+}
+.h_login_reg .h_reg{
+	color: #fff;
+	margin:0px 5px;
+}
+.h_login_reg .h_login{
+	color: #fff;
+}
+
+.h_language{
+	width: 48px;
+	height: 25px;
+	margin-top: 24px;
+	float: right;
+}
+.h_language p{
+	font-size: 16px;
+	font-family: "黑体";
+	text-align: center;
+	line-height: 25px;
+}
+.h_language .h_china{
+	width: 22px;
+	height: 25px;
+	color: #FFFFFF;
+	float: left;
+	background: #FFA400;
+}
+.h_language .h_English a{
+	width: 22px;
+	height: 25px;
+	color: #0268B1;
+	float: right;
+	background: #000000;
+	opacity: 0.4;
+	filter:alpha(opacity=40);
+}
+
+/*底部*/
+.footer{
+	width:100%;
+	min-width:1200px;
+	height:126px;
+	background: #0b52a1;
+	margin-top: 60px;
+
+}
+.footer_con{
+	width:1200px;
+	position: relative;
+	margin:0px auto;
+}
+.copyright{
+	width: 700px;
+	margin-left:260px;
+	text-align: center;
+	line-height: 126px;
+	color:#fff;	
+	float: left;
+}
+.enjon_icon{
+	width: 240px;
+	height: 56px;
+	margin-top:25px;
+	float:right;
+}
+.enjon_icon li{
+	float: left;
+	margin-left: 15px;
+}
+.enjon_icon li a{
+	display: inline-block;
+	width: 55px;
+	height:56px;
+	background: url(../images/enjoy_icon.png) no-repeat;
+}
+.enjon_icon li a.icon_02{
+	background-position: -55px 0px;
+}
+.enjon_icon li a.icon_03{
+	background-position: -110px 0px;
+}
+/*二维码*/
+.footer_ewm{
+	width: 140px;
+	position: absolute;
+	top:-50px;
+	
+}
+.footer_ewm .footer_ewm_img01{
+	position: absolute;
+	z-index: 1;
+}
+.footer_ewm .footer_ewm_img02{
+	position: absolute;
+	top:-6px;
+	left: 6px;
+	z-index: 0;
+}
+.footer_ewm_text{
+	position: absolute;
+	top:140px;
+	left:8px;
+	font-size: 14px;
+	color: #fff;
+}
+/*友情链接*/
+.com_yqlj{
+	width: 1200px;
+	padding-bottom: 20px;
+	margin: 0px auto;
+}
+.com_yqlj .com_yqlj_left,
+.com_yqlj .com_yqlj_right li a{	
+	font-family: "微软雅黑";
+	font-size:16px;
+	color: #636363;	
+	line-height: 38px;
+}
+.com_yqlj .com_yqlj_left{
+	float: left;
+	width: 70px;
+	font-weight: 700;
+}
+.com_yqlj .com_yqlj_right{
+	float: left;
+	width: 1130px;	
+}
+.com_yqlj .com_yqlj_right li{
+	margin:0px 4px;
+}
+.com_yqlj .com_yqlj_right li:hover a{
+	color: #ff9300;
+}
+/*clip*/
+.clip{
+	display: block;
+	width: 420px;
+	overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
