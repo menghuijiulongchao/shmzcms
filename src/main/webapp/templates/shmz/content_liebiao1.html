@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="${CTPATH}/css/reset.css" />
+		<link rel="stylesheet" href="${CTPATH}/css/common.css" />
+		<link rel="stylesheet" href="${CTPATH}/css/style_index.css" />
+		<script type="text/javascript" src="${CTPATH}/js/jquery.js"></script>
+		<script type="text/javascript" src="${CTPATH}/js/base.js"></script>
+	</head>
+	<body>
+	<input type="hidden" id="1">
+			<!--头部-->
+		<div class="container">				
+				<div class="h_header" >
+					<div class="h_logo">
+						<img src="${CTPATH}/images/logo.png" alt="logo" class="logo_img" />
+					</div>
+					<div class="h_nav">
+						<ul>
+							<li>
+								<a href="${CPATH}/">首页</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">公益活动</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">公益组织</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">亲子体验</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">时长公示</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">帮助中心</a>
+							</li>
+						</ul>
+					</div>
+					<div class="h_login_reg">
+						<a class="h_login" href="javascript:void(0)">登录</a>
+						<a class="h_reg" href="javascript:void(0)">注册</a>
+					</div>
+				</div>
+			</div>
+		<!--头部结束-->
+		<!--中间内容-->
+		<div class="list_container_box">
+			<div class="list_condition">
+				<ul class="list_condition_detail">
+					<li><a class="list_active" href="#">全部</a></li>
+					<li><a href="#">文化</a></li>
+					<li><a href="#">教育</a></li>
+					<li><a href="#">体育</a></li>
+					<li><a href="#">卫生医疗</a></li>
+					<li><a href="#">社区</a></li>
+					<li><a href="#">社区服务</a></li>
+				</ul>
+			</div>
+			<div class="list_container">
+				<!--搜索列表-->
+				<div class="list_search">
+					<ul class="list_search_class">
+						<li class="">
+							<a href="#">综合排序</a>
+						</li>
+						<li class="list_search_col">
+							<a href="#">不限状态</a>
+						</li>
+						<li class="list_search_col">
+							<a href="#">不限时间</a>
+						</li>
+						<li class="list_search_col">
+							<a href="#">不限地域</a>
+						</li>
+						<li class="list_search_col">
+							<a href="#">不限排序</a>
+						</li>
+					</ul>
+					<div class="search_box">
+						<input type="text" placeholder="搜索" />
+						<button type="button" class="list_search_botton" value="搜索">搜索</button>
+					</div>					
+				</div>
+				<!--搜索列表结束-->
+				<!--列表详细-->
+				<ul class="list_detail">
+				<@jp.contents module="jidi" count="10">
+						<#list contents as content>
+					<li class="list_detail_li">
+						<a class="list_img">
+							<img src="${(content.thumbnail)!}"/>
+						</a>
+						<dl class="list_detail_content">
+								<dt><a class="list_detail_title clip" href="${content.url!}">${content.title!}</a></dt>
+								<dd class="list_address clip">地址：${content.metadata('_meta5')}</dd>
+								
+								<dd>
+									<div class="list_detail_progress">
+										<span>报名截止:</span>
+										<p ><img src="${CTPATH}/images/progress.png"></p>
+										<span>剩<em>300</em>天</span>
+									</div>
+								</dd>
+						</dl>
+						<a class="list_handle">联系基地</a>
+						<ul class="list_operation">
+							<li class="list_operation_li">
+								<i class="list_operation_01"></i>
+								<em>感兴趣</em>
+								<strong>2</strong>
+							</li>
+							<li class="list_operation_li">
+								<i class="list_operation_02"></i>
+								<em>活动数量</em>
+								<strong>20</strong>
+							</li>
+							<li class="list_operation_li">
+								<i class="list_operation_03"></i>
+								<em>关注</em>
+								<strong>200</strong>
+							</li>
+						</ul>
+					</li>
+						</#list>
+				</@jp.contents>
+				</ul>
+				
+				<!--列表详细结束-->
+				<!--列表分页-->
+				<!--<div class="list_paging">
+					<ul class="list_paging_ul">
+						<li class="list_paging_first">首页</li>
+						<li class="list_paging_pre">上一页</li>
+						<li class="list_paging_num">1</li>
+						<li class="list_paging_pre">下一页</li>
+						<li class="list_paging_first">尾页</li>
+					</ul>
+					<p>共<strong>1626</strong>条信息分<strong>109</strong>页 每页显示<strong>14</strong>条 当前显示第<strong>1</strong>页</p>
+				</div>-->
+				<!--列表分页结束-->
+			</div>
+		</div>
+		<!--中间内容结束-->	
+		<!--底部-->
+		<div class="footer">
+				<div class="footer_con">
+				<div class="footer_ewm">
+					<img class="footer_ewm_img01" src="${CTPATH}/images/erweima.png">
+					<img class="footer_ewm_img02" src="${CTPATH}/images/ewm_bg.png">
+					<p class="footer_ewm_text">扫描二维码下载App</p>
+				</div>
+					<p class="copyright">${OPTION('web_copyright')!'暂未填写版权信息'}${OPTION('web_icp_number')!}</p>
+					<ul class="enjon_icon">
+						<li><a href="#" class="icon_01"></a></li>
+						<li><a href="#" class="icon_02"></a></li>
+						<li><a href="#" class="icon_03"></a></li>
+					</ul>
+				</div>
+			</div>
+		<!--底部-->
+	</body>
+	
+</html>
+
