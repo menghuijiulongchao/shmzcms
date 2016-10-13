@@ -6,7 +6,7 @@
 		<description>shmz是上海民政定制主题</description>
 		<author>jpress.cc</author>
 		<authorWebsite>http://www.jpress.cc</authorWebsite>
-		<version>v1.0</version>
+		<version>v1.0.1</version>
 		<versionCode>1</versionCode>
 		<updateUrl>http://www.jpress.cc</updateUrl>
 	</infos>
@@ -43,7 +43,7 @@
 		<metadata dataType="input" name="_meta7" title="分类"  placeholder="活动分类，如环境保护"/>
 	</module>
 
-	<module title="页面" name="page" list="所有页面" add="新建页面" comment="评论">
+	<module title="列表" name="liebiao" list="所有页面" add="新建页面" comment="评论">
 	</module>
 	<module title="地图" name="map" list="所有页面" add="新建页面" comment="评论">
 	</module>

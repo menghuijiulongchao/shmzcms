@@ -6,7 +6,9 @@
 		<link rel="stylesheet" href="${CTPATH}/css/reset.css" />
 		<link rel="stylesheet" href="${CTPATH}/css/common.css" />
 		<link rel="stylesheet" href="${CTPATH}/css/style_index.css" />
+		<link rel="stylesheet" href="${CTPATH}/css/swiper.css" />
 		<script type="text/javascript" src="${CTPATH}/js/jquery.js"></script>
+		<script type="text/javascript" src="${CTPATH}/js/swiper.min.js"></script>
 		<script type="text/javascript" src="${CTPATH}/js/base.js"></script>
 	</head>
 	<body>
@@ -20,7 +22,7 @@
 					<div class="h_nav">
 						<ul>
 							<li>
-								<a href="${CPATH}">首页</a>
+								<a href="${CPATH}/">首页</a>
 							</li>
 							<li>
 								<a href="javascript:void(0);">公益活动</a>
@@ -59,23 +61,30 @@
 		<div style="background: #ECF2F5;">
 		<!------->
 		
+		<!--banner-->
 		<div class="banner">
-					<ul>
-						<li class="b_img"><a href="#" ><img src="${CTPATH}/images/shmz_banner.jpg" /></a></li>
-						<li class="b_img"><a href="#" ><img src="${CTPATH}/images/banner_02.png" /></a></li>
-					</ul>
-					<div class="banner_icon">
-						<a class="icon_active"></a>
-						<a></a>
-					</div>
-				</div>
+			<ul class='swiper-wrapper'>
+				<li class="b_img swiper-slide">
+					<a href="javascript:void(0);" style="background-image:url(${CTPATH}/images/shmz_banner.jpg);"></a>
+				</li>
+				<li class="b_img swiper-slide">
+					<a href="javascript:viod(0);" style="background-image:url(${CTPATH}/images/banner_02.png);"></a>
+				</li>
+				
+			</ul>
+			<div class='banner_paginator_wrapper'>
+				<div class='banner_icon'></div>
+				
+			</div>
+		</div>
+
 		<!--banner结束-->
 		<!--活动列表-->
 		<div class="class_img_bg">
 			<div class="class_img">
 			
 				<div class="left_class">
-					<a class="left_class_map"  href="${SPATH}/page_map.html">
+					<a class="left_class_map" target="_blank"  href="${SPATH}/page_map.html">
 						<img src="${CTPATH}/images/gongyi_map.png">
 						<span>公益地图</span>
 					</a>
@@ -99,7 +108,9 @@
 				<div class="right_class">
 					<ul>
 						<li class="ci_list">
-							<a class="ci_block" href="list.html">
+						<@jp.taxonomy id="1" > 
+							<a class="ci_block" href="${taxonomy.url}">
+						</@jp.taxonomy>	
 								<img src="${CTPATH}/images/tree.png" />
 								<span>文化</span>
 							</a>
@@ -166,9 +177,13 @@
     				<li class="">
     					<a href="javascript:void(0)">社会服务</a>
     				</li>    
+    			<@jp.contents module="liebiao" count="1">
+    				<#list contents as content>
     				<li class="last_li">
-    					<a href="">更多>></a>
+    					<a target="_blank" href="${content.url!}">更多>></a>
     				</li>
+  					</#list>
+				</@jp.contents>
     			</ul>
     		</div>
 			<div class="acbox">
@@ -222,7 +237,7 @@
 										</a>
 									</div>
 									<h3>
-										<a href="${content.url!}">${content.title!}</a>
+										<a title="${content.title!}" href="${content.url!}">${content.title!}</a>
 									</h3>
 									<p>地点：${content.metadata('_meta5')}</p>
 									<p>申报时间：${content.metadata('_meta6')}</p>
@@ -239,7 +254,7 @@
 										</a>
 									</div>
 									<h3>
-										<a href="${content.url!}">${content.title!}</a>
+										<a title="${content.title!}" href="${content.url!}">${content.title!}</a>
 									</h3>
 									<p style="width: 200px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;color: black;">地点：${content.metadata('_meta1')}</p>
 									<p>开始时间：${content.metadata('_meta2')}</p>
