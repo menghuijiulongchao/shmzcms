@@ -1,0 +1,44 @@
+<#macro script_import> </#macro> <#macro script> </#macro> <#macro
+css_import> </#macro> <#macro css> </#macro> <#macro layout>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>${WEB_TITLE!WEB_NAME!} - ${WEB_SUBTITLE!}</title>
+<link rel="stylesheet" href="${CTPATH}/css/reset.css" />
+<link rel="stylesheet" href="${CTPATH}/css/common.css" />
+<link rel="stylesheet" href="${CTPATH}/css/style_index.css" />
+<link rel="stylesheet" href="${CTPATH}/css/swiper.css" />
+
+</head>
+<body>
+
+<#nested> 
+	<!--底部-->
+	<div class="footer">
+		<div class="footer_con">
+			<div class="footer_ewm">
+				<img class="footer_ewm_img01" src="${CTPATH}/images/erweima.png">
+				<p class="footer_ewm_text">扫描二维码下载App</p>
+			</div>
+			<p class="copyright">${OPTION('web_copyright')!'暂未填写版权信息'}${OPTION('web_icp_number')!}</p>
+			<ul class="enjon_icon">
+				<li><a href="javascript:;" class="icon_01"></a></li>
+				<li><a href="javascript:;" class="icon_02"></a></li>
+				<li><a href="javascript:;" class="icon_03"></a></li>
+			</ul>
+		</div>
+	</div>
+	<!--底部-->
+	<!-------->
+	
+	<!-------->
+	<@script_import />
+	<script type="text/javascript" src="${CTPATH}/js/jquery.js"></script>
+	<script type="text/javascript" src="${CTPATH}/js/swiper.min.js"></script>
+	<script type="text/javascript" src="${CTPATH}/js/base.js"></script>
+	<@script />
+</body>
+
+</html>
+</#macro>
