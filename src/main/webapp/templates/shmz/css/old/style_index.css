@@ -1,4 +1,4 @@
-/*首页样式*/
+/*棣栭〉鏍峰紡*/
 .banner{
 	position:relative;
 	display: block;
@@ -7,6 +7,7 @@
 	height: 350px;;
 	margin: 0px auto;
 	overflow: hidden;
+	background: #0b52a1;
 }
 .banner ul{
 	width: 100%;
@@ -44,7 +45,7 @@
 	height: 2px;
 	background: #fff;
 	/*opacity: 0.3;
-	filter: alpha(opacity=30);　　*/
+	filter: alpha(opacity=30);銆�銆�*/
 }
 .banner_icon .icon_active{
 	/*opacity: 1;
@@ -52,7 +53,7 @@
 	background: #f00;
 }
 /*
- *	banner下面的小分类
+ *	banner涓嬮潰鐨勫皬鍒嗙被
  * */
 .class_img_bg{
 	width: 100%;
@@ -81,7 +82,7 @@
 	width: 289px;
 }
 .left_class .left_class_map span{
-	font-family: "黑体";
+	font-family: "榛戜綋";
 	font-size:36px;
 	font-weight: 900;
 	text-align: center;
@@ -158,7 +159,7 @@
 }
 
 
-/*列表页样式*/
+/*鍒楄〃椤垫牱寮�*/
 .list_container_box{
 	width:100%;
 	background: #eaeaea;
@@ -192,7 +193,7 @@
 	background:#0b52a1;
 	color:#fff
 }
-/*列表内容部分*/
+/*鍒楄〃鍐呭閮ㄥ垎*/
 .list_container{
 	width: 1200px;
 	margin: 0px auto;
@@ -222,7 +223,7 @@
 	padding-right: 20px;
 	background: url(../images/list_arrow.png) no-repeat center right;
 }
-/*搜索*/
+/*鎼滅储*/
 .search_box{
 	float:right;
 }
@@ -239,7 +240,7 @@
 	background: #f4f4f4;
 	cursor: pointer;
 }
-/*列表详细*/
+/*鍒楄〃璇︾粏*/
 .list_detail{
 	width: 1200px;
 }
@@ -363,7 +364,7 @@
 	color: #fff;
 }
 
-/*分页*/
+/*鍒嗛〉*/
 .list_paging{
 	width:1200px;
 	margin: 0 auto;
@@ -396,14 +397,14 @@
 }
 
 
-/*新闻列表*/
+/*鏂伴椈鍒楄〃*/
 .clearfix:after{
 	content: '';
 	display: block;
 	clear: both;
 }
-/*信息公告和志愿排行*/
-/*导航*/
+/*淇℃伅鍏憡鍜屽織鎰挎帓琛�*/
+/*瀵艰埅*/
 .news{
 	width: 1200px;
 	height: 520px;
@@ -421,18 +422,18 @@
 	margin-right: 28px;
 	font-size: 14px;
 	color: #040404;
-	font-family: "微软雅黑";
+	font-family: "寰蒋闆呴粦";
 	line-height: 50px;
 }
 .news .news_l .news_nav span{
 	font-size: 14px;
 	color: #040404;
-	font-family: "微软雅黑";
+	font-family: "寰蒋闆呴粦";
 	line-height: 50px;
 	float: right;
 	margin-right: 28px;
 }
-/*选项卡*/
+/*閫夐」鍗�*/
 .news .news_l{
 	float: left;
 	overflow: hidden;
@@ -445,7 +446,7 @@
 
 
 
-/*内容*/
+/*鍐呭*/
 .news .news_l .news_con{
 	width: 676px;
 	height: 470px;
@@ -479,7 +480,7 @@
 	left: 50px;
 	top: -18px;
 	color: #da4453;
-	font-family: "微软雅黑";
+	font-family: "寰蒋闆呴粦";
 }
 .news .news_l .news_con ul li .newsL_con .tit :hover{
 	color: #6cb2eb;
@@ -493,16 +494,16 @@
 	overflow: hidden;
 	color: #6c6c6c;
 	font-size: 12px;
-	font-family: "微软雅黑";
+	font-family: "寰蒋闆呴粦";
 }
 .news .news_l .news_con ul li .newsL_con span{
 	color: #6c6c6c;
 	font-size: 12px;
-	font-family: "微软雅黑";
+	font-family: "寰蒋闆呴粦";
 }
 
 
-/*志愿文化*/
+/*蹇楁効鏂囧寲*/
 .news .news_l .news_con .news_list{
 	width: 700px;
 	height: 450px;
@@ -529,7 +530,7 @@
 .news .news_r .newsr_tit{
 	height: 50px;
 	font-size: 14px;
-	font-family: "微软雅黑";
+	font-family: "寰蒋闆呴粦";
 	color: #333;
 	line-height: 50px;
 }
@@ -567,7 +568,7 @@
 	position: relative;
 	left: 65px;
 	top: -40px;
-	font-family: "黑体";
+	font-family: "榛戜綋";
 	font-size: 14px;
 	color: #333333;
 }
@@ -580,7 +581,7 @@
 }
 .news .news_r .newsr_conl ul li i,.news .news_r .newsr_conl ul li span{
 	color: #3EBB2B;
-    font-family: "老宋体";
+    font-family: "鑰佸畫浣�";
     font-weight: bold;
 }
 .news .news_r ul li i{
@@ -590,7 +591,7 @@
 	float: right;
 }
 .news .news_r ul li em{
-	font-family: "微软雅黑";
+	font-family: "寰蒋闆呴粦";
 	font-size: 14px;
 }
 
@@ -613,19 +614,19 @@
 	position: relative;
 	left: 65px;
 	top: -42px;
-	font-family: "黑体";
+	font-family: "榛戜綋";
 	font-size: 14px;
 	color: #333333;
 }
 .news .news_r .newsr_conr ul li i,.news .news_r .newsr_conr ul li span{
 	color: #967adc;
-    font-family: "老宋体";
+    font-family: "鑰佸畫浣�";
     font-weight: bold;
 }
 
-/*活动推荐部分的样式*/
+/*娲诲姩鎺ㄨ崘閮ㄥ垎鐨勬牱寮�*/
 a{
-	font-family: "微软雅黑";
+	font-family: "寰蒋闆呴粦";
 	color: #333333;
 	text-decoration: none;
 }
@@ -707,7 +708,7 @@ li{
 	height:38px;
 	overflow:hidden;
 	font-size: 14px;
-	font-family: "微软雅黑";        		
+	font-family: "寰蒋闆呴粦";        		
 }
 .con_sec .acbox .Activity h3 a:hover{
 	color: orange;
@@ -722,7 +723,7 @@ li{
     text-overflow:ellipsis;
     white-space:nowrap;
 }
-/*活跃志愿者部分的样式*/
+/*娲昏穬蹇楁効鑰呴儴鍒嗙殑鏍峰紡*/
 .acver{        		
 	padding-top: 12px;       		
 	background-color: #ecf2f5;	
@@ -749,7 +750,7 @@ li{
 	display: inline-block;
 	line-height: 50px;
 	margin-left: 28px;
-	font-family: "微软雅黑";
+	font-family: "寰蒋闆呴粦";
 	font-size: 16px;
 	color: #333333;
 }
@@ -785,7 +786,7 @@ li{
 }
 .acver .acverL .acverBox .acverboxin h3{
 	font-size: 14px;
-	font-family: "微软雅黑";
+	font-family: "寰蒋闆呴粦";
 	color: #333333;
 	height: 24px;
 	line-height: 24px;

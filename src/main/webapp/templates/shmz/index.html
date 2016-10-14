@@ -1,42 +1,8 @@
 <#include "_layout.html"/> <@layout>
-<input type="hidden" id="basepath" value="${CPATH}">
-<!--头部-->
-<div class="container">
-	<div class="h_header">
-		<div class="h_logo">
-			<img src="${CTPATH}/images/logo.png" alt="logo" class="logo_img" />
-		</div>
-		<div class="h_nav">
-			<ul>
-				<li><a href="${CPATH}/">首页</a></li>
-				<li><a href="javascript:;">公益活动</a></li>
-				<li><a href="javascript:;">公益组织</a></li>
-				<li><a href="javascript:;">亲子体验</a></li>
-				<li><a href="javascript:;">时长公示</a></li>
-				<li><a href="javascript:;">帮助中心</a></li>
-			</ul>
-		</div>
-		<div class="h_language">
-			<div class="h_china">
-				<a href=""><p>中</p></a>
-			</div>
-			<div class="h_English">
-				<a href=""><p>EN</p></a>
-			</div>
-		</div>
-		<div class="h_login_reg">
-			<a class="h_login" href="javascript:;">登录</a> <a class="h_reg"
-				href="javascript:;">注册</a>
-		</div>
-	</div>
-</div>
-<!--头部结束-->
-<!--banner-->
-<!------>
-<div style="background: #ECF2F5;">
-	<!------->
+<!-- <input type="hidden" id="basepath" value="${CPATH}"> -->
 
-	<!--banner-->
+<!--banner-->
+<div style="background: #ECF2F5;">
 	<div class="banner">
 		<ul class='swiper-wrapper'>
 			<li class="b_img swiper-slide"><a href="javascript:;"
@@ -45,7 +11,6 @@
 			<li class="b_img swiper-slide"><a href="javascript:;"
 				style="background-image: url(${CTPATH}/images/banner_02.png);"></a>
 			</li>
-
 		</ul>
 		<div class='banner_paginator_wrapper'>
 			<div class='banner_icon'></div>
@@ -57,28 +22,28 @@
 	<!--活动列表-->
 	<div class="class_img_bg">
 		<div class="class_img">
-
 			<div class="left_class">
 				<a class="left_class_map" target="_blank"
 					href="${SPATH}/page_map.html"> <img
 					src="${CTPATH}/images/gongyi_map.png"> <span>公益地图</span>
 				</a>
 			</div>
-
 			<div class="center_class">
-				<div class="center_class_01">
-					<p>注册公益市民 (人)</p>
-					<span id="center_num_01">167</span>
+				<div class='content'>
+					<div class="center_class_01">
+						<p>注册公益市民 (人)</p>
+						<span id="center_num_01">167</span>
+					</div>
+					<div class="center_class_02">
+						<p>公益服务时长 (万小时)</p>
+						<span id="center_num_02">210267</span>
+					</div>
+					<div class="center_class_03">
+						<p>注册公益组织(个)</p>
+						<span id="center_num_03">3803</span>
+					</div>
+					<a class="jion_vol" href="javascript:;">申请公益护照</a>
 				</div>
-				<div class="center_class_02">
-					<p>公益服务时长 (万小时)</p>
-					<span id="center_num_02">210267</span>
-				</div>
-				<div class="center_class_03">
-					<p>注册公益组织(个)</p>
-					<span id="center_num_03">3803</span>
-				</div>
-				<a class="jion_vol" href="javascript:;">申请公益护照</a>
 			</div>
 			<div class="right_class">
 				<ul>
