@@ -1,50 +1,4 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-		<link rel="stylesheet" href="${CTPATH}/css/reset.css" />
-		<link rel="stylesheet" href="${CTPATH}/css/common.css" />
-		<link rel="stylesheet" href="${CTPATH}/css/style_index.css" />
-		<script type="text/javascript" src="${CTPATH}/js/jquery.js"></script>
-		<script type="text/javascript" src="${CTPATH}/js/base.js"></script>
-	</head>
-	<body>
-	<input type="hidden" id="1">
-			<!--头部-->
-		<div class="container">				
-				<div class="h_header" >
-					<div class="h_logo">
-						<img src="${CTPATH}/images/logo.png" alt="logo" class="logo_img" />
-					</div>
-					<div class="h_nav">
-						<ul>
-							<li>
-								<a href="${CPATH}/">首页</a>
-							</li>
-							<li>
-								<a href="javascript:void(0);">公益活动</a>
-							</li>
-							<li>
-								<a href="javascript:void(0);">公益组织</a>
-							</li>
-							<li>
-								<a href="javascript:void(0);">亲子体验</a>
-							</li>
-							<li>
-								<a href="javascript:void(0);">时长公示</a>
-							</li>
-							<li>
-								<a href="javascript:void(0);">帮助中心</a>
-							</li>
-						</ul>
-					</div>
-					<div class="h_login_reg">
-						<a class="h_login" href="javascript:void(0)">登录</a>
-						<a class="h_reg" href="javascript:void(0)">注册</a>
-					</div>
-				</div>
-			</div>
+<#include "_layout.html"/> <@layout>
 		<!--头部结束-->
 		<!--中间内容-->
 		<div class="list_container_box">
@@ -125,12 +79,25 @@
 						</ul>
 					</li>
 						</#list>
+					 <div class="list_paging">
+					<ul class="list_paging_ul">
+					</ul>ul
+					</div>
 				</@jp.contents>
 				</ul>
 				
 				<!--列表详细结束-->
 				<!--列表分页-->
-				<!--<div class="list_paging">
+				<@jp.contents module="jidi" count="10">
+						<#list contents as content>
+				<@pagination>
+			        <#list pages as page>
+			           <li class="list_paging_num"> <a href="${page.url}">${page.text}</a></li>
+			        </#list>
+			    </@pagination>
+			     </#list>
+			     </@jp.contents>
+				<!-- <div class="list_paging">
 					<ul class="list_paging_ul">
 						<li class="list_paging_first">首页</li>
 						<li class="list_paging_pre">上一页</li>
@@ -139,29 +106,11 @@
 						<li class="list_paging_first">尾页</li>
 					</ul>
 					<p>共<strong>1626</strong>条信息分<strong>109</strong>页 每页显示<strong>14</strong>条 当前显示第<strong>1</strong>页</p>
-				</div>-->
+				</div> -->
 				<!--列表分页结束-->
 			</div>
 		</div>
 		<!--中间内容结束-->	
 		<!--底部-->
-		<div class="footer">
-				<div class="footer_con">
-				<div class="footer_ewm">
-					<img class="footer_ewm_img01" src="${CTPATH}/images/erweima.png">
-					<img class="footer_ewm_img02" src="${CTPATH}/images/ewm_bg.png">
-					<p class="footer_ewm_text">扫描二维码下载App</p>
-				</div>
-					<p class="copyright">${OPTION('web_copyright')!'暂未填写版权信息'}${OPTION('web_icp_number')!}</p>
-					<ul class="enjon_icon">
-						<li><a href="#" class="icon_01"></a></li>
-						<li><a href="#" class="icon_02"></a></li>
-						<li><a href="#" class="icon_03"></a></li>
-					</ul>
-				</div>
-			</div>
-		<!--底部-->
-	</body>
-	
-</html>
+</@layout>
 
