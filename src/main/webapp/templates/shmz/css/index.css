@@ -65,7 +65,7 @@
 .left_class .left_class_map {
 	display: inline-block;
 	width: 290px;
-	margin: 20px;
+/*	margin: 20px;*/
 	text-align: center;
 }
 .left_class .left_class_map img {
@@ -113,7 +113,7 @@
 .center_class {
 	display: inline-block;
 	min-width: 240px;
-	height: 330px;
+	height: 300px;
 	position: relative;
 	z-index: 1;
 	vertical-align: bottom;
@@ -123,7 +123,7 @@
 	padding: 20px 20px;
 	min-width: 200px;
 	bottom: -6px;
-	height: 340px;
+	height: 300px;
 	background: #3e79b8;
 }
 .center_class div {
@@ -647,8 +647,9 @@ li {
 	margin: 0px auto;
 }
 .con_sec .con_sec_in ul {
+	display: inline-block;
 	font-size: 0;
-	width: 100%;
+	width: 90%;
 	height: 40px;
 }
 .con_sec .con_sec_in li {
@@ -670,10 +671,12 @@ li {
 	background-color: #0b52a1;
 	color: #ffffff;
 }
-.con_sec .con_sec_in .last_li {
-	float: right;
+.con_sec .con_sec_in .more {
+	display: inline-block;
+	text-align: center;
+	line-height: 40px;
 }
-.con_sec .con_sec_in .last_li a:hover {
+.con_sec .con_sec_in .more:hover {
 	background-color: #ecf2f5;
 	color: #0b52a1;
 }
