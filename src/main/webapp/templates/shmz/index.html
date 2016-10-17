@@ -1,17 +1,12 @@
-<#include "_layout.html"/>
-<@layout>
+<#include "_layout.html"/> <@layout>
 <!-- <input type="hidden" id="basepath" value="${CPATH}"> -->
 
 <!--banner-->
 <div style="background: #ECF2F5;">
 	<div class="banner">
 		<ul class='swiper-wrapper'>
-			<li class="b_img swiper-slide"><a href="javascript:;"
-				style="background-image: url(${CTPATH}/images/shmz_banner.jpg);"></a>
-			</li>
-			<li class="b_img swiper-slide"><a href="javascript:;"
-				style="background-image: url(${CTPATH}/images/banner_02.png);"></a>
-			</li>
+			<li class="b_img swiper-slide"><a href="javascript:;" style="background-image: url(${CTPATH}/images/shmz_banner.jpg);"></a></li>
+			<li class="b_img swiper-slide"><a href="javascript:;" style="background-image: url(${CTPATH}/images/banner_02.png);"></a></li>
 		</ul>
 		<div class='banner_paginator_wrapper'>
 			<div class='banner_icon'></div>
@@ -22,9 +17,7 @@
 	<div class="class_img_bg">
 		<div class="class_img">
 			<div class="left_class">
-				<a class="left_class_map" target="_blank"
-					href="${SPATH}/page_map.html"> <img
-					src="${CTPATH}/images/gongyi_map.png"> <span>公益地图</span>
+				<a class="left_class_map" target="_blank" href="${SPATH}/page_map.html"> <img src="${CTPATH}/images/gongyi_map.png"> <span>公益地图</span>
 				</a>
 			</div>
 			<div class="center_class">
@@ -46,28 +39,20 @@
 			</div>
 			<div class="right_class">
 				<ul>
-					<li class="ci_list"><a class="ci_block" href=""> <img
-							src="${CTPATH}/images/tree.png" /> <span>文化</span>
+					<li class="ci_list"><a class="ci_block" href=""> <img src="${CTPATH}/images/tree.png" /> <span>文化</span>
 					</a></li>
-					<li class="ci_list"><a class="ci_block" href="list.html">
-							<img src="${CTPATH}/images/sport.png" /> <span>体育</span>
+					<li class="ci_list"><a class="ci_block" href="list.html"> <img src="${CTPATH}/images/sport.png" /> <span>体育</span>
 					</a></li>
-					<li class="ci_list"><a class="ci_block" href="list.html">
-							<img src="${CTPATH}/images/civilization.png" /> <span>教育</span>
+					<li class="ci_list"><a class="ci_block" href="list.html"> <img src="${CTPATH}/images/civilization.png" /> <span>教育</span>
 					</a></li>
-					<li class="ci_list"><a class="ci_block" href="list.html">
-							<img src="${CTPATH}/images/safety.png" /> <span>卫生医疗</span>
+					<li class="ci_list"><a class="ci_block" href="list.html"> <img src="${CTPATH}/images/safety.png" /> <span>卫生医疗</span>
 					</a></li>
-					<li class="ci_list"><a class="ci_block" href="list.html">
-							<img src="${CTPATH}/images/oldman.png" /> <span>社区</span>
+					<li class="ci_list"><a class="ci_block" href="list.html"> <img src="${CTPATH}/images/oldman.png" /> <span>社区</span>
 					</a></li>
-					<li class="ci_list"><a class="ci_block" href="list.html">
-							<img src="${CTPATH}/images/youngman.png" /> <span>社会组织</span>
+					<li class="ci_list"><a class="ci_block" href="list.html"> <img src="${CTPATH}/images/youngman.png" /> <span>社会组织</span>
 					</a></li>
 				</ul>
 			</div>
-			<!--清除浮动-->
-			<div class="clear_fix"></div>
 		</div>
 	</div>
 	<!--活动列表结束-->
@@ -81,13 +66,10 @@
 				<li class=""><a href="javascript:;">教育</a></li>
 				<li class=""><a href="javascript:;">卫生医疗</a></li>
 				<li class=""><a href="javascript:;">社区</a></li>
-				<li class=""><a href="javascript:;">社会服务</a></li> 
+				<li class=""><a href="javascript:;">社会服务</a></li>
 			</ul>
-			<@jp.contents module="liebiao" count="1">
-				<#list contents as content>
-					<li class="more"><a target="_blank" href="${content.url!}">更多>></a></li>
-				</#list>
-			</@jp.contents>
+			<@jp.contents module="liebiao" count="4"> <#list contents as content> <a class='more' href="${content.url!}"> 更多&gt&gt </a></#list> </@jp.contents>
+			
 		</div>
 		<div class="acbox">
 			<!-- 全部开始 -->
@@ -96,8 +78,7 @@
 					<@jp.contents module="jidi" count="5"> <#list contents as content>
 					<li>
 						<div class="adimg">
-							<a href="${content.url!}"> <img src="${(content.thumbnail)!}"
-								width="224" height="160" />
+							<a href="${content.url!}"> <img src="${(content.thumbnail)!}" width="224" height="160" />
 							</a>
 						</div>
 						<h3>
@@ -108,19 +89,16 @@
 					</li> </#list> </@jp.contents>
 				</ul>
 				<ul class="Activity">
-					<@jp.contents module="huodong" count="5"> <#list contents as
-					content>
+					<@jp.contents module="huodong" count="5"> <#list contents as content>
 					<li>
 						<div class="adimg">
-							<a href="${content.url!}"> <img src="${(content.thumbnail)!}"
-								width="224" height="160" />
+							<a href="${content.url!}"> <img src="${(content.thumbnail)!}" width="224" height="160" />
 							</a>
 						</div>
 						<h3>
 							<a href="${content.url!}">${content.title!}</a>
 						</h3>
-						<p
-							style="width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: black;">地点：${content.metadata('_meta1')}</p>
+						<p style="width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: black;">地点：${content.metadata('_meta1')}</p>
 						<p>开始时间：${content.metadata('_meta2')}</p>
 					</li> </#list> </@jp.contents>
 				</ul>
@@ -129,12 +107,10 @@
 			<!-- 文化开始 -->
 			<div class="acbox_jh" style="display: none">
 				<ul class="Activity">
-					<@jp.contents module="jidi" typeSlug="wenhua" count="5"> <#list
-					contents as content>
+					<@jp.contents module="jidi" typeSlug="wenhua" count="5"> <#list contents as content>
 					<li>
 						<div class="adimg">
-							<a href="${content.url!}"> <img src="${(content.thumbnail)!}"
-								width="224" height="160" />
+							<a href="${content.url!}"> <img src="${(content.thumbnail)!}" width="224" height="160" />
 							</a>
 						</div>
 						<h3>
@@ -145,19 +121,16 @@
 					</li> </#list> </@jp.contents>
 				</ul>
 				<ul class="Activity">
-					<@jp.contents module="huodong" typeSlug="wenhua" count="5"> <#list
-					contents as content>
+					<@jp.contents module="huodong" typeSlug="wenhua" count="5"> <#list contents as content>
 					<li>
 						<div class="adimg">
-							<a href="${content.url!}"> <img src="${(content.thumbnail)!}"
-								width="224" height="160" />
+							<a href="${content.url!}"> <img src="${(content.thumbnail)!}" width="224" height="160" />
 							</a>
 						</div>
 						<h3>
 							<a title="${content.title!}" href="${content.url!}">${content.title!}</a>
 						</h3>
-						<p
-							style="width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: black;">地点：${content.metadata('_meta1')}</p>
+						<p style="width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: black;">地点：${content.metadata('_meta1')}</p>
 						<p>开始时间：${content.metadata('_meta2')}</p>
 					</li> </#list> </@jp.contents>
 				</ul>
@@ -166,12 +139,10 @@
 			<!-- 体育开始 -->
 			<div class="acbox_jh" style="display: none">
 				<ul class="Activity">
-					<@jp.contents module="jidi" typeSlug="tiyu" count="5"> <#list
-					contents as content>
+					<@jp.contents module="jidi" typeSlug="tiyu" count="5"> <#list contents as content>
 					<li>
 						<div class="adimg">
-							<a href="${content.url!}"> <img src="${(content.thumbnail)!}"
-								width="224" height="160" />
+							<a href="${content.url!}"> <img src="${(content.thumbnail)!}" width="224" height="160" />
 							</a>
 						</div>
 						<h3>
@@ -182,19 +153,16 @@
 					</li> </#list> </@jp.contents>
 				</ul>
 				<ul class="Activity">
-					<@jp.contents module="huodong" typeSlug="tiyu" count="5"> <#list
-					contents as content>
+					<@jp.contents module="huodong" typeSlug="tiyu" count="5"> <#list contents as content>
 					<li>
 						<div class="adimg">
-							<a href="${content.url!}"> <img src="${(content.thumbnail)!}"
-								width="224" height="160" />
+							<a href="${content.url!}"> <img src="${(content.thumbnail)!}" width="224" height="160" />
 							</a>
 						</div>
 						<h3>
 							<a href="${content.url!}">${content.title!}</a>
 						</h3>
-						<p
-							style="width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: black;">地点：${content.metadata('_meta1')}</p>
+						<p style="width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: black;">地点：${content.metadata('_meta1')}</p>
 						<p>开始时间：${content.metadata('_meta2')}</p>
 					</li> </#list> </@jp.contents>
 				</ul>
@@ -203,12 +171,10 @@
 			<!-- 教育开始 -->
 			<div class="acbox_jh" style="display: none">
 				<ul class="Activity">
-					<@jp.contents module="jidi" typeSlug="jiaoyu" count="5"> <#list
-					contents as content>
+					<@jp.contents module="jidi" typeSlug="jiaoyu" count="5"> <#list contents as content>
 					<li>
 						<div class="adimg">
-							<a href="${content.url!}"> <img src="${(content.thumbnail)!}"
-								width="224" height="160" />
+							<a href="${content.url!}"> <img src="${(content.thumbnail)!}" width="224" height="160" />
 							</a>
 						</div>
 						<h3>
@@ -219,19 +185,16 @@
 					</li> </#list> </@jp.contents>
 				</ul>
 				<ul class="Activity">
-					<@jp.contents module="huodong" typeSlug="jiaoyu" count="5"> <#list
-					contents as content>
+					<@jp.contents module="huodong" typeSlug="jiaoyu" count="5"> <#list contents as content>
 					<li>
 						<div class="adimg">
-							<a href="${content.url!}"> <img src="${(content.thumbnail)!}"
-								width="224" height="160" />
+							<a href="${content.url!}"> <img src="${(content.thumbnail)!}" width="224" height="160" />
 							</a>
 						</div>
 						<h3>
 							<a href="${content.url!}">${content.title!}</a>
 						</h3>
-						<p
-							style="width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: black;">地点：${content.metadata('_meta1')}</p>
+						<p style="width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: black;">地点：${content.metadata('_meta1')}</p>
 						<p>开始时间：${content.metadata('_meta2')}</p>
 					</li> </#list> </@jp.contents>
 				</ul>
@@ -241,12 +204,10 @@
 			<!-- 卫生医疗开始 -->
 			<div class="acbox_jh" style="display: none">
 				<ul class="Activity">
-					<@jp.contents module="jidi" typeSlug="weishengyiliao" count="5">
-					<#list contents as content>
+					<@jp.contents module="jidi" typeSlug="weishengyiliao" count="5"> <#list contents as content>
 					<li>
 						<div class="adimg">
-							<a href="${content.url!}"> <img src="${(content.thumbnail)!}"
-								width="224" height="160" />
+							<a href="${content.url!}"> <img src="${(content.thumbnail)!}" width="224" height="160" />
 							</a>
 						</div>
 						<h3>
@@ -257,19 +218,16 @@
 					</li> </#list> </@jp.contents>
 				</ul>
 				<ul class="Activity">
-					<@jp.contents module="huodong" typeSlug="weishengyiliao" count="5">
-					<#list contents as content>
+					<@jp.contents module="huodong" typeSlug="weishengyiliao" count="5"> <#list contents as content>
 					<li>
 						<div class="adimg">
-							<a href="${content.url!}"> <img src="${(content.thumbnail)!}"
-								width="224" height="160" />
+							<a href="${content.url!}"> <img src="${(content.thumbnail)!}" width="224" height="160" />
 							</a>
 						</div>
 						<h3>
 							<a href="${content.url!}">${content.title!}</a>
 						</h3>
-						<p
-							style="width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: black;">地点：${content.metadata('_meta1')}</p>
+						<p style="width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: black;">地点：${content.metadata('_meta1')}</p>
 						<p>开始时间：${content.metadata('_meta2')}</p>
 					</li> </#list> </@jp.contents>
 				</ul>
@@ -278,12 +236,10 @@
 			<!-- 社区开始 -->
 			<div class="acbox_jh" style="display: none">
 				<ul class="Activity">
-					<@jp.contents module="jidi" typeSlug="shequ" count="5"> <#list
-					contents as content>
+					<@jp.contents module="jidi" typeSlug="shequ" count="5"> <#list contents as content>
 					<li>
 						<div class="adimg">
-							<a href="${content.url!}"> <img src="${(content.thumbnail)!}"
-								width="224" height="160" />
+							<a href="${content.url!}"> <img src="${(content.thumbnail)!}" width="224" height="160" />
 							</a>
 						</div>
 						<h3>
@@ -294,19 +250,16 @@
 					</li> </#list> </@jp.contents>
 				</ul>
 				<ul class="Activity">
-					<@jp.contents module="huodong" typeSlug="shequ" count="5"> <#list
-					contents as content>
+					<@jp.contents module="huodong" typeSlug="shequ" count="5"> <#list contents as content>
 					<li>
 						<div class="adimg">
-							<a href="${content.url!}"> <img src="${(content.thumbnail)!}"
-								width="224" height="160" />
+							<a href="${content.url!}"> <img src="${(content.thumbnail)!}" width="224" height="160" />
 							</a>
 						</div>
 						<h3>
 							<a href="${content.url!}">${content.title!}</a>
 						</h3>
-						<p
-							style="width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: black;">地点：${content.metadata('_meta1')}</p>
+						<p style="width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: black;">地点：${content.metadata('_meta1')}</p>
 						<p>开始时间：${content.metadata('_meta2')}</p>
 					</li> </#list> </@jp.contents>
 				</ul>
@@ -315,12 +268,10 @@
 			<!-- 社会服务开始 -->
 			<div class="acbox_jh" style="display: none">
 				<ul class="Activity">
-					<@jp.contents module="jidi" typeSlug="shequfuwu" count="5"> <#list
-					contents as content>
+					<@jp.contents module="jidi" typeSlug="shequfuwu" count="5"> <#list contents as content>
 					<li>
 						<div class="adimg">
-							<a href="${content.url!}"> <img src="${(content.thumbnail)!}"
-								width="224" height="160" />
+							<a href="${content.url!}"> <img src="${(content.thumbnail)!}" width="224" height="160" />
 							</a>
 						</div>
 						<h3>
@@ -331,19 +282,16 @@
 					</li> </#list> </@jp.contents>
 				</ul>
 				<ul class="Activity">
-					<@jp.contents module="huodong" typeSlug="shequfuwu" count="5">
-					<#list contents as content>
+					<@jp.contents module="huodong" typeSlug="shequfuwu" count="5"> <#list contents as content>
 					<li>
 						<div class="adimg">
-							<a href="${content.url!}"> <img src="${(content.thumbnail)!}"
-								width="224" height="160" />
+							<a href="${content.url!}"> <img src="${(content.thumbnail)!}" width="224" height="160" />
 							</a>
 						</div>
 						<h3>
 							<a href="${content.url!}">${content.title!}</a>
 						</h3>
-						<p
-							style="width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: black;">地点：${content.metadata('_meta1')}</p>
+						<p style="width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: black;">地点：${content.metadata('_meta1')}</p>
 						<p>开始时间：${content.metadata('_meta2')}</p>
 					</li> </#list> </@jp.contents>
 				</ul>
@@ -364,8 +312,7 @@
 					<ul>
 						<li>
 							<div class="acverimg">
-								<a href=""> <img src="${CTPATH}/images/huoyzyz01.jpg"
-									width="50" height="50" />
+								<a href=""> <img src="${CTPATH}/images/huoyzyz01.jpg" width="50" height="50" />
 								</a>
 							</div>
 							<div class="acverboxin">
@@ -377,8 +324,7 @@
 						</li>
 						<li>
 							<div class="acverimg">
-								<a href=""> <img src="${CTPATH}/images/defaultPic_11.jpg"
-									width="50" height="50" />
+								<a href=""> <img src="${CTPATH}/images/defaultPic_11.jpg" width="50" height="50" />
 								</a>
 							</div>
 							<div class="acverboxin">
@@ -390,8 +336,7 @@
 						</li>
 						<li>
 							<div class="acverimg">
-								<a href=""> <img src="${CTPATH}/images/Interest.png"
-									width="50" height="50" />
+								<a href=""> <img src="${CTPATH}/images/Interest.png" width="50" height="50" />
 								</a>
 							</div>
 							<div class="acverboxin">
@@ -403,8 +348,7 @@
 						</li>
 						<li>
 							<div class="acverimg">
-								<a href=""> <img src="${CTPATH}/images/tuijian05.jpg"
-									width="50" height="50" />
+								<a href=""> <img src="${CTPATH}/images/tuijian05.jpg" width="50" height="50" />
 								</a>
 							</div>
 							<div class="acverboxin">
@@ -416,8 +360,7 @@
 						</li>
 						<li>
 							<div class="acverimg">
-								<a href=""> <img src="${CTPATH}/images/tuijian04.jpg"
-									width="50" height="50" />
+								<a href=""> <img src="${CTPATH}/images/tuijian04.jpg" width="50" height="50" />
 								</a>
 							</div>
 							<div class="acverboxin">
@@ -429,8 +372,7 @@
 						</li>
 						<li>
 							<div class="acverimg">
-								<a href=""> <img src="${CTPATH}/images/huoyzyz01.jpg"
-									width="50" height="50" />
+								<a href=""> <img src="${CTPATH}/images/huoyzyz01.jpg" width="50" height="50" />
 								</a>
 							</div>
 							<div class="acverboxin">
@@ -442,8 +384,7 @@
 						</li>
 						<li>
 							<div class="acverimg">
-								<a href=""> <img src="${CTPATH}/images/tuijian05.jpg"
-									width="50" height="50" />
+								<a href=""> <img src="${CTPATH}/images/tuijian05.jpg" width="50" height="50" />
 								</a>
 							</div>
 							<div class="acverboxin">
@@ -455,8 +396,7 @@
 						</li>
 						<li>
 							<div class="acverimg">
-								<a href=""> <img src="${CTPATH}/images/tuijian04.jpg"
-									width="50" height="50" />
+								<a href=""> <img src="${CTPATH}/images/tuijian04.jpg" width="50" height="50" />
 								</a>
 							</div>
 							<div class="acverboxin">
@@ -468,8 +408,7 @@
 						</li>
 						<li>
 							<div class="acverimg">
-								<a href=""> <img src="${CTPATH}/images/tuijian05.jpg"
-									width="50" height="50" />
+								<a href=""> <img src="${CTPATH}/images/tuijian05.jpg" width="50" height="50" />
 								</a>
 							</div>
 							<div class="acverboxin">
@@ -481,8 +420,7 @@
 						</li>
 						<li>
 							<div class="acverimg">
-								<a href=""> <img src="${CTPATH}/images/tuijian04.jpg"
-									width="50" height="50" />
+								<a href=""> <img src="${CTPATH}/images/tuijian04.jpg" width="50" height="50" />
 								</a>
 							</div>
 							<div class="acverboxin">
@@ -494,8 +432,7 @@
 						</li>
 						<li>
 							<div class="acverimg">
-								<a href=""> <img src="${CTPATH}/images/huoyzyz01.jpg"
-									width="50" height="50" />
+								<a href=""> <img src="${CTPATH}/images/huoyzyz01.jpg" width="50" height="50" />
 								</a>
 							</div>
 							<div class="acverboxin">
@@ -507,8 +444,7 @@
 						</li>
 						<li>
 							<div class="acverimg">
-								<a href=""> <img src="${CTPATH}/images/Interest.png"
-									width="50" height="50" />
+								<a href=""> <img src="${CTPATH}/images/Interest.png" width="50" height="50" />
 								</a>
 							</div>
 							<div class="acverboxin">
@@ -528,19 +464,16 @@
 				<div class="acverQueryBox">
 					<p>公益护照、公益时间查询</p>
 					<div class="acverLabel">
-						<a href="javascript:;" class="acverdd">公益护照查询</a> <a
-							href="javascript:;" class="">公益时间查询</a>
+						<a href="javascript:;" class="acverdd">公益护照查询</a> <a href="javascript:;" class="">公益时间查询</a>
 					</div>
 					<div class="acverForm">
 						<div class="acverFormBox" style="display: block;">
 							<form class="acverFormff" action="" method="post">
 								<div class="acverFormdd">
-									<label for="">姓名:</label> <input type="text" name="" id=""
-										value="" />
+									<label for="">姓名:</label> <input type="text" name="" id="" value="" />
 								</div>
 								<div class="acverFormdd">
-									<label for="">护照编号:</label> <input type="text" name="" id=""
-										value="" />
+									<label for="">护照编号:</label> <input type="text" name="" id="" value="" />
 								</div>
 								<div class="acverFormdd">
 									<input type="button" id="button" value="公益护照查询" />
@@ -550,12 +483,10 @@
 						<div class="acverFormBox" style="display: none;">
 							<form class="acverFormff" action="" method="post">
 								<div class="acverFormdd">
-									<label for="">姓名:</label> <input type="text" name="" id=""
-										value="" />
+									<label for="">姓名:</label> <input type="text" name="" id="" value="" />
 								</div>
 								<div class="acverFormdd">
-									<label for="">身份证号:</label> <input type="text" name="" id=""
-										value="" />
+									<label for="">身份证号:</label> <input type="text" name="" id="" value="" />
 								</div>
 								<div class="acverFormdd">
 									<input type="button" id="button" value="公益时间查询" />
@@ -585,40 +516,35 @@
 					<p class="news_nav1">
 						<a href="JavaScript:;">政策法规</a>
 					</p>
-					<span style="float: right;"><a href="javascript:;">更多>></a></span>
+					<span><a href="javascript:;">更多>></a></span>
 				</div>
 				<!--内容-->
 				<!--信息公告-->
 				<div class="news_con">
 					<ul>
-						<@jp.contents module="article" typeSlug="xxgg" count="3"> <#list
-						contents as content> <#if content?is_first >
+						<@jp.contents module="article" typeSlug="information" count="3"> <#list contents as content> <#if content?is_first >
 						<li>
 							<div class="newsL_con">
 								<div class="tit clearfix">
 									<img src="${CTPATH}/images/hot-ico.png" />
-									<h1
-										style="width: 500px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: black;">
+									<h1 style="width: 500px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: black;">
 										<a href="${content.url!}" title="${content.title!}">${content.title!}</a>
 									</h1>
 								</div>
 								<p>${content.summary}</p>
-								<span><em>${content.created?string("yyyy-MM-dd
-										HH:mm:ss")}</em></span>
+								<span><em>${content.created?string("yyyy-MM-dd HH:mm:ss")}</em></span>
 							</div>
 						</li> <#else>
 						<li style="border-top: solid 1px #ffffff;">
 							<div class="newsL_con">
 								<div class="tit clearfix">
 									<img src="${CTPATH}/images/hot-ico.png" />
-									<h1
-										style="width: 500px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: black;">
+									<h1 style="width: 500px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: black;">
 										<a href="${content.url!}" title="${content.title!}">${content.title!}</a>
 									</h1>
 								</div>
 								<p>${content.summary}</p>
-								<span><em>${content.created?string("yyyy-MM-dd
-										HH:mm:ss")}</em></span>
+								<span><em>${content.created?string("yyyy-MM-dd HH:mm:ss")}</em></span>
 							</div>
 						</li> </#if> </#list> </@jp.contents>
 					</ul>
@@ -627,11 +553,8 @@
 				<div class="news_con">
 					<div class="news_list">
 						<ul>
-							<@jp.contents module="article" typeSlug="xwzx" count="10"> <#list
-							contents as content>
-							<li><a href="${content.url!}" title="${content.title!}"
-								style="width: 530px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: black;">
-									• ${content.title!}</a></li> </#list> </@jp.contents>
+							<@jp.contents module="article" typeSlug="news" count="10"> <#list contents as content>
+							<li><a href="${content.url!}" title="${content.title!}" style="width: 530px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: black;"> • ${content.title!}</a></li> </#list> </@jp.contents>
 						</ul>
 					</div>
 				</div>
@@ -639,15 +562,11 @@
 				<div class="news_con">
 					<div class="news_list">
 						<ul>
-							<@jp.contents module="article" typeSlug="zcfg" count="10"> <#list
-							contents as content>
-							<li><a href="${content.url!}" title="${content.title!}"
-								style="width: 530px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: black;">
-									• ${content.title!}</a></li> </#list> </@jp.contents>
+							<@jp.contents module="article" typeSlug="policy" count="10"> <#list contents as content>
+							<li><a href="${content.url!}" title="${content.title!}" style="width: 530px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: black;"> • ${content.title!}</a></li> </#list> </@jp.contents>
 						</ul>
 					</div>
 				</div>
-
 			</div>
 			<!--志愿者排行-->
 			<div class="news_r">
@@ -664,24 +583,15 @@
 							<p>公益基地排行</p>
 						</div>
 						<ul>
-							<li class="clearfix"><i>1</i> <em>&nbsp;&nbsp;&nbsp;黄浦区</em>
-								<span>1471978</span></li>
-							<li class="clearfix"><i>2</i> <em>&nbsp;&nbsp;&nbsp;徐汇区</em>
-								<span>1134259</span></li>
-							<li class="clearfix"><i>3</i> <em>&nbsp;&nbsp;&nbsp;普陀区</em>
-								<span>847465</span></li>
-							<li class="clearfix"><i>4</i> <em>&nbsp;&nbsp;&nbsp;长宁区</em>
-								<span>712379</span></li>
-							<li class="clearfix"><i>5</i> <em>&nbsp;&nbsp;&nbsp;闵行区</em>
-								<span>391594</span></li>
-							<li class="clearfix"><i>6</i> <em>&nbsp;&nbsp;&nbsp;杨浦区</em>
-								<span>381305</span></li>
-							<li class="clearfix"><i>7</i> <em>&nbsp;&nbsp;&nbsp;虹口区</em>
-								<span>375064</span></li>
-							<li class="clearfix"><i>8</i> <em>&nbsp;&nbsp;&nbsp;嘉定区</em>
-								<span>333261</span></li>
-							<li class="clearfix"><i>9</i> <em>&nbsp;&nbsp;&nbsp;宝山区</em>
-								<span>257935</span></li>
+							<li class="clearfix"><i>1</i> <em>&nbsp;&nbsp;&nbsp;黄浦区</em> <span>1471978</span></li>
+							<li class="clearfix"><i>2</i> <em>&nbsp;&nbsp;&nbsp;徐汇区</em> <span>1134259</span></li>
+							<li class="clearfix"><i>3</i> <em>&nbsp;&nbsp;&nbsp;普陀区</em> <span>847465</span></li>
+							<li class="clearfix"><i>4</i> <em>&nbsp;&nbsp;&nbsp;长宁区</em> <span>712379</span></li>
+							<li class="clearfix"><i>5</i> <em>&nbsp;&nbsp;&nbsp;闵行区</em> <span>391594</span></li>
+							<li class="clearfix"><i>6</i> <em>&nbsp;&nbsp;&nbsp;杨浦区</em> <span>381305</span></li>
+							<li class="clearfix"><i>7</i> <em>&nbsp;&nbsp;&nbsp;虹口区</em> <span>375064</span></li>
+							<li class="clearfix"><i>8</i> <em>&nbsp;&nbsp;&nbsp;嘉定区</em> <span>333261</span></li>
+							<li class="clearfix"><i>9</i> <em>&nbsp;&nbsp;&nbsp;宝山区</em> <span>257935</span></li>
 
 						</ul>
 					</div>
@@ -691,24 +601,15 @@
 							<p>公益时长排行</p>
 						</div>
 						<ul>
-							<li class="clearfix"><i>1</i> <em>&nbsp;&nbsp;&nbsp;黄浦区</em>
-								<span>36860254</span></li>
-							<li><i>2</i> <em>&nbsp;&nbsp;&nbsp;徐汇区</em> <span>28083452</span>
-							</li>
-							<li><i>3</i> <em>&nbsp;&nbsp;&nbsp;普陀区</em> <span>24850991</span>
-							</li>
-							<li><i>4</i> <em>&nbsp;&nbsp;&nbsp;长宁区</em> <span>13786372</span>
-							</li>
-							<li><i>5</i> <em>&nbsp;&nbsp;&nbsp;闵行区</em> <span>9646758</span>
-							</li>
-							<li><i>6</i> <em>&nbsp;&nbsp;&nbsp;杨浦区</em> <span>9189213</span>
-							</li>
-							<li><i>7</i> <em>&nbsp;&nbsp;&nbsp;虹口区</em> <span>4975741</span>
-							</li>
-							<li><i>8</i> <em>&nbsp;&nbsp;&nbsp;嘉定区</em> <span>2259646</span>
-							</li>
-							<li><i>9</i> <em>&nbsp;&nbsp;&nbsp;宝山区</em> <span>2065087</span>
-							</li>
+							<li class="clearfix"><i>1</i> <em>&nbsp;&nbsp;&nbsp;黄浦区</em> <span>36860254</span></li>
+							<li><i>2</i> <em>&nbsp;&nbsp;&nbsp;徐汇区</em> <span>28083452</span></li>
+							<li><i>3</i> <em>&nbsp;&nbsp;&nbsp;普陀区</em> <span>24850991</span></li>
+							<li><i>4</i> <em>&nbsp;&nbsp;&nbsp;长宁区</em> <span>13786372</span></li>
+							<li><i>5</i> <em>&nbsp;&nbsp;&nbsp;闵行区</em> <span>9646758</span></li>
+							<li><i>6</i> <em>&nbsp;&nbsp;&nbsp;杨浦区</em> <span>9189213</span></li>
+							<li><i>7</i> <em>&nbsp;&nbsp;&nbsp;虹口区</em> <span>4975741</span></li>
+							<li><i>8</i> <em>&nbsp;&nbsp;&nbsp;嘉定区</em> <span>2259646</span></li>
+							<li><i>9</i> <em>&nbsp;&nbsp;&nbsp;宝山区</em> <span>2065087</span></li>
 						</ul>
 					</div>
 				</div>
