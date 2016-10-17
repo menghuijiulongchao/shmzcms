@@ -290,17 +290,39 @@
 .list_detail_progress {
 	overflow: hidden;
 }
-.list_detail_progress span, .list_detail_progress p {
+.list_detail_progress span.ldp_baoming,
+.list_detail_progress span.ldp_syts,
+.list_detail_progress p {
 	float: left;
 	margin-top: 8px;
 	margin-left: 4px;
 }
-.list_detail_progress span {
+.list_detail_progress span.ldp_baoming,
+.list_detail_progress span.ldp_syts {
 	color: #333;
 	float: left;
 	line-height: 18px;
 	font-size: 12px;
 }
+.list_detail_progress p{
+	width:140px;
+	height:10px;
+	position:relative;
+	border-radius:5px;
+	margin-top: 12px;
+	background: #eaeaea;
+}
+.list_detail_progress p span.ldp_jdt{
+	display: block;
+	position:absolute;
+	top:0px;
+	left:0px;
+	border-radius:5px;
+	background: #0268B1;
+	width: 0%;
+	height: 10px;
+}
+
 .list_operation {
 	float: right;
 	width: 260px;
