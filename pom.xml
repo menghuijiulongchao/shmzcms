@@ -8,11 +8,11 @@
 		<artifactId>jpress</artifactId>
 		<version>1.0</version>
 	</parent>
-	<artifactId>jpress-web-template-cms</artifactId>
+	<artifactId>jpress-web-template-shmz</artifactId>
 	<url>http://jpress.io</url>
 	<packaging>war</packaging>
-	<name>jpress-web-template-cms Template</name>
+	<name>jpress-web-template-shmz Template</name>
 	<build>
-		<finalName>template-cms</finalName>
+		<finalName>template-shmz</finalName>
 	</build>
 </project>
