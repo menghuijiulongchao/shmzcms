@@ -100,7 +100,6 @@
 	min-width: 1200px;
 	height: 126px;
 	background: #0b52a1;
-	margin-top: 60px;
 }
 .footer_con {
 	width: 1200px;
@@ -169,6 +168,8 @@
 	width: 1200px;
 	padding-bottom: 20px;
 	margin: 0px auto;
+	text-align: center;
+	font-size: 0;
 }
 .com_yqlj .com_yqlj_left, .com_yqlj .com_yqlj_right li a {
 	font-family: "微软雅黑";
@@ -177,13 +178,16 @@
 	line-height: 38px;
 }
 .com_yqlj .com_yqlj_left {
-	float: left;
+	display: inline-block;
+	margin: 0 15px;
 	width: 70px;
 	font-weight: 700;
 }
 .com_yqlj .com_yqlj_right {
-	float: left;
-	width: 1130px;
+	display: inline-block;
+	width: 1100px;
+	text-align: left;
+	vertical-align: middle;
 }
 .com_yqlj .com_yqlj_right li {
 	margin: 0px 4px;

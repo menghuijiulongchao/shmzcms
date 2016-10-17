@@ -1,5 +1,9 @@
 /*首页样式*/
-
+.index_main_container{
+	padding: 0 0 60px 0;
+	width: 100%;
+	background-color: #ecf2f5;
+}
 .banner {
 	position: relative;
 	display: block;
@@ -154,23 +158,33 @@
 	border-radius: 20px;
 }
 
+
+/*新闻列表*/
+
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
 /*信息公告和志愿排行*/
 
 
 /*导航*/
 
-.news {
+.index_news_wrapper {
 	width: 1200px;
 	height: 520px;
-	margin: 10px auto;
+	padding: 20px 0;
+	margin: 0 auto;
 }
-.news .news_l .news_nav {
+.index_news_wrapper .news_l .news_nav {
 	width: 712px;
 	height: 50px;
 	background-color: #ffffff;
 	border-bottom: solid 1px #eaeaea;
 }
-.news .news_l .news_nav p {
+.index_news_wrapper .news_l .news_nav p {
 	float: left;
 	margin-left: 23px;
 	margin-right: 28px;
@@ -179,7 +193,7 @@
 	font-family: "微软雅黑";
 	line-height: 50px;
 }
-.news .news_l .news_nav span {
+.index_news_wrapper .news_l .news_nav span {
 	font-size: 14px;
 	color: #040404;
 	font-family: "微软雅黑";
@@ -190,25 +204,25 @@
 
 /*选项卡*/
 
-.news .news_l {
+.index_news_wrapper .news_l {
 	float: left;
 	overflow: hidden;
 	width: 712px;
 	height: 500px;
 }
-.news .news_l .news_nav .currentS {
+.index_news_wrapper .news_l .news_nav .currentS {
 	border-bottom: solid 1px #da4453;
 }
 
 /*内容*/
 
-.news .news_l .news_con {
+.index_news_wrapper .news_l .news_con {
 	width: 676px;
 	height: 470px;
 	padding: 25px 18px 0 18px;
 	background-color: #ffffff;
 }
-.news .news_l .news_con ul li {
+.index_news_wrapper .news_l .news_con ul li {
 	width: 676px;
 	height: 131px;
 	margin-top: 5px;
@@ -216,31 +230,31 @@
 	padding-bottom: 1px;
 	border-bottom: solid 1px #e9e9e9;
 }
-.news .news_l .news_con ul li .newsL_con {
+.index_news_wrapper .news_l .news_con ul li .newsL_con {
 	width: 665px;
 	height: 110px;
 }
-.news .news_l .news_con ul li .newsL_con .tit {
+.index_news_wrapper .news_l .news_con ul li .newsL_con .tit {
 	width: 665px;
 	height: 30px;
 	position: relative;
 }
-.news .news_l .news_con ul li .newsL_con .tit img {
+.index_news_wrapper .news_l .news_con ul li .newsL_con .tit img {
 	position: relative;
 	left: 5px;
 	top: 5px;
 }
-.news .news_l .news_con ul li .newsL_con .tit h1 {
+.index_news_wrapper .news_l .news_con ul li .newsL_con .tit h1 {
 	position: relative;
 	left: 50px;
 	top: -18px;
 	color: #da4453;
 	font-family: "微软雅黑";
 }
-.news .news_l .news_con ul li .newsL_con .tit:hover {
+.index_news_wrapper .news_l .news_con ul li .newsL_con .tit:hover {
 	color: #6cb2eb;
 }
-.news .news_l .news_con ul li .newsL_con p {
+.index_news_wrapper .news_l .news_con ul li .newsL_con p {
 	margin-top: 12px;
 	margin-bottom: 12px;
 	width: 100%;
@@ -251,7 +265,7 @@
 	font-size: 12px;
 	font-family: "微软雅黑";
 }
-.news .news_l .news_con ul li .newsL_con span {
+.index_news_wrapper .news_l .news_con ul li .newsL_con span {
 	color: #6c6c6c;
 	font-size: 12px;
 	font-family: "微软雅黑";
@@ -259,11 +273,11 @@
 
 /*志愿文化*/
 
-.news .news_l .news_con .news_list {
+.index_news_wrapper .news_l .news_con .news_list {
 	width: 700px;
 	height: 450px;
 }
-.news .news_l .news_con .news_list ul li {
+.index_news_wrapper .news_l .news_con .news_list ul li {
 	width: 538px;
 	height: 38px;
 	color: #333333;
@@ -272,45 +286,45 @@
 	border-bottom: dashed 0px #999999;
 	margin-top: 0px;
 }
-.news .news_l .news_con .news_list ul li a {
+.index_news_wrapper .news_l .news_con .news_list ul li a {
 	display: block;
 }
 
 /*-----------------------------------------*/
 
-.news .news_r {
+.index_news_wrapper .news_r {
 	float: right;
 	width: 470px;
 	background-color: #FFFFFF;
 }
-.news .news_r .newsr_tit {
+.index_news_wrapper .news_r .newsr_tit {
 	height: 50px;
 	font-size: 14px;
 	font-family: "微软雅黑";
 	color: #333;
 	line-height: 50px;
 }
-.news .news_r .newsr_tit h2 {
+.index_news_wrapper .news_r .newsr_tit h2 {
 	margin-left: 23px;
 	float: left;
 }
-.news .news_r .newsr_tit p {
+.index_news_wrapper .news_r .newsr_tit p {
 	margin-right: 28px;
 	float: right;
 }
-.news .news_r .newsr_con {
+.index_news_wrapper .news_r .newsr_con {
 	width: 470px;
 	height: 449px;
 	background-color: #FFFFFF;
 	border-top: solid 1px #E9E9E9;
 }
-.news .news_r .newsr_conl {
+.index_news_wrapper .news_r .newsr_conl {
 	float: left;
 	width: 235px;
 	height: 449px;
 	border-right: solid 1px #e9e9e9;
 }
-.news .news_r .newsr_conl .newsr_conl_tit {
+.index_news_wrapper .news_r .newsr_conl .newsr_conl_tit {
 	width: 150px;
 	height: 28px;
 	padding-top: 20px;
@@ -320,7 +334,7 @@
 	line-height: 32px;
 	position: relative;
 }
-.news .news_r .newsr_conl .newsr_conl_tit p {
+.index_news_wrapper .news_r .newsr_conl .newsr_conl_tit p {
 	position: relative;
 	left: 65px;
 	top: -40px;
@@ -328,34 +342,34 @@
 	font-size: 14px;
 	color: #333333;
 }
-.news .news_r ul li {
+.index_news_wrapper .news_r ul li {
 	width: 175px;
 	height: 41px;
 	padding-left: 23px;
 	padding-right: 36px;
 	line-height: 41px;
 }
-.news .news_r .newsr_conl ul li i, .news .news_r .newsr_conl ul li span {
+.index_news_wrapper .news_r .newsr_conl ul li i, .index_news_wrapper .news_r .newsr_conl ul li span {
 	color: #3EBB2B;
 	font-family: "老宋体";
 	font-weight: bold;
 }
-.news .news_r ul li i {
+.index_news_wrapper .news_r ul li i {
 	float: left;
 }
-.news .news_r ul li span {
+.index_news_wrapper .news_r ul li span {
 	float: right;
 }
-.news .news_r ul li em {
+.index_news_wrapper .news_r ul li em {
 	font-family: "微软雅黑";
 	font-size: 14px;
 }
-.news .news_r .newsr_conr {
+.index_news_wrapper .news_r .newsr_conr {
 	float: right;
 	width: 234px;
 	height: 449px;
 }
-.news .news_r .newsr_conr .newsr_conr_tit {
+.index_news_wrapper .news_r .newsr_conr .newsr_conr_tit {
 	width: 150px;
 	height: 28px;
 	padding-top: 20px;
@@ -365,7 +379,7 @@
 	line-height: 32px;
 	position: relative;
 }
-.news .news_r .newsr_conr .newsr_conr_tit p {
+.index_news_wrapper .news_r .newsr_conr .newsr_conr_tit p {
 	position: relative;
 	left: 65px;
 	top: -42px;
@@ -373,7 +387,7 @@
 	font-size: 14px;
 	color: #333333;
 }
-.news .news_r .newsr_conr ul li i, .news .news_r .newsr_conr ul li span {
+.index_news_wrapper .news_r .newsr_conr ul li i, .index_news_wrapper .news_r .newsr_conr ul li span {
 	color: #967adc;
 	font-family: "老宋体";
 	font-weight: bold;
@@ -394,7 +408,6 @@ li {
 	width: 100%;
 	min-width: 1200px;
 	margin: 0 auto;
-	background-color: #ecf2f5;
 	padding-top: 34px;
 }
 .con_sec .con_sec_in {
@@ -484,7 +497,6 @@ li {
 
 .acver {
 	padding-top: 12px;
-	background-color: #ecf2f5;
 	min-width: 1200px;
 	margin: 0px auto;
 }
