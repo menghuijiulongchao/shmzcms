@@ -21,16 +21,19 @@ css_import> </#macro> <#macro css> </#macro> <#macro layout>
 			<div class="h_logo">
 				<img src="${CTPATH}/images/logo.png" alt="logo" class="logo_img" />
 			</div>
-			<@jp.menus> 
-				<#list menus as menu>
-					<li>
-						<a href="${menu.url!}"> ${menu.title!} <#if
-					menu.isActive() > <span class="x-a-border"></span> </#if>
-						</a>
-					</li>
-			 	</#list> 
-			 </@jp.menus>
-
+			<div class="h_nav">
+				<ul>
+					<li><a href="${CPATH}/">首页</a></li>
+					<@jp.menus> 
+						<#list menus as menu>
+							<li>
+								<a href="${menu.url!}"> ${menu.title!} <#if menu.isActive() > <span class="x-a-border"></span> </#if>
+								</a>
+							</li>
+						</#list> 
+					</@jp.menus>
+				</ul>
+			</div>
 			<!-- <div class="h_nav">
 				<ul>
 					<li><a href="${CPATH}/">首页</a></li>
@@ -43,8 +46,8 @@ css_import> </#macro> <#macro css> </#macro> <#macro layout>
 			</div> -->
 			<div class='leftside_wrapper'>
 				<div class="h_login_reg">
-					<a class="h_login" href="javascript:;">登录</a> <a class="h_reg"
-						href="javascript:;">注册</a>
+					<a class="h_login" href="javascript:;">登录</a>
+					<a class="h_reg" href="javascript:;">注册</a>
 				</div>
 				<div class="h_language">
 					<div class="h_china">

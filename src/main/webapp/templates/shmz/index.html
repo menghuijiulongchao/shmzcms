@@ -89,7 +89,6 @@
 			</ul>
 		</div>
 		<div class="acbox">
-
 			<!-- 全部开始 -->
 			<div class="acbox_jh" style="display: inline-block">
 				<ul class="Activity">
@@ -119,8 +118,7 @@
 						<h3>
 							<a href="${content.url!}">${content.title!}</a>
 						</h3>
-						<p
-							style="width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: black;">地点：${content.metadata('_meta1')}</p>
+						<p style="width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: black;">地点：${content.metadata('_meta1')}</p>
 						<p>开始时间：${content.metadata('_meta2')}</p>
 					</li> </#list> </@jp.contents>
 				</ul>
@@ -133,8 +131,8 @@
 					contents as content>
 					<li>
 						<div class="adimg">
-							<a href="${content.url!}"> <img src="${(content.thumbnail)!}"
-								width="224" height="160" />
+							<a href="${content.url!}">
+								<img src="${(content.thumbnail)!}" width="224" height="160" />
 							</a>
 						</div>
 						<h3>
@@ -163,7 +161,6 @@
 				</ul>
 			</div>
 			<!-- 文化结束 -->
-
 			<!-- 体育开始 -->
 			<div class="acbox_jh" style="display: none">
 				<ul class="Activity">
@@ -183,8 +180,8 @@
 					</li> </#list> </@jp.contents>
 				</ul>
 				<ul class="Activity">
-					<@jp.contents module="huodong" typeSlug="tiyu" count="5"> <#list
-					contents as content>
+					<@jp.contents module="huodong" typeSlug="tiyu" count="5">
+						<#list contents as content>
 					<li>
 						<div class="adimg">
 							<a href="${content.url!}"> <img src="${(content.thumbnail)!}"
@@ -197,7 +194,9 @@
 						<p
 							style="width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: black;">地点：${content.metadata('_meta1')}</p>
 						<p>开始时间：${content.metadata('_meta2')}</p>
-					</li> </#list> </@jp.contents>
+					</li>
+						</#list>
+					</@jp.contents>
 				</ul>
 			</div>
 			<!-- 体育结束 -->
