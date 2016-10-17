@@ -1,49 +1,8 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
+<#include "_layout.html"/> <@layout>
 		<title>${WEB_TITLE!WEB_NAME!} - ${WEB_SUBTITLE!}</title>
-		<link rel="stylesheet" type="text/css" href="${CTPATH}/css/reset.css"/>
 		<link rel="stylesheet" type="text/css" href="${CTPATH}/css/news_001.css"/>
-		<link rel="stylesheet" type="text/css" href="${CTPATH}/css/common.css"/>
 		 <script src="${CPATH}/counter?cid=${content.id!}"></script>
-	</head>
-	<body>
-		<!--头部-->
-			<!--头部-->
-		<div class="container">				
-				<div class="h_header" >
-					<div class="h_logo">
-						<img src="${CTPATH}/images/logo.png" alt="logo" class="logo_img" />
-					</div>
-					<div class="h_nav">
-						<ul>
-							<li>
-								<a href="${CPATH}">首页</a>
-							</li>
-							<li>
-								<a href="javascript:void(0);">志愿活动</a>
-							</li>
-							<li>
-								<a href="javascript:void(0);">志愿组织</a>
-							</li>
-							<li>
-								<a href="javascript:void(0);">亲子体验</a>
-							</li>
-							<li>
-								<a href="javascript:void(0);">时长公示</a>
-							</li>
-							<li>
-								<a href="javascript:void(0);">帮助中心</a>
-							</li>
-						</ul>
-					</div>
-					<div class="h_login_reg">
-						<a class="h_login" href="javascript:void(0)">登录</a>
-						<a class="h_reg" href="javascript:void(0)">注册</a>
-					</div>
-				</div>
-			</div>
+	
 		<!--头部结束-->
 		<!--内容-->
 		<div class="news_content clearfix">
@@ -133,21 +92,4 @@
 		</div>
 		
 		<!--底部-->
-		<div class="footer">
-				<div class="footer_con">
-				<div class="footer_ewm">
-					<img class="footer_ewm_img01" src="${CTPATH}/images/erweima.png">
-					<img class="footer_ewm_img02" src="${CTPATH}/images/ewm_bg.png">
-					<p class="footer_ewm_text">扫描二维码下载App</p>
-				</div>
-					<p class="copyright">${OPTION('web_copyright')!'暂未填写版权信息'}${OPTION('web_icp_number')!}</p>
-					<ul class="enjon_icon">
-						<li><a href="#" class="icon_01"></a></li>
-						<li><a href="#" class="icon_02"></a></li>
-						<li><a href="#" class="icon_03"></a></li>
-					</ul>
-				</div>
-			</div>
-		<!--底部-->
-	</body>
-</html>
+</@layout>
