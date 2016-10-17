@@ -136,6 +136,16 @@
 .news_content .dConBox_b .dConBox_bot span a{
 	color: red;
 }
+/*评论*/
+.news_content .news_article .news_article_content{
+	min-height:500px;
+}
+.news_content .news_article .news_article_content .dConBox-Bottom{
+	margin:50px auto 20px;
+	
+}
+
+
 
 /*志愿快讯*/
 .news_content .news_article .Newsintro_tzgg{
