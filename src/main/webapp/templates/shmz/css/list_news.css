@@ -136,9 +136,12 @@
 .news_content .dConBox_b .dConBox_bot span a{
 	color: red;
 }
+
+
 /*评论*/
 .news_content .news_article .news_article_content{
-	width:920px;
+	float:left;
+	width:900px;
 	min-height:500px;
 	margin-bottom:20px;
 }
