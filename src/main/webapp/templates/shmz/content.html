@@ -70,6 +70,39 @@
 			<div class="news_article clearfix">
 				<div class="news_article_content">
 					${content.text!}
+					<div class="dConBox-Bottom" style="float:left;border:1px solid #ebebeb; margin-bottom:30px;">
+                	<div class="dConBox-Btit">
+                    	<h2>评论<i>(0)</i></h2>
+                        <span><!-- <a href="#">更多>></a> --></span>
+                    </div>
+                    <div class="dConBox-BconBox">
+                     	<form action="/sitepage/pinglun.action" method="post" id="pinglunform">
+	                    	<div class="dB-review">
+	                       	<div class="hidden"> 发表评论，请先<a href="#">登录</a></div>
+	                       		<input type="hidden" name="plistingReview.gdSitePageListing.pageNo" value="506029372543">
+								<input type="hidden" name="plistingReview.users.userId" value="">
+								<input type="hidden" name="plistingReview.userName" value="">
+	                        	<!--  <textarea id='WeiboNewContent_s' name="plistingReview.contents" class="sendMsg"></textarea>-->
+	                        	<textarea id="WeiboNewContent_s" name="plistingReview.contents" disabled="disabled" readonly="readonly" class="sendMsg" style="width:722px;" onclick="checkTotal();"></textarea>
+				                        	<script type="text/javascript">
+												function checkTotal(){
+		   											 var txt = document.getElementById("WeiboNewContent_s").value
+          											 if (txt.length < 10){
+        	 										 alert("评论不能少于10字");
+														return false;
+        	 										 }
+        	 										 return true;
+														}
+  											</script>               	
+	                        </div>
+	                        <div style="float:right; margin-right:10px; margin-top:10px; margin-bottom:40px;">
+	                        		发表评论，请先<a href="#" style="color:red;" onclick="javascript:login11();return false;">登录</a>
+	                        	</div>
+	                        </form>  
+                        <ul>
+                        </ul>
+                    </div>
+	            	</div>
                 </div>
                 
                 
@@ -94,6 +127,8 @@
 						</@jp.contents>
             		</ul>
             	</div>
+            	
+            	
 			</div>
 		</div>
 		
