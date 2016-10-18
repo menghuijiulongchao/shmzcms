@@ -4,6 +4,9 @@
 	width: 100%;
 	background-color: #ecf2f5;
 }
+.index_news_container{
+	padding: 0 0 60px 0;
+}
 .banner {
 	position: relative;
 	display: block;
@@ -285,6 +288,9 @@
 	border-top: dashed 1px #999999;
 	border-bottom: dashed 0px #999999;
 	margin-top: 0px;
+}
+.index_news_wrapper .news_l .news_con .news_list ul li:first-child{
+	border-top: 0;
 }
 .index_news_wrapper .news_l .news_con .news_list ul li a {
 	display: block;
