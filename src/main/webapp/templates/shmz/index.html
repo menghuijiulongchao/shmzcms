@@ -69,7 +69,11 @@
 				<li class=""><a href="javascript:;">社会服务</a></li>
 			</ul>
 			<@jp.contents module="liebiao" count="4"> <#list contents as content> <a class='more' href="${content.url!}"> 更多&gt&gt </a></#list> </@jp.contents>
-			
+			<@jp.taxonomys>
+    <#list taxonomys as taxonomy>
+        <a href="${taxonomy.url!}">${taxonomy.title!}</a>
+    </#list>
+</@jp.taxonomys>
 		</div>
 		<div class="acbox">
 			<!-- 全部开始 -->
