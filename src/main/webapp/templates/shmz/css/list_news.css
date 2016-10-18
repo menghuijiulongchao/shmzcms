@@ -145,6 +145,31 @@
 	min-height:500px;
 	margin-bottom:20px;
 }
+.news_content .news_article .dConBox-Bottom{
+	float: left;
+	border: 1px solid #ebebeb;
+	margin-bottom: 100px;
+	margin-top: 50px;
+}
+.news_content .news_article .dConBox-Bottom .dConBox-Btit{
+	height:30px;
+}
+.news_content .news_article .dConBox-Bottom .dConBox-Btit h2{
+	line-height: 30px;
+	color: #333333;
+	font-size: 16px;
+	font-family: "微软雅黑";
+}
+.news_content .news_article .dConBox-BconBox .dB-review textarea{
+	 width:880px;
+	 min-height:60px;
+}
+.news_content .news_article .dConBox-BconBox .dB-review .pinglun{
+	width:60px;
+	height:20px;
+	font-size:16px;
+}
+
 
 /*志愿快讯*/
 .news_content .news_article .Newsintro_tzgg{
@@ -173,6 +198,11 @@
 	width: 120px;
 	height: 70px;
 	padding: 10px 0px 0px 15px;
+}
+.news_content .news_article .Newsintro_tzgg ul li .zyz_img img{
+	display:inline-block;
+	width:100px;
+	height:60px;
 }
 .news_content .news_article .Newsintro_tzgg ul li .zyz_cont{
 	float: left;
@@ -369,6 +399,7 @@
 .news_content .news_article .Newsintro_tzgg ul li .zyz_cont p{
 	width: 120px;
 	height: 40px;
+	overflow:hidden;
 	font-size: 14px;
 	color: #333333;
 	font-family: "微软雅黑";

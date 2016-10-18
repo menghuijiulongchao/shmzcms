@@ -30,11 +30,10 @@
 					content>
 					<li class="clearfix">
 						<div class="zyz_img">
-							<img src="${(content.thumbnail)!}"
-								style="width: 100px; height: 60px;" />
+							<img src="${(content.thumbnail)!}"/>
 						</div>
 						<div class="zyz_cont">
-							<p style="width: 120px; hright: 38px; overflow: hidden;">${content.title!}</p>
+							<p>${content.title!}</p>
 							<a href="${content.url!}">阅读全文>></a>
 						</div>
 					</li> </#list> </@jp.contents>
@@ -43,15 +42,14 @@
 
 			<!-- 评论 -->
 			<div class="clearfix" >
-				<div class="dConBox-Bottom"
-					style="float: left;border: 1px solid #ebebeb; margin-bottom: 100px; margin-top: 50px">
+				<div class="dConBox-Bottom">
 					<div class="dConBox-Btit">
 						<h2>
 							评论<i>(0)</i>
 						</h2>
 					</div>
 					<div class="dConBox-BconBox" >
-						<form action="/sitepage/pinglun.action" method="post"
+						<form action="" method="post"
 							id="pinglunform">
 							<div class="dB-review">
 								<div class="hidden"></div>
@@ -60,9 +58,10 @@
 									value="506029372543"> <input type="hidden"
 									name="plistingReview.users.userId" value=""> <input
 									type="hidden" name="plistingReview.userName" value="">
-								<textarea style="width:880px" id='WeiboNewContent_s' name="plistingReview.contents"
+								<textarea id='WeiboNewContent_s' name="plistingReview.contents"
 									class="sendMsg"></textarea>
-								<input type="submit" value="评论">
+									</br>
+								<input class="pinglun" type="submit" value="评 论">
 							</div>
 						</form>
 						<ul>
