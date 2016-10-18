@@ -8,6 +8,7 @@
 }
 .common_header_container {
 	width: 100%;
+	min-width: 1200px;
 	background: #0b52a1;
 }
 .common_header_container:after{

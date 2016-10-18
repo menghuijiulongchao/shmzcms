@@ -1,44 +1,48 @@
 @charset 'utf-8';
+
 /*标题样式*/
-.details{
+
+.details {
 	height: 90px;
 	width: 100%;
-	min-width: 1200px;	
+	min-width: 1200px;
 	background-color: #ecf2f5;
 	border-bottom: 1px solid #ecf2f5;
 }
-.details .detailsBox{
+.details .detailsBox {
 	padding-top: 40px;
-	width: 1200px;	
+	width: 1200px;
 	margin: 0 auto;
 	height: 57px;
 }
-.details .detailsBox h2{
+.details .detailsBox h2 {
 	font-size: 20px;
 	font-family: "microsoft yahei";
-	color: #333;    
-    display: inline-block;
-    width: 800px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
+	color: #333;
+	display: inline-block;
+	width: 800px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
 }
+
 /*副标题*/
-.details-TBox{
+
+.details-TBox {
 	width: 100%;
 	min-width: 1200px;
 	height: 74px;
 	background-color: #ecf2f5;
 }
-.details-TBox .details-T{
+.details-TBox .details-T {
 	width: 1200px;
 	margin: 0 auto;
 }
-.details-TBox .details-T ul{
+.details-TBox .details-T ul {
 	position: relative;
-	font-size: 0;				
+	font-size: 0;
 }
-.details-TBox .details-T ul li{			
+.details-TBox .details-T ul li {
 	font-size: 12px;
 	color: #666666;
 	font-family: "microsoft yahei";
@@ -46,111 +50,121 @@
 	margin-top: 20px;
 	margin-right: 34px;
 }
+
 /*主体样式*/
-.dConBox{
+
+.dConBox {
 	width: 100%;
-	min-width: 1200px;				
+	min-width: 1200px;
 	background-color: #ecf2f5;
 }
-.dConBox .dConBox-In{
+.dConBox .dConBox-In {
 	width: 1200px;
 	margin: 0 auto;
-	overflow: hidden;				
+	overflow: hidden;
 }
+
 /*主体左部样式*/
-.dConBox .dConBox-L{				
-	float: left;				
-} 
+
+.dConBox .dConBox-L {
+	float: left;
+}
+
 /*主体左上样式*/
-.dConBox .dConBox-L .dConBox-Top{
+
+.dConBox .dConBox-L .dConBox-Top {
 	background-color: #FFFFFF;
 	width: 816px;
 	padding: 46px 33px 30px;
-	margin-bottom: 21px;						
+	margin-bottom: 21px;
 }
-.dConBox .dConBox-L .dConBox-Top img{
-	max-width: 816px;				
+.dConBox .dConBox-L .dConBox-Top img {
+	max-width: 816px;
 }
-.dConBox .dConBox-L .dConBox-Top p{
+.dConBox .dConBox-L .dConBox-Top p {
 	margin-bottom: 37px;
-	line-height: 24px;	
+	line-height: 24px;
 }
+
 /*主体左下样式*/
-.dConBox .dConBox-L .dConBox-Bottom{
+
+.dConBox .dConBox-L .dConBox-Bottom {
 	background-color: #FFFFFF;
 	width: 882px;
 	margin-top: 21px;
-	margin-bottom: 20px;						
+	margin-bottom: 20px;
 }
-.dConBox .dConBox-L .dConBox-Bottom .dConBox-Btit{		
+.dConBox .dConBox-L .dConBox-Bottom .dConBox-Btit {
 	padding: 0 1px;
-	height: 66px;	
+	height: 66px;
 }
-.dConBox .dConBox-L .dConBox-Bottom .dConBox-Btit ul{
+.dConBox .dConBox-L .dConBox-Bottom .dConBox-Btit ul {
 	font-size: 0;
 }
-.dConBox .dConBox-L .dConBox-Bottom .dConBox-Btit li{
+.dConBox .dConBox-L .dConBox-Bottom .dConBox-Btit li {
 	font-size: 16px;
 	font-family: "microsoft yahei";
 	display: inline-block;
 	width: 220px;
-	padding: 17px 0px 8px ;
-	text-align: center;	
+	padding: 17px 0px 8px;
+	text-align: center;
 	border-bottom: 1px solid #e0e2e3;
 	cursor: pointer;
 }
-.dConBox .dConBox-L .dConBox-Bottom .dConBox-Btit a{
-	display: block;	
+.dConBox .dConBox-L .dConBox-Bottom .dConBox-Btit a {
+	display: block;
 	width: 219px;
 	height: 40px;
 	line-height: 40px;
-	border-right: 1px solid #E0E2E3;	
+	border-right: 1px solid #E0E2E3;
 	color: #333333;
 }
-.dConBox .dConBox-L .dConBox-Bottom .dConBox-Btit li.btit_c{
+.dConBox .dConBox-L .dConBox-Bottom .dConBox-Btit li.btit_c {
 	border-color: #FFA400;
 }
-.dConBox .dConBox-L .dConBox-Bottom .dConBox-Btit li.btit_c a{
+.dConBox .dConBox-L .dConBox-Bottom .dConBox-Btit li.btit_c a {
 	color: #FFA400;
 }
-.dConBox .dConBox-L .dConBox-Bottom .btit_select{
+.dConBox .dConBox-L .dConBox-Bottom .btit_select {
 	display: none;
 }
-.dConBox .dConBox-L .dConBox-Bottom .btit_sl{
+.dConBox .dConBox-L .dConBox-Bottom .btit_sl {
 	display: block;
 }
+
 /*主体左下项目详情样式*/
-.dConBox .dConBox-L .dConBox-Bottom .dConBox_xmxq{
+
+.dConBox .dConBox-L .dConBox-Bottom .dConBox_xmxq {
 	background-color: #FFFFFF;
 	width: 816px;
 	padding: 46px 33px 30px;
-	margin-bottom: 21px;						
+	margin-bottom: 21px;
 }
-.dConBox .dConBox-L .dConBox-Bottom .dConBox_xmxq img{
-	max-width: 816px;				
+.dConBox .dConBox-L .dConBox-Bottom .dConBox_xmxq img {
+	max-width: 816px;
 }
-.dConBox .dConBox-L .dConBox-Bottom .dConBox_xmxq p{
+.dConBox .dConBox-L .dConBox-Bottom .dConBox_xmxq p {
 	margin-bottom: 37px;
 	line-height: 24px;
 	font-size: 14px;
 	font-family: "microsoft yahei";
 	color: #333333;
 }
-.dConBox .dConBox-L .dConBox-Bottom .dConBox_xmxq h3{
+.dConBox .dConBox-L .dConBox-Bottom .dConBox_xmxq h3 {
 	font-size: 14px;
-	color: #333333;								
+	color: #333333;
 }
-.dConBox .dConBox-L .dConBox-Bottom .dConBox_xmxq strong{
-	font-family:  "微软雅黑";
-	font-style: normal;							
+.dConBox .dConBox-L .dConBox-Bottom .dConBox_xmxq strong {
+	font-family: "微软雅黑";
+	font-style: normal;
 }
-.dConBox .dConBox-L .dConBox-Bottom .dConBox_btn{
+.dConBox .dConBox-L .dConBox-Bottom .dConBox_btn {
 	border-top: 4px solid #ECF2F5;
 	padding: 13px 0px 21px;
 	height: 41px;
 	font-size: 0px;
 }
-.dConBox .dConBox-L .dConBox-Bottom .dConBox_btn a{
+.dConBox .dConBox-L .dConBox-Bottom .dConBox_btn a {
 	display: inline-block;
 	font-size: 18px;
 	width: 141px;
@@ -159,15 +173,16 @@
 	text-align: center;
 	font-family: "microsoft yahei";
 	color: #FFFFFF;
-	border-radius: 19px;	
+	border-radius: 19px;
 }
-.dConBox .dConBox-L .dConBox-Bottom .dConBox_btn .canyu{
+.dConBox .dConBox-L .dConBox-Bottom .dConBox_btn .canyu {
 	background-color: #FFA400;
 	margin: 0px 34px 0px 14px;
 }
-.dConBox .dConBox-L .dConBox-Bottom .dConBox_btn .zanzhu{
+.dConBox .dConBox-L .dConBox-Bottom .dConBox_btn .zanzhu {
 	background-color: #0268b1;
-}			
+}
+
 /*主体左下参与者与赞助者共有样式*/
 
 
@@ -178,56 +193,57 @@
 
 
 /*主体左下话题样式*/
-.dConBox .dConBox-L .dConBox-Bottom .dConBox_ht{
+
+.dConBox .dConBox-L .dConBox-Bottom .dConBox_ht {
 	background-color: #FFFFFF;
 	width: 816px;
 	padding: 40px 33px 20px;
 	margin-bottom: 20px;
 }
-.dConBox .dConBox-L .dConBox-Bottom .dConBox_ht #topicForm{
+.dConBox .dConBox-L .dConBox-Bottom .dConBox_ht #topicForm {
 	overflow: hidden;
 }
-.dConBox .dConBox-L .dConBox-Bottom .dConBox_ht .xingming{
-	float:left;
+.dConBox .dConBox-L .dConBox-Bottom .dConBox_ht .xingming {
+	float: left;
 	padding-left: 2px;
-	font-size: 16px;	
+	font-size: 16px;
 	font-family: "microsoft yahei";
 	color: #333;
 	margin-bottom: 8px;
 }
-.dConBox .dConBox-L .dConBox-Bottom .dConBox_ht .xingming input{
+.dConBox .dConBox-L .dConBox-Bottom .dConBox_ht .xingming input {
 	width: 235px;
 	height: 34px;
-	border:1px solid #dedbdb;
+	border: 1px solid #dedbdb;
 	padding-left: 5px;
 	margin-left: 2px;
-	font-size: 18px;	
+	font-size: 18px;
 }
-.dConBox .dConBox-L .dConBox-Bottom .dConBox_ht .tishi{
-	float:right;
+.dConBox .dConBox-L .dConBox-Bottom .dConBox_ht .tishi {
+	float: right;
 	height: 36px;
 	line-height: 36px;
 	padding-right: 2px;
-	font-size: 16px;	
+	font-size: 16px;
 	font-family: "microsoft yahei";
 	color: #333;
 }
-.dConBox .dConBox-L .dConBox-Bottom .dConBox_ht .tishi b{
+.dConBox .dConBox-L .dConBox-Bottom .dConBox_ht .tishi b {
 	font-size: 18px;
 }
-.dConBox .dConBox-L .dConBox-Bottom .dConBox_ht .textarea{
+.dConBox .dConBox-L .dConBox-Bottom .dConBox_ht .textarea {
 	width: 794px;
-    padding: 10px;
-    border: 1px solid #dedbdb;
-    height: 100px;
-    font-size: 16px;
-    color: #333;
+	padding: 10px;
+	border: 1px solid #dedbdb;
+	height: 100px;
+	font-size: 16px;
+	color: #333;
 }
-.dConBox .dConBox-L .dConBox-Bottom .dConBox_ht .liuyan{
+.dConBox .dConBox-L .dConBox-Bottom .dConBox_ht .liuyan {
 	margin-top: 8px;
-	float:right; 
+	float: right;
 }
-.dConBox .dConBox-L .dConBox-Bottom .dConBox_ht .liuyan a{
+.dConBox .dConBox-L .dConBox-Bottom .dConBox_ht .liuyan a {
 	display: inline-block;
 	font-size: 18px;
 	width: 137px;
@@ -237,82 +253,89 @@
 	font-family: "microsoft yahei";
 	color: #FFFFFF;
 	border-radius: 19px;
-	background-color: #FFA400;	
-}			
-/*主体右部样式*/
-.dConBox .dConBox-R{
-	float: right;	
+	background-color: #FFA400;
 }
+
+/*主体右部样式*/
+
+.dConBox .dConBox-R {
+	float: right;
+	width: 300px;
+}
+
 /*主体右部八块共有样式*/
-.dConBox .dConBox-R .dConBoxr_9g{
+
+.dConBox .dConBox-R .dConBoxr_9g {
 	background-color: #FFFFFF;
 	margin-bottom: 16px;
 }
+
 /*主体右部第一块样式*/
-.dConBox .dConBox-R .dConBoxr01{	
+
+.dConBox .dConBox-R .dConBoxr01 {
 	width: 230px;
-    height: 236px;
-   	padding: 45px 35px 0;				
+	height: 236px;
+	padding: 45px 35px 0;
 }
-.dConBox .dConBox-R .dConBoxr01 .enrollment{
+.dConBox .dConBox-R .dConBoxr01 .enrollment {
 	font-size: 12px;
-    color: #333333;
-    font-family: "MicroSoft Yahei";			    
-    margin-bottom: 12px;
-    overflow: hidden;
+	color: #333333;
+	font-family: "MicroSoft Yahei";
+	margin-bottom: 12px;
+	overflow: hidden;
 }
-.dConBox .dConBox-R .dConBoxr01 .enrollment span{				
-	float:left;				
+.dConBox .dConBox-R .dConBoxr01 .enrollment span {
+	float: left;
 }
-.dConBox .dConBox-R .dConBoxr01 .enrollment span em{
+.dConBox .dConBox-R .dConBoxr01 .enrollment span em {
 	color: #000000;
-}			
-.dConBox .dConBox-R .dConBoxr01 .enrollment .activity-item-progress{
+}
+.dConBox .dConBox-R .dConBoxr01 .enrollment .activity-item-progress {
 	width: 170px;
 	overflow: hidden;
 	float: left;
-    height: 10px;
-    border-radius: 5px;
-    background-clip: padding-box;
-    margin-top: 5px;
-    margin-right: 10px;
-    background-color: #e8e9e9;
-    position: relative;			   
+	height: 10px;
+	border-radius: 5px;
+	background-clip: padding-box;
+	margin-top: 5px;
+	margin-right: 10px;
+	background-color: #e8e9e9;
+	position: relative;
 }
-.dConBox .dConBox-R .dConBoxr01 .enrollment .activity-item-progress-ing{
+.dConBox .dConBox-R .dConBoxr01 .enrollment .activity-item-progress-ing {
 	position: absolute;
-    left: 0px;
-    top: 0px;
-    height: 10px;
-    background-color: #fb5652;
-    z-index: 1;
-    display: inline-block;
-    width: 60%;
-    border-radius: 5px;
-    background-clip: padding-box;
-    overflow: hidden;
+	left: 0px;
+	top: 0px;
+	height: 10px;
+	background-color: #fb5652;
+	z-index: 1;
+	display: inline-block;
+	width: 60%;
+	border-radius: 5px;
+	background-clip: padding-box;
+	overflow: hidden;
 }
-.dConBox .dConBox-R .dConBoxr01 .cyzz{
+.dConBox .dConBox-R .dConBoxr01 .cyzz {
 	height: 104px;
 	margin-top: 0px;
 	font-family: "microsoft yahei";
 }
-.dConBox .dConBox-R .dConBoxr01 .cyzz h2{
+.dConBox .dConBox-R .dConBoxr01 .cyzz h2 {
 	height: 23px;
 	font-size: 14px;
 	color: #666;
 }
-.dConBox .dConBox-R .dConBoxr01 .canyuin b{
+.dConBox .dConBox-R .dConBoxr01 .canyuin b {
 	font-size: 18px;
 	color: #00b1ee;
 	margin-right: 5px;
 }
-.dConBox .dConBox-R .dConBoxr01 .zanzhuin b{
+.dConBox .dConBox-R .dConBoxr01 .zanzhuin b {
 	font-size: 18px;
 	color: #9dba00;
 	margin-right: 5px;
 }
-.dConBox .dConBox-R .dConBoxr01 .cyzz a{
+.dConBox .dConBox-R .dConBoxr01 .cyzz a {
 	display: block;
 	margin-top: 17px;
 	margin-bottom: 23px;
@@ -322,20 +345,21 @@
 	text-align: center;
 	color: #fff;
 	font-size: 18px;
-	border-radius: 20px;		
+	border-radius: 20px;
 }
-.dConBox .dConBox-R .dConBoxr01 .canyuin a{
+.dConBox .dConBox-R .dConBoxr01 .canyuin a {
 	background-color: #0268b1;
 }
-.dConBox .dConBox-R .dConBoxr01 .zanzhuin a{
+.dConBox .dConBox-R .dConBoxr01 .zanzhuin a {
 	background-color: #FFA400;
 }
+
 /*主体右部第二块样式*/
-.dConBox .dConBox-R .dConBoxr02{
+
+.dConBox .dConBox-R .dConBoxr02 {
 	width: 300px;
-    height: 139px;  				
 }
-.dConBox .dConBox-R .dConBoxr02 .gzz{
+.dConBox .dConBox-R .dConBoxr02 .gzz {
 	width: 233px;
 	height: 36px;
 	margin: 0 auto;
@@ -343,7 +367,7 @@
 	font-size: 0px;
 	font-family: "microsoft yahei";
 }
-.dConBox .dConBox-R .dConBoxr02 .gzz span{
+.dConBox .dConBox-R .dConBoxr02 .gzz span {
 	font-size: 14px;
 	display: inline-block;
 	width: 70px;
@@ -354,50 +378,49 @@
 	cursor: pointer;
 	position: relative;
 }
-.dConBox .dConBox-R .dConBoxr02 .gzz em{
+.dConBox .dConBox-R .dConBoxr02 .gzz em {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	display: block;		
+	display: block;
 	width: 24px;
-	height: 24px;	
+	height: 24px;
 }
-.dConBox .dConBox-R .dConBoxr02 #guanzhu{
+.dConBox .dConBox-R .dConBoxr02 #guanzhu {
 	color: #74cbf4;
 	border: 1px solid #74cbf4;
-	margin-right: 5px;	
+	margin-right: 5px;
 }
-.dConBox .dConBox-R .dConBoxr02 #guanzhu em{	
+.dConBox .dConBox-R .dConBoxr02 #guanzhu em {
 	border: 5px solid #74cbf4;
 	background: url(../images/huodongXQ/picbg.png) no-repeat;
 	background-position: -24px -2px;
 }
-.dConBox .dConBox-R .dConBoxr02 #zan{
+.dConBox .dConBox-R .dConBoxr02 #zan {
 	color: #ff8808;
-	border: 1px solid #ff8808;	
+	border: 1px solid #ff8808;
 }
-.dConBox .dConBox-R .dConBoxr02 #zan em{	
-	border: 5px solid #ff8808;	
+.dConBox .dConBox-R .dConBoxr02 #zan em {
+	border: 5px solid #ff8808;
 	background: url(../images/huodongXQ/picbg.png) no-repeat;
 	background-position: -55px -2px;
 }
-.dConBox .dConBox-R .dConBoxr02 .share{
+.dConBox .dConBox-R .dConBoxr02 .share {
 	font-size: 0px;
 	background-color: #f8f8f8;
 }
-.dConBox .dConBox-R .dConBoxr02 .share h2{
+.dConBox .dConBox-R .dConBoxr02 .share h2 {
 	display: inline-block;
 	width: 99px;
 	height: 49px;
-	margin-right: 10px;
 	line-height: 49px;
-	text-align: center;	
+	text-align: center;
 	background-color: #ececec;
 	font-size: 16px;
 	font-family: "microsoft yahei";
 	color: #666;
 }
-.dConBox .dConBox-R .dConBoxr02 .share a{
+.dConBox .dConBox-R .dConBoxr02 .share a {
 	display: inline-block;
 	width: 40px;
 	height: 40px;
@@ -405,107 +428,114 @@
 	vertical-align: -14px;
 	margin-left: 15px;
 }
-.dConBox .dConBox-R .dConBoxr02 .share .sina{
+.dConBox .dConBox-R .dConBoxr02 .share .sina {
 	background: url(../images/huodongXQ/picbg.png) no-repeat;
 	background-position: -2px -29px;
 }
-.dConBox .dConBox-R .dConBoxr02 .share .qq{
+.dConBox .dConBox-R .dConBoxr02 .share .qq {
 	background: url(../images/huodongXQ/picbg.png) no-repeat;
 	background-position: -47px -29px;
 }
-.dConBox .dConBox-R .dConBoxr02 .share .weixin{
+.dConBox .dConBox-R .dConBoxr02 .share .weixin {
 	background: url(../images/huodongXQ/picbg.png) no-repeat;
 	background-position: -92px -29px;
 }
 
 /*主体右部第三、四、五、六相同样式*/
-.dConBox .dConBox-R .dConBoxr_356g .title_aa{
+
+.dConBox .dConBox-R .dConBoxr_356g .title_aa {
 	height: 54px;
 	background: #f8f8f8 url(../images/huodongXQ/ad_rightBg.png) no-repeat center bottom;
 	font-family: "microsoft yahei";
 	line-height: 54px;
 	position: relative;
 }
-.dConBox .dConBox-R .dConBoxr_356g .title_aa h2{
+.dConBox .dConBox-R .dConBoxr_356g .title_aa h2 {
 	display: inline-block;
 	font-size: 16px;
 	color: #333;
 	width: 98px;
 	text-align: center;
 }
-.dConBox .dConBox-R .dConBoxr_356g .title_aa a{
+.dConBox .dConBox-R .dConBoxr_356g .title_aa a {
 	position: absolute;
 	font-size: 14px;
 	color: #0268b1;
 	right: 22px;
 }
-.dConBox .dConBox-R .dConBoxr_356g .neirong{
+.dConBox .dConBox-R .dConBoxr_356g .neirong {
 	min-height: 14px;
 	padding: 18px;
 	font-family: "microsoft yahei";
 	font-size: 14px;
 	color: #333;
 }
+
 /*主体右部第三块样式*/
-.dConBox .dConBox-R .dConBoxr03{		
-	width: 300px;      					
+
+.dConBox .dConBox-R .dConBoxr03 {
+	width: 300px;
 }
 
 /*主体右部第四块样式*/
-.dConBox .dConBox-R .dConBoxr04{
+
+.dConBox .dConBox-R .dConBoxr04 {
 	width: 300px;
-    color: #333;
-    font-family: "MicroSoft Yahei";									
+	color: #333;
+	font-family: "MicroSoft Yahei";
 }
-.dConBox .dConBox-R .dConBoxr04 .dConBoxrBli{
-	height:216px;
+.dConBox .dConBox-R .dConBoxr04 .dConBoxrBli {
+	height: 216px;
 	width: 246px;
 	font-size: 0px;
 	padding: 24px 27px 0;
-}			
-.dConBox .dConBox-R .dConBoxr04 .dConBoxrBli .dConBoxrbImg{
+}
+.dConBox .dConBox-R .dConBoxr04 .dConBoxrBli .dConBoxrbImg {
 	font-size: 14px;
 	display: inline-block;
 	border: 1px solid #dadada;
 	margin-bottom: 20px;
 	vertical-align: -13px;
 }
-.dConBox .dConBox-R .dConBoxr04 .dConBoxrBli .dConBoxrbcon{
+.dConBox .dConBox-R .dConBoxr04 .dConBoxrBli .dConBoxrbcon {
 	font-size: 14px;
 	margin-left: 10px;
 	width: 150px;
 	display: inline-block;
-	line-height: 40px;		
+	line-height: 40px;
 }
-.dConBox .dConBox-R .dConBoxr04 .dConBoxrBli .dConBoxrbcon h3{
+.dConBox .dConBox-R .dConBoxr04 .dConBoxrBli .dConBoxrbcon h3 {
 	font-size: 14px;
 	font-family: "微软雅黑";
 	color: #333333;
-	height: 40px;	
+	height: 40px;
 }
-.dConBox .dConBox-R .dConBoxr04 .dConBoxrBli .dConBoxrbcon p{
+.dConBox .dConBox-R .dConBoxr04 .dConBoxrBli .dConBoxrbcon p {
 	font-size: 12px;
 	color: #999999;
-	height: 40px;	
+	height: 40px;
 }
 
 /*主体右部第五块样式*/
-.dConBox .dConBox-R .dConBoxr05{		
-	width: 300px;   				
+
+.dConBox .dConBox-R .dConBoxr05 {
+	width: 300px;
 }
 
 /*主体右部第六块样式*/
-.dConBox .dConBox-R .dConBoxr06{		
-	width: 300px;   				
+
+.dConBox .dConBox-R .dConBoxr06 {
+	width: 300px;
 }
 
 /*主体右部第七块样式*/
-.dConBox .dConBox-R .dConBoxr07{		
+
+.dConBox .dConBox-R .dConBoxr07 {
 	width: 300px;
-    height: 236px;
-    font-size: 0;   					
+	height: 236px;
+	font-size: 0;
 }
-.dConBox .dConBox-R .dConBoxr07 h2{
+.dConBox .dConBox-R .dConBoxr07 h2 {
 	height: 43px;
 	line-height: 43px;
 	background-color: #0268b1;
@@ -514,11 +544,11 @@
 	color: #fff;
 	padding-left: 20px;
 }
-.dConBox .dConBox-R .dConBoxr07 .xiazaiewm{
+.dConBox .dConBox-R .dConBoxr07 .xiazaiewm {
 	display: inline-block;
 	width: 120px;
 }
-.dConBox .dConBox-R .dConBoxr07 .xiazaiewm i{
+.dConBox .dConBox-R .dConBoxr07 .xiazaiewm i {
 	display: inline-block;
 	margin-top: 20px;
 	width: 118px;
@@ -526,260 +556,265 @@
 	border: 1px solid #dadada;
 	background: url(../images/huodongXQ/picbg.png) no-repeat;
 }
-.dConBox .dConBox-R .dConBoxr07 .ip{
+.dConBox .dConBox-R .dConBoxr07 .ip {
 	margin-left: 19px;
 	margin-right: 22px;
 }
-.dConBox .dConBox-R .dConBoxr07 .xiazaiewm .iphone{
+.dConBox .dConBox-R .dConBoxr07 .xiazaiewm .iphone {
 	background-position: -5px -95px;
 }
-.dConBox .dConBox-R .dConBoxr07 .xiazaiewm .android{
+.dConBox .dConBox-R .dConBoxr07 .xiazaiewm .android {
 	background-position: -147px -97px;
 }
-.dConBox .dConBox-R .dConBoxr07 .xiazaiewm h2{
+.dConBox .dConBox-R .dConBoxr07 .xiazaiewm h2 {
 	color: #fc6d00;
-    font-size: 12px;
-    font-family: Tahoma;
-    background-color: #fff;
-    padding-left: 0;
-    width: 140px;
+	font-size: 12px;
+	font-family: Tahoma;
+	background-color: #fff;
+	padding-left: 0;
+	width: 140px;
 }
+
 /*主体右部第八块样式*/
-.dConBox .dConBox-R .dConBoxr08{		
-	width: 300px;     					
+
+.dConBox .dConBox-R .dConBoxr08 {
+	width: 300px;
 }
-.dConBox .dConBox-R .dConBoxr08 .guanggao{
+.dConBox .dConBox-R .dConBoxr08 .guanggao {
 	height: 108px;
 	margin-bottom: 15px;
 }
-.dConBox .dConBox-R .dConBoxr08 .guanggao img{
+.dConBox .dConBox-R .dConBoxr08 .guanggao img {
 	width: 300px;
 	height: 108px;
 }
-
-.ad_box{
+.ad_box {
 	width: 1200px;
 	margin: 20px auto 0px;
 }
-h2.ad_title{
+h2.ad_title {
 	font-family: "microsoft yahei";
-	font-size:20px;
+	font-size: 20px;
 	color: #333;
 	width: 1200px;
 	margin-bottom: 10px;
 }
-.ad_clip{
-	overflow:hidden;
-    text-overflow:ellipsis;
-    white-space:nowrap;
+.ad_clip {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
-.ad_navTetail{
-	
-}
-.ad_navTetail span{
+.ad_navTetail {}
+.ad_navTetail span {
 	font-size: 12px;
 	line-height: 18px;
 	color: #666666;
 	font-family: "microsoft yahei";
 }
-.ad_navTetail span.ad_nav02{
+.ad_navTetail span.ad_nav02 {
 	margin-left: 30px;
 }
 
 /*基地内容页*/
-.ad_container{
+
+.ad_container {
 	overflow: hidden;
-	margin:20px auto;
+	margin: 20px auto;
 }
-.ad_con_left{
+.ad_con_left {
 	float: left;
 	width: 882px;
 }
-.ad_leftImg {	
-	padding:40px 0px;
+.ad_leftImg {
+	padding: 40px 0px;
 	background: #fff;
-	margin-bottom:16px ;
+	margin-bottom: 16px;
 }
-.ad_leftImg img{
+.ad_leftImg img {
 	max-width: 826px;
-	text-align: center;	
+	text-align: center;
 }
-.ad_conChange{
+.ad_conChange {
 	background: #fff;
 }
-.ad_conTag{
+.ad_conTag {
 	overflow: hidden;
 }
-.ad_conTag li{
+.ad_conTag li {
 	float: left;
 	display: inline;
 	cursor: pointer;
-    font-family: "microsoft yahei";
-    font-size: 16px;
-    padding: 17px 0 8px;
-    text-align: center;
-    width: 294px;
-    border-bottom: 1px solid #e0e2e3;
+	font-family: "microsoft yahei";
+	font-size: 16px;
+	padding: 17px 0 8px;
+	text-align: center;
+	width: 294px;
+	border-bottom: 1px solid #e0e2e3;
 }
-
-.ad_conTag li:hover,.ad_conTag li.ad_currentLi {
+.ad_conTag li:hover, .ad_conTag li.ad_currentLi {
 	border-bottom: 1px solid #ffa400;
 }
-.ad_conTag li:hover a,
-.ad_conTag  li.ad_currentLi a{
+.ad_conTag li:hover a, .ad_conTag li.ad_currentLi a {
 	color: #ffa400;
 }
-.ad_conTag li a{
+.ad_conTag li a {
 	display: block;
 	height: 40px;
 	line-height: 40px;
 	border-right: 1px solid #e0e2e3;
 }
-.ad_conTag li.ad_tagLast a{
+.ad_conTag li.ad_tagLast a {
 	border-right: 0px;
 }
 
 /*tag内容部分*/
-.ad_conUl{
+
+.ad_conUl {
 	padding: 10px;
 }
-.ad_conUl tr{
+.ad_conUl tr {
 	height: 30px;
 }
-.ad_tdLeft{
+.ad_tdLeft {
 	width: 200px;
 	text-align: right;
 }
-.ad_conUl td.ad_tdRStyle01{
+.ad_conUl td.ad_tdRStyle01 {
 	color: #636363;
 }
-.ad_conUl td.ad_tdRStyle02{
+.ad_conUl td.ad_tdRStyle02 {
 	color: #0268B1;
 }
 
 /*右边模块*/
-.ad_con_right{
-	float: right; 
+
+.ad_con_right {
+	float: right;
 	width: 300px;
 }
-.ad_con_right .ad_rCommon{
+.ad_con_right .ad_rCommon {
 	background: #fff;
 	margin-bottom: 10px;
 }
-.ad_con_right .ad_rCommon .ad_rightTit{
-	border-top:1px solid #dad6d6;
-    font-size: 16px;
-    height: 49px;
-    line-height: 49px;
-    text-indent: 10px;
-    background: #f6f6f6 url(../images/ad_rightBg.png) no-repeat center bottom;
+.ad_con_right .ad_rCommon .ad_rightTit {
+	border-top: 1px solid #dad6d6;
+	font-size: 16px;
+	height: 49px;
+	line-height: 49px;
+	text-indent: 10px;
+	background: #f6f6f6 url(../images/ad_rightBg.png) no-repeat center bottom;
 }
-.ad_con_right .ad_rightCon{
+.ad_con_right .ad_rightCon {
 	background: #fff;
-	padding:10px 10px 10px 20px;
+	padding: 10px 10px 10px 20px;
 }
 
 /*基地联系人*/
-.ad_atten .ad_rightCon li{
+
+.ad_atten .ad_rightCon li {
 	font-family: "microsoft yahei";
 	font-size: 14px;
 	line-height: 28px;
-	color:#333333;
+	color: #333333;
 }
-.ad_atten .ad_rightCon li.ad_rName{
+.ad_atten .ad_rightCon li.ad_rName {
 	font-size: 18px;
 	line-height: 36px;
 	color: #0268B1;
 }
-.ad_atten .ad_rightCon a.ad_rMail,
-.ad_position .ad_rightCon a{
+.ad_atten .ad_rightCon a.ad_rMail, .ad_position .ad_rightCon a {
 	background: #ffa400;
 	text-align: center;
 	display: block;
 	width: 100px;
-	padding:6px 10px; 
+	padding: 6px 10px;
 	border-radius: 4px;
 	color: #fff;
 	font-size: 14px;
-	font-family:"microsoft yahei";
-	margin:10px auto;
+	font-family: "microsoft yahei";
+	margin: 10px auto;
 }
+
 /*基地二维码*/
-.ad_baseQR img{
+
+.ad_baseQR img {
 	max-width: 200px;
 	margin: 0px auto;
 }
+
 /*基地分享*/
-.ad_shareLi01{
+
+.ad_shareLi01 {
 	overflow: hidden;
 	margin-bottom: 20px;
 }
-.ad_shareLi01 p{
+.ad_shareLi01 p {
 	float: left;
 	width: 100px;
-	margin:0px 5px;
+	margin: 0px 5px;
 }
-.ad_shareLi01 p a{
+.ad_shareLi01 p a {
 	float: left;
 	display: inline-block;
 	width: 30px;
 	height: 24px;
-	
 }
-.ad_shareLi01 p span{
+.ad_shareLi01 p span {
 	font-size: 12px;
 	float: left;
 	display: inline;
 	margin-left: 4px;
 	line-height: 24px;
 }
-.ad_shareLi01 p.ad_shareFol{
+.ad_shareLi01 p.ad_shareFol {
 	border: 1px solid #0268B1;
-	
 }
-.ad_shareLi01 p.ad_shareFol a{
-	background: #0268B1 url(../images/list_icost.png) no-repeat center ;
+.ad_shareLi01 p.ad_shareFol a {
+	background: #0268B1 url(../images/list_icost.png) no-repeat center;
 }
-.ad_shareLi01 p.ad_shareFab{
+.ad_shareLi01 p.ad_shareFab {
 	border: 1px solid #ffa400;
 }
-.ad_shareLi01 p.ad_shareFab a{
-	background: #ffa400 url(../images/list_iconst3.png) no-repeat center ;
+.ad_shareLi01 p.ad_shareFab a {
+	background: #ffa400 url(../images/list_iconst3.png) no-repeat center;
 }
-	/*分享*/
-.ad_shareLi02{
+
+/*分享*/
+
+.ad_shareLi02 {
 	overflow: hidden;
 }
-.ad_shareLi02 span{
+.ad_shareLi02 span {
 	line-height: 40px;
 	margin-right: 10px;
 }
-.ad_shareLi02 span,
-.ad_shareLi02 a{
+.ad_shareLi02 span, .ad_shareLi02 a {
 	float: left;
 	display: inline;
 }
-.ad_shareLi02 a{
+.ad_shareLi02 a {
 	width: 40px;
 	height: 40px;
 	margin-left: 10px;
 }
-.ad_shareLi02 a.ad_shareAdd01{
+.ad_shareLi02 a.ad_shareAdd01 {
 	background: url(../images/QQ.png) no-repeat center;
 }
-.ad_shareLi02 a.ad_shareAdd02{
+.ad_shareLi02 a.ad_shareAdd02 {
 	background: url(../images/weibo.png) no-repeat center;
 }
-.ad_shareLi02 a.ad_shareAdd03{
+.ad_shareLi02 a.ad_shareAdd03 {
 	background: url(../images/wechat.png) no-repeat center;
 }
+
 /*基地位置*/
-.ad_position .ad_rightCon p{
+
+.ad_position .ad_rightCon p {
 	font-family: "microsoft yahei";
 	font-size: 14px;
 	line-height: 28px;
-	color:#333333;
+	color: #333333;
 }
-.ad_position .ad_rightCon a{
+.ad_position .ad_rightCon a {
 	margin-left: 0px;
 }
