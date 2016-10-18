@@ -1,49 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <infos>
-        <title>shmz</title>
-        <id>shmz</id>
-        <description>shmz是上海民政定制主题</description>
-        <author>jpress.cc</author>
-        <authorWebsite>http://www.jpress.cc</authorWebsite>
-        <version>v1.0.1</version>
-        <versionCode>1</versionCode>
-        <updateUrl>http://www.jpress.cc</updateUrl>
-    </infos>
-    <module title="信息发布" name="article" list="所有信息" add="发布信息" comment="评论">
-        <taxonomy title="分类" name="category" formType="select" />
-        <taxonomy title="专题" name="feature" formType="select">
-            <metadata dataType="input" name="author" title="专题作者" description="这个数据只是模板自定义模型的测试。" placeholder="请填写作者用户名" />
-        </taxonomy>
-        <taxonomy title="标签" name="tag" formType="input" />
-    </module>
-    <module title="活动" name="huodong" list="所有活动" add="发起活动" comment="评论">
-        <taxonomy title="分类" name="category" formType="select" />
-        <taxonomy title="专题" name="feature" formType="select">
-            <metadata dataType="input" name="author" title="专题作者" description="这个数据只是模板自定义模型的测试。" placeholder="请填写作者用户名" />
-        </taxonomy>
-        <taxonomy title="标签" name="tag" formType="input" />
-        <metadata dataType="input" name="_meta1" title="地点" placeholder="地点" />
-        <metadata dataType="input" name="_meta2" title="开始" placeholder="开始时间" />
-        <metadata dataType="input" name="_meta3" title="分类" placeholder="活动分类，如环境保护" />
-        <metadata dataType="input" name="_meta4" title="组织" placeholder="活动组织名称" />
-    </module>
-    <module title="基地" name="jidi" list="所有基地" add="申请基地" comment="评论">
-        <taxonomy title="分类" name="category" formType="select" />
-        <taxonomy title="专题" name="feature" formType="select">
-            <metadata dataType="input" name="author" title="专题作者" description="这个数据只是模板自定义模型的测试。" placeholder="请填写作者用户名" />
-        </taxonomy>
-        <taxonomy title="标签" name="tag" formType="input" />
-        <metadata dataType="input" name="_meta5" title="地点" placeholder="地点" />
-        <metadata dataType="input" name="_meta6" title="开始" placeholder="开始时间" />
-        <metadata dataType="input" name="_meta7" title="分类" placeholder="活动分类，如环境保护" />
-    </module>
-    <module title="列表" name="liebiao" list="所有页面" add="新建页面" comment="评论">
-    </module>
-    <module title="地图" name="map" list="所有页面" add="新建页面" comment="评论">
-    </module>
-    <thumbnail name="t1" size="780 x 240" />
-    <thumbnail name="t2" size="240 x 140" />
-    <thumbnail name="t3" size="600 x 300" />
-    <thumbnail name="t4" size="300 x 300" />
+	<infos>
+		<title>shmz</title>
+		<id>shmz</id>
+		<description>shmz是上海民政定制主题</description>
+		<author>jpress.cc</author>
+		<authorWebsite>http://www.jpress.cc</authorWebsite>
+		<version>v1.0.1</version>
+		<versionCode>1</versionCode>
+		<updateUrl>http://www.jpress.cc</updateUrl>
+	</infos>
+	<module title="信息发布" name="article" list="所有信息" add="发布信息" comment="评论">
+		<taxonomy title="分类" name="category" formType="select" />
+		<taxonomy title="专题" name="feature" formType="select">
+			<metadata dataType="input" name="author" title="专题作者" description="这个数据只是模板自定义模型的测试。" placeholder="请填写作者用户名" />
+		</taxonomy>
+		<taxonomy title="标签" name="tag" formType="input" />
+	</module>
+	<module title="活动" name="activity" list="所有活动" add="发起活动" comment="评论">
+		<taxonomy title="分类" name="category" formType="select" />
+		<taxonomy title="专题" name="feature" formType="select">
+			<metadata dataType="input" name="author" title="专题作者" description="这个数据只是模板自定义模型的测试。" placeholder="请填写作者用户名" />
+		</taxonomy>
+		<taxonomy title="标签" name="tag" formType="input" />
+		<metadata dataType="input" name="_meta1" title="地点" placeholder="地点" />
+		<metadata dataType="input" name="_meta2" title="开始" placeholder="开始时间" />
+		<metadata dataType="input" name="_meta3" title="分类" placeholder="活动分类，如环境保护" />
+		<metadata dataType="input" name="_meta4" title="组织" placeholder="活动组织名称" />
+	</module>
+	<module title="基地" name="jidi" list="所有基地" add="申请基地" comment="评论">
+		<taxonomy title="分类" name="category" formType="select" />
+		<taxonomy title="专题" name="feature" formType="select">
+			<metadata dataType="input" name="author" title="专题作者" description="这个数据只是模板自定义模型的测试。" placeholder="请填写作者用户名" />
+		</taxonomy>
+		<taxonomy title="标签" name="tag" formType="input" />
+		<metadata dataType="input" name="_meta5" title="地点" placeholder="地点" />
+		<metadata dataType="input" name="_meta6" title="开始" placeholder="开始时间" />
+		<metadata dataType="input" name="_meta7" title="分类" placeholder="活动分类，如环境保护" />
+	</module>
+	<module title="列表" name="liebiao" list="所有页面" add="新建页面" comment="评论">
+	</module>
+	<module title="地图" name="map" list="所有页面" add="新建页面" comment="评论">
+	</module>
+	<thumbnail name="t1" size="780 x 240" />
+	<thumbnail name="t2" size="240 x 140" />
+	<thumbnail name="t3" size="600 x 300" />
+	<thumbnail name="t4" size="300 x 300" />
 </config>

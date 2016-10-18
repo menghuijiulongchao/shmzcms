@@ -190,6 +190,7 @@
 /*列表页样式*/
 
 .list_container_box {
+	padding: 0 0 60px 0;
 	width: 100%;
 	background: #eaeaea;
 }

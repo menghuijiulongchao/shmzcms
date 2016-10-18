@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<title></title>
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="swiper.css" />
+		<link rel="stylesheet" href="../css/style_index.css" />
+		<script type="text/javascript" src="../js/jquery.js"></script>
+		<script type="text/javascript" src="../js/base.js"></script>
+		<script type="text/javascript" src="swiper.js"></script>
+		 <script>
+	    var swiper = new Swiper('.swiper-container', {
+	        pagination: '.swiper-pagination',
+	        paginationClickable: true,
+	        nextButton: '.swiper-button-next',
+	        prevButton: '.swiper-button-prev',
+	        autoHeight: true, //enable auto height
+	    });
+    </script>
+     <style>
+    .swiper-container {
+        width: 100%;
+        height: auto;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+    }
+    .swiper-container .swiper-slide {
+        height: 300px;
+        line-height: 300px;
+    }
+    .swiper-container .swiper-slide:nth-child(2n) {
+        height: 500px;
+        line-height: 500px;
+    }
+    
+    </style>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="container">				
+				<div class="h_header" >
+					<div class="h_logo">
+						<img src="../images/logo.png" alt="logo" class="logo_img" />
+					</div>
+					<div class="h_nav">
+						<ul>
+							<li>
+								<a href="index.html">首页</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">公益活动</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">公益组织</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">亲子体验</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">时长公示</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">帮助中心</a>
+							</li>
+						</ul>
+					</div>
+					<div class="h_language">
+						<div class="h_china">
+							<a href=""><p>中</p></a>
+						</div>
+						<div class="h_English">
+							<a href=""><p>EN</p></a>
+						</div>
+					</div>
+					<div class="h_login_reg">
+						<a class="h_login" href="javascript:void(0)">登录</a>
+						<a class="h_reg" href="javascript:void(0)">注册</a>
+					</div>
+				</div>
+			</div>
+		<!--头部结束-->
+		<!--banner-->
+		<div class="swiper-container">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide">Slide 1</div>
+	            <div class="swiper-slide">Slide 2</div>
+	            <div class="swiper-slide">Slide 3</div>
+	            <div class="swiper-slide">Slide 4</div>
+	            <div class="swiper-slide">Slide 5</div>
+	            <div class="swiper-slide">Slide 6</div>
+	            <div class="swiper-slide">Slide 7</div>
+	            <div class="swiper-slide">Slide 8</div>
+	            <div class="swiper-slide">Slide 9</div>
+	            <div class="swiper-slide">Slide 10</div>
+	        </div>
+	        <!-- Add Pagination -->
+	        <div class="swiper-pagination"></div>
+	        <!-- Add Pagination -->
+	        <div class="swiper-button-next"></div>
+	        <div class="swiper-button-prev"></div>
+    	</div>
+		<!--banner结束-->
+		<!--活动列表-->
+		<div class="class_img_bg">
+			<div class="class_img">
+				<div class="left_class">
+					<a class="left_class_map" href="javascript:void(0)">
+						<img src="../images/gongyi_map.png">
+						<span>公益地图</span>
+					</a>
+				</div>
+
+				<div class="center_class">
+					<div class="center_class_01">
+						<p>注册公益市民 (人)</p>
+						<span id="center_num_01">167</span>
+					</div>
+					<div class="center_class_02">
+						<p>公益服务时长 (万小时)</p>
+						<span id="center_num_02">210267</span>
+					</div>
+					<div  class="center_class_03">
+						<p>注册公益组织(个)</p>
+						<span id="center_num_03">3803</span>
+					</div>
+					<a class="jion_vol" href="#">申请公益护照</a>
+				</div>
+				<div class="right_class">
+					<ul>
+						<li class="ci_list">
+							<a class="ci_block" href="list.html">
+								<img src="../images/tree.png" />
+								<span>文化</span>
+							</a>
+						</li>
+						<li class="ci_list">
+							<a class="ci_block" href="list.html">
+								<img src="../images/sport.png" />
+								<span>体育</span>
+							</a>
+						</li>
+						<li class="ci_list">
+							<a class="ci_block" href="list.html">
+								<img src="../images/civilization.png"/>
+								<span>教育</span>
+							</a>
+						</li>
+						<li class="ci_list">
+							<a class="ci_block" href="list.html">
+								<img src="../images/safety.png" />
+								<span>卫生医疗</span>
+							</a>
+						</li>
+						<li class="ci_list">
+							<a class="ci_block" href="list.html">
+								<img src="../images/oldman.png" />
+								<span>社区</span>
+							</a>
+						</li>
+						<li class="ci_list">
+							<a class="ci_block" href="list.html">
+								<img src="../images/youngman.png" />
+								<span>社会组织</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!--清除浮动-->
+				<div class="clear_fix"></div>
+			</div>
+		</div>
+		<!--活动列表结束-->
+		<!--推荐活动和活动志愿者开始-->
+		<div class="con_sec">
+    		<div class="con_sec_in">
+    			<ul>
+    				<li class="cur_li">
+    					<a href="javascript:void(0)">全部</a>
+    				</li>
+    				<li class="">
+    					<a href="javascript:void(0)">文化</a>
+    				</li>
+    				<li class="">
+    					<a href="javascript:void(0)">体育</a>
+    				</li>
+    				<li class="">
+    					<a href="javascript:void(0)">教育</a>
+    				</li>
+    				<li class="">
+    					<a href="javascript:void(0)">卫生医疗</a>
+    				</li>
+    				<li class="">
+    					<a href="javascript:void(0)">社区</a>
+    				</li>
+    				<li class="">
+    					<a href="javascript:void(0)">社会服务</a>
+    				</li>
+    				<!--<li class="">
+    					<a href="">环境保护</a>
+    				</li>    				-->
+    				<li class="last_li">
+    					<a href="">更多>></a>
+    				</li>
+    			</ul>
+    		</div>
+			<div class="acbox">
+				<ul class="Activity" style="display: inline-block;">
+					<li>
+						<div class="adimg">
+							<a href="guoqing.html">
+								<img src="../images/tuijian01.png" width="224" height="160" />
+							</a>
+						</div>
+						<h3>
+							<a href="guoqing.html">国庆假期上海动物园志愿者招募</a>
+						</h3>
+						<p>地点：上海市黄浦区普育西路上海公益新天地园-8号楼</p>
+						<p>开始时间：2016-10-01</p>
+					</li>
+					<li>
+						<div class="adimg">
+							<a href="shengming.html">
+								<img src="../images/tuijian02.jpg" width="224" height="160" />
+							</a>
+						</div>
+						<h3>
+							<a href="shengming.html">生命教育</a>
+						</h3>
+						<p>地点：上海市黄浦区重庆南路100号9/10层</p>
+						<p>开始时间：2016-10-01</p>
+					</li>
+					<li>
+						<div class="adimg">
+							<a href="dongxincun.html">
+								<img src="../images/tuijian03.jpg" width="224" height="160" />
+							</a>
+						</div>
+						<h3>
+							<a href="dongxincun.html">2016.10.1 洞心村乐善家园落成暨第一届高明乡村美食节</a>
+						</h3>
+						<p>地点：陕西北路600号(与新闸路交汇处)</p>
+						<p>开始时间：2016-10-01</p>
+					</li>
+					<li>
+						<div class="adimg">
+							<a href="lishi.html">
+								<img src="../images/tuijian04.jpg" width="224" height="160" />
+							</a>
+						</div>
+						<h3>
+							<a href="lishi.html">2016年理事会会议</a>
+						</h3>
+						<p>地点：上海市黄浦区普育西路上海公益新天地园-8号楼</p>
+						<p>开始时间：2017-03-01</p>
+					</li>
+					<li class="mr0">
+						<div class="adimg">
+							<a href="shuishou.html">
+								<img src="../images/tuijian05.jpg" width="224" height="160" />
+							</a>
+						</div>
+						<h3>
+							<a href="shuishou.html">税收筹划</a>
+						</h3>
+						<p>地点：上海市黄浦区金融高新区股权交易中心</p>
+						<p>开始时间：2016-10-01</p>
+					</li>
+					<li>
+						<div class="adimg">
+							<a href="guoqin006.html">
+								<img src="../images/activeVolunteer/zyz_006.jpg" width="224" height="160" />
+							</a>
+						</div>
+						<h3>
+							<a href="guoqin006.html">“共筑教育腾飞梦”晚会志愿者招募</a>
+						</h3>
+						<p> 地点：人民广场</p>
+						<p>开始时间：2016-10-27</p>
+					</li>
+					<li>
+						<div class="adimg">
+							<a href="guoqin007.html">
+								<img src="../images/tuijian07.jpg" width="224" height="160" />
+							</a>
+						</div>
+						<h3>
+							<a href="guoqin007.html">绿色社区守护（十月份）</a>
+						</h3>
+						<p>地点：上海市静安区淮安路668号</p>
+						<p>开始时间：2016-10-01</p>
+					</li>
+					<li>
+						<div class="adimg">
+							<a href="guoqin008.html">
+								<img src="../images/tuijian08.jpg" width="224" height="160" />
+							</a>
+						</div>
+						<h3>
+							<a href="guoqin008.html">（10.1）第十三届国庆书法大赛志愿者招募</a>
+						</h3>
+						<p>地点：上海市静安区秣陵路80号3楼(上海火车站)</p>
+						<p>开始时间：2016-10-01</p>
+					</li>
+					<li>
+						<div class="adimg">
+							<a href="guoqin_last.html">
+								<img src="../images/tuijian09.jpg" width="224" height="160" />
+							</a>
+						</div>
+						<h3>
+							<a href="guoqin_last_two.html">上海南站志愿服务志愿者招募</a>
+						</h3>
+						<p> 地点：上海南站</p>
+						<p>开始时间：2016-10-01</p>
+					</li>
+					<li class="mr0">
+						<div class="adimg">
+							<a href="guoqin_last.html">
+								<img src="../images/tuijian10.jpg" width="224" height="160" />
+							</a>
+						</div>
+						<h3>
+							<a href="guoqin_last_two.html">“童趣重阳，隔代同乐计划”活动</a>
+						</h3>
+						<p> 地点：浦东新区敬老院</p>
+						<p> 开始时间：2016-10-07</p>
+					</li>
+				</ul>
+				<ul class="Activity"  style="display: none;">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+	                <li class="mr0"></li>
+	                <li></li>
+	                <li></li>
+	                <li></li>
+	                <li></li>
+	                <li class="mr0"></li>
+				</ul>
+				<ul class="Activity"  style="display: none;">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+	                <li class="mr0"></li>
+	                <li></li>
+	                <li></li>
+	                <li></li>
+	                <li></li>
+	                <li class="mr0"></li>
+				</ul>
+				<ul class="Activity"  style="display: none;">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+	                <li class="mr0"></li>
+	                <li></li>
+	                <li></li>
+	                <li></li>
+	                <li></li>
+	                <li class="mr0"></li>
+				</ul>
+				<ul class="Activity"  style="display: none;">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+	                <li class="mr0"></li>
+	                <li></li>
+	                <li></li>
+	                <li></li>
+	                <li></li>
+	                <li class="mr0"></li>
+				</ul>
+				<ul class="Activity"  style="display: none;">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+	                <li class="mr0"></li>
+	                <li></li>
+	                <li></li>
+	                <li></li>
+	                <li></li>
+	                <li class="mr0"></li>
+				</ul>
+				<ul class="Activity"  style="display: none;">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+	                <li class="mr0"></li>
+	                <li></li>
+	                <li></li>
+	                <li></li>
+	                <li></li>
+	                <li class="mr0"></li>
+				</ul>	
+			</div>    			 			
+    	</div>
+		<div class="acver">
+			<div class="acverbb">
+				<div class="acverL">
+					<div class="acverBigBox">
+						<h2>公益先锋</h2>
+						<a class="">换一换</a>
+					</div>
+					<div class="acverBox">
+						<ul>
+							<li>
+								<div class="acverimg">
+									<a href="">
+										<img src="../images/huoyzyz01.jpg" width="50" height="50" />
+									</a>
+								</div>
+								<div class="acverboxin">
+									<h3>谭美娟</h3>
+									<p>服务时长:<em>185</em></p>
+								</div>
+							</li>
+							<li>
+								<div class="acverimg">
+									<a href="">
+										<img src="../images/defaultPic_11.jpg" width="50" height="50" />
+									</a>
+								</div>
+								<div class="acverboxin">
+									<h3>林琪</h3>
+									<p>服务时长:<em>165</em></p>
+								</div>
+							</li>
+							<li>
+								<div class="acverimg">
+									<a href="">
+										<img src="../images/Interest.png" width="50" height="50" />
+									</a>
+								</div>
+								<div class="acverboxin">
+									<h3>张静棉</h3>
+									<p>服务时长:<em>103</em></p>
+								</div>
+							</li>
+							<li>
+								<div class="acverimg">
+									<a href="">
+										<img src="../images/tuijian05.jpg" width="50" height="50" />
+									</a>
+								</div>
+								<div class="acverboxin">
+									<h3>李颖欢</h3>
+									<p>服务时长:<em>155</em></p>
+								</div>
+							</li>
+							<li>
+								<div class="acverimg">
+									<a href="">
+										<img src="../images/tuijian04.jpg" width="50" height="50" />
+									</a>
+								</div>
+								<div class="acverboxin">
+									<h3>罗友梅</h3>
+									<p>服务时长:<em>191</em></p>
+								</div>
+							</li>
+							<li>
+								<div class="acverimg">
+									<a href="">
+										<img src="../images/huoyzyz01.jpg" width="50" height="50" />
+									</a>
+								</div>
+								<div class="acverboxin">
+									<h3>吴松华</h3>
+									<p>服务时长:<em>75</em></p>
+								</div>
+							</li>
+							<li>
+								<div class="acverimg">
+									<a href="">
+										<img src="../images/tuijian05.jpg" width="50" height="50" />
+									</a>
+								</div>
+								<div class="acverboxin">
+									<h3>李金伦</h3>
+									<p>服务时长:<em>98</em></p>
+								</div>
+							</li>
+							<li>
+								<div class="acverimg">
+									<a href="">
+										<img src="../images/tuijian04.jpg" width="50" height="50" />
+									</a>
+								</div>
+								<div class="acverboxin">
+									<h3>黎慧慧</h3>
+									<p>服务时长:<em>145</em></p>
+								</div>
+							</li>
+							<li>
+								<div class="acverimg">
+									<a href="">
+										<img src="../images/tuijian05.jpg" width="50" height="50" />
+									</a>
+								</div>
+								<div class="acverboxin">
+									<h3>袁志彬</h3>
+									<p>服务时长:<em>175</em></p>
+								</div>
+							</li>
+							<li>
+								<div class="acverimg">
+									<a href="">
+										<img src="../images/tuijian04.jpg" width="50" height="50" />
+									</a>
+								</div>
+								<div class="acverboxin">
+									<h3>陈思旋</h3>
+									<p>服务时长:<em>185</em></p>
+								</div>
+							</li>
+							<li>
+								<div class="acverimg">
+									<a href="">
+										<img src="../images/huoyzyz01.jpg" width="50" height="50" />
+									</a>
+								</div>
+								<div class="acverboxin">
+									<h3>郭冬云</h3>
+									<p>服务时长:<em>129</em></p>
+								</div>
+							</li>
+							<li>
+								<div class="acverimg">
+									<a href="">
+										<img src="../images/Interest.png" width="50" height="50" />
+									</a>
+								</div>
+								<div class="acverboxin">
+									<h3>秦莹溪</h3>
+									<p>服务时长:<em>175</em></p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="acverR">
+					<div class="acverQuery">
+						<h2>公益护照查询</h2>
+					</div>
+					<div class="acverQueryBox">
+						<p>志愿者信息、公益护照查询</p>
+						<div class="acverLabel">
+							<a href="javascript:;" class="acverdd">志愿者信息查询</a>
+							<a href="javascript:;" class="">公益护照查询</a>
+						</div>
+						<div class="acverForm">
+							<div class="acverFormBox" style="display: block;">
+								<form class="acverFormff" action="" method="post">
+									<div class="acverFormdd">
+										<label for="">姓名:</label>
+										<input type="text" name="" id="" value=""/>										
+									</div>
+									<div class="acverFormdd">
+										<label for="">证件号码:</label>
+										<input type="text" name="" id="" value=""/>
+									</div>
+									<div class="acverFormdd">										
+										<input type="button" id="button" value="查询志愿者"/>										
+									</div>
+								</form>
+							</div>
+							<div class="acverFormBox" style="display: none;">
+								<form class="acverFormff" action="" method="post">
+									<div class="acverFormdd">
+										<label for="">护照编号:</label>
+										<input type="text" name="" id="" value=""/>
+									</div>
+									<div class="acverFormdd">										
+										<input type="button" id="button" value="查询公益护照"/>										
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<!--活动展示和活动志愿者-->
+		<!--信息公告和志愿排行-->
+		<div class="news clearfix">
+			
+			<div class="news_l">
+				<!--信息公告和志愿导航-->
+				<div class="news_nav clearfix">
+					<p class="news_nav1 currentS"><a href="JavaScript:;">信息公告</a></p>
+					<p class="news_nav1"><a href="JavaScript:;">新闻资讯</a></p>
+					<p class="news_nav1"><a href="JavaScript:;">政策法规</a></p>
+					<span style="float: right;"><a href="#">更多>></a></span>
+				</div>
+				<!--内容-->
+				<!--信息公告-->
+				<div class="news_con">
+					<ul>
+						<li>
+							<div class="newsL_con">
+								<div class="tit clearfix">
+									<img src="../images/hot-ico.png"/>
+									<h1><a href="news_001.html" title="“益苗计划”项目申报问答">“益苗计划”项目申报问答</a></h1>
+								</div>
+								<p>问：现在可以申报了吗？答：“益苗计划”网上申报从即日起启动，至2016年8月31日结束。网上申报成功的组织（机构）须于9月5日前将纸质申报材料邮寄至“益苗计划”组委会秘书处（地址：上海市越秀区寺贝通津1号大院省青年志愿者行动指导中心，邮编：510080，电话：020-83861999）。</p>
+								<span><em>2016-08-09 09:00</em></span>
+							</div>
+						</li>
+						<li>
+							<div class="newsL_con">
+								<div class="tit clearfix">
+									<img src="../images/hot-ico.png"/>
+									<h1><a href="news_002.html" title="关于开展上海助残志愿者助力精准脱贫攻坚行动的通知"> 关于开展上海助残志愿者助力精准脱贫攻...</a></h1>
+								</div>
+								<p>点击下载全文（扫描版）  各地级以上市及顺德区团委、扶贫办（扶贫局、协作办、对口办、经协办）、残联、志愿者联合会，各高等学校团委、青年志愿者协会，省直机关团工委、志愿者协会，省志愿者联合会各会员团体：    按照中央和省委省政府关于精准扶贫、精准脱贫的部署及要求，为广泛组织动员志愿服务组织和志愿者积极投身精准脱贫攻坚行</p>
+								<span><em>2016-08-01 09:00</em></span>
+							</div>
+						</li>
+						<li style="border-bottom: solid 1px #ffffff;">
+							<div class="newsL_con" >
+								<div class="tit clearfix">
+									<img src="../images/hot-ico.png"/>
+									<h1><a href="news_003.html" title="关于召开2016年全省志愿者骨干训练营暨上海市志愿者联合会第二届常务理事会第二次全体（扩大）会议的通知"> 关于召开2016年全省志愿者骨干训练营暨...</a></h1>
+								</div>
+								<p>各地级以上市并顺德区志愿者联合会（青年志愿者协会、义工联），各有关高校青年志愿者协会，省志愿者联合会各会员团体：为贯彻落实中央和省委省政府关于支持和发展志愿服务组织等系列决策部署，经省志愿者联合会会长办公会研究决定，现定于6月23日至24日召开2016年全省志愿者骨干训练营暨上海市志愿者联合会第二届常务理事会第二次全体</p>
+								<span><em>2016-06-15 09:00</em></span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!--新闻咨询-->
+				<div class="news_con">
+					<div class="news_list">
+						<ul>
+							<li><a href="newswh_00001.html" title="冯卓怡：从上海姑娘到“新疆古丽”"> • 冯卓怡：从上海姑娘到“新疆古丽”</a></li>
+							<li><a href="" title="Jeremy John Grey：热衷party不为玩乐为公益"> • Jeremy John Grey：热衷party不为玩乐为公益</a></li>
+							<li><a href="" title="林敏标：志愿事业是最后的归宿"> • 林敏标：志愿事业是最后的归宿</a></li>
+							<li><a href="" title="徐暐杰：淡淡地去做志愿者，淡淡地去过自己的人生"> • 徐暐杰：淡淡地去做志愿者，淡淡地去过自己的人生</a></li>
+							<li><a href="" title="陈美璃：“会发声的盲杖”"> • 陈美璃：“会发声的盲杖”</a></li>
+							<li><a href="" title="陈建宇：平凡人做平凡事，奉献他人 ,提升自己"> • 陈建宇：平凡人做平凡事，奉献他人 ,提升自己</a></li>
+							<li><a href="" title="赵健勇：执着公益，志愿服务创新开拓者"> • 赵健勇：执着公益，志愿服务创新开拓者</a></li>
+							<li><a href="" title="马威：把志愿服务当成一种生活时尚"> • 马威：把志愿服务当成一种生活时尚</a></li>
+							<li><a href="" title="罗勇强：生命因感动而变得更精彩"> • 罗勇强：生命因感动而变得更精彩</a></li>
+							<li><a href="" title="胡保平：无偿献血是模范"> • 胡保平：无偿献血是模范</a></li>
+						</ul>
+					</div>
+				</div>
+				<!--政策法规-->
+				<div class="news_con">
+					<div class="news_list">
+						<ul>
+							<li><a href="" title="上海市星级志愿者资质认证管理办法"> • 上海市星级志愿者资质认证管理办法</a></li>
+							<li><a href="" title="关于推进社会工作者与志愿者联动工作的实施意见"> • 关于推进社会工作者与志愿者联动工作的实施意见</a></li>
+							<li><a href="" title="关于发展上海行业志愿服务工作的意见"> • 关于发展上海行业志愿服务工作的意见</a></li>
+							<li><a href="" title="中共上海市委、上海市人民政府关于进一步发展志愿服务事业的意见"> • 中共上海市委、上海市人民政府关于进一步发展志愿服务事业的意见</a></li>
+							<li><a href="" title="中央精神文明建设指导委员会关于深入开展志愿服务活动的意见"> • 中央精神文明建设指导委员会关于深入开展志愿服务活动的意见</a></li>
+							<li><a href="" title="《中国注册志愿者管理办法》"> • 《中国注册志愿者管理办法》</a></li>
+							<li><a href="" title="《中国青年志愿者协会章程》  "> • 《中国青年志愿者协会章程》  </a></li>
+							<li><a href="" title="《上海市青少年保护条例》"> • 《上海市青少年保护条例》</a></li>
+						</ul>
+				</div>
+			</div>
+			
+			</div>
+			<!--志愿者排行-->
+			<div class="news_r">
+				<div class="newsr_tit">
+					<h2>公益大数据</h2>
+					<p><a href="JavaScript:;">更多>></a></p>
+				</div>
+				<div class="newsr_con clearfix">
+					<div class="newsr_conl">
+						<div class="newsr_conl_tit">
+							<img src="../images/zuzhi.png"/>
+							<p>公益基地排行</p>
+						</div>
+						<ul>
+							<li class="clearfix">
+								<i>1</i>
+								<em>&nbsp;&nbsp;&nbsp;黄浦区</em>
+								<span>1471978</span>
+							</li>
+							<li class="clearfix">
+								<i>2</i>
+								<em>&nbsp;&nbsp;&nbsp;徐汇区</em>
+								<span>1134259</span>
+							</li>
+							<li class="clearfix">
+								<i>3</i>
+								<em>&nbsp;&nbsp;&nbsp;普陀区</em>
+								<span>847465</span>
+							</li>
+							<li class="clearfix">
+								<i>4</i>
+								<em>&nbsp;&nbsp;&nbsp;长宁区</em>
+								<span>712379</span>
+							</li>
+							<li class="clearfix">
+								<i>5</i>
+								<em>&nbsp;&nbsp;&nbsp;闵行区</em>
+								<span>391594</span>
+							</li>
+							<li class="clearfix">
+								<i>6</i>
+								<em>&nbsp;&nbsp;&nbsp;杨浦区</em>
+								<span>381305</span>
+							</li>
+							<li class="clearfix">
+								<i>7</i>
+								<em>&nbsp;&nbsp;&nbsp;虹口区</em>
+								<span>375064</span>
+							</li>
+							<li class="clearfix">
+								<i>8</i>
+								<em>&nbsp;&nbsp;&nbsp;嘉定区</em>
+								<span>333261</span>
+							</li>
+							<li class="clearfix">
+								<i>9</i>
+								<em>&nbsp;&nbsp;&nbsp;宝山区</em>
+								<span>257935</span>
+							</li>
+							
+						</ul>
+					</div>
+					<div class="newsr_conr">
+						<div class="newsr_conr_tit">
+							<img src="../images/zuzhi03.png"/>
+							<p>公益时长排行</p>
+						</div>
+						<ul>
+							<li class="clearfix">
+								<i>1</i>
+								<em>&nbsp;&nbsp;&nbsp;黄浦区</em>
+								<span>36860254</span>
+							</li>
+							<li>
+								<i>2</i>
+								<em>&nbsp;&nbsp;&nbsp;徐汇区</em>
+								<span>28083452</span>
+							</li>
+							<li>
+								<i>3</i>
+								<em>&nbsp;&nbsp;&nbsp;普陀区</em>
+								<span>24850991</span>
+							</li>
+							<li>
+								<i>4</i>
+								<em>&nbsp;&nbsp;&nbsp;长宁区</em>
+								<span>13786372</span>
+							</li>
+							<li>
+								<i>5</i>
+								<em>&nbsp;&nbsp;&nbsp;闵行区</em>
+								<span>9646758</span>
+							</li>
+							<li>
+								<i>6</i>
+								<em>&nbsp;&nbsp;&nbsp;杨浦区</em>
+								<span>9189213</span>
+							</li>
+							<li>
+								<i>7</i>
+								<em>&nbsp;&nbsp;&nbsp;虹口区</em>
+								<span>4975741</span>
+							</li>
+							<li>
+								<i>8</i>
+								<em>&nbsp;&nbsp;&nbsp;嘉定区</em>
+								<span>2259646</span>
+							</li>
+							<li>
+								<i>9</i>
+								<em>&nbsp;&nbsp;&nbsp;宝山区</em>
+								<span>2065087</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="com_yqlj clearfix">
+			<div class="com_yqlj_left">
+				<span>友情链接:</span>
+			</div>
+			<ul class="com_yqlj_right">
+				<li><a href="javascript:void(0)">中国共青团网</a></li>
+				<li><a href="javascript:void(0)">中国青年志愿者网 </a></li>
+				<li><a href="javascript:void(0)">志愿北京天津共青团</a></li>
+				<li><a href="javascript:void(0)">河北青年志愿服务网</a></li>
+				<li><a href="javascript:void(0)">山西志愿者网</a></li>
+				<li><a href="javascript:void(0)">内蒙古志愿者网</a></li>
+				<li><a href="javascript:void(0)">辽宁青年志愿服务网</a></li>
+				<li><a href="javascript:void(0)">吉林省青年志愿者协会</a></li>
+				<li><a href="javascript:void(0)">黑龙江省志愿服务平台</a></li>
+				<li><a href="javascript:void(0)">上海青年志愿者智慧公益平台</a></li>
+				<li><a href="javascript:void(0)">江苏志愿服务网</a></li>
+				<li><a href="javascript:void(0)">浙江志愿者网</a></li>
+			</ul>
+		</div>
+		<!--底部-->
+		<div class="footer">
+				<div class="footer_con">
+				<div class="footer_ewm">
+					<img class="footer_ewm_img01" src="../images/erweima.png">
+					<img class="footer_ewm_img02" src="../images/ewm_bg.png">
+					<p class="footer_ewm_text">扫描二维码下载App</p>
+				</div>
+					<p class="copyright"> Copyright &copy;2010-2017 上海市公益服务促进中心 沪ICP备1206628号</p>
+					<ul class="enjon_icon">
+						<li><a href="#" class="icon_01"></a></li>
+						<li><a href="#" class="icon_02"></a></li>
+						<li><a href="#" class="icon_03"></a></li>
+					</ul>
+				</div>
+			</div>
+		<!--底部-->
+	</body>
+	
+</html>
+
