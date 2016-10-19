@@ -84,7 +84,7 @@
 					<li class=""><a href="javascript:;">社区</a></li>
 					<li class=""><a href="javascript:;">社会服务</a></li>
 				</ul>
-				<@jp.taxonomy id="25">
+				<@jp.taxonomy id="26">
 					<a class='more' href="${taxonomy.url}">更多&gt;&gt;</a>
 				</@jp.taxonomy>
 			</div>
@@ -92,7 +92,7 @@
 				<!-- 全部开始 -->
 				<div class="acbox_jh" style="display: inline-block">
 					<ul class="Activity">
-						<@jp.contents module="base" count="5">
+						<@jp.contents module="base" typeSlug="allbases" count="5">
 							<#list contents as content>
 								<li>
 									<div class="adimg">
@@ -130,7 +130,7 @@
 				<!-- 文化开始 -->
 				<div class="acbox_jh" style="display: none">
 					<ul class="Activity">
-						<@jp.contents module="base" typeSlug="wenhua" count="5">
+						<@jp.contents module="base" typeSlug="culture" count="5">
 							<#list contents as content>
 								<li>
 									<div class="adimg">
@@ -147,7 +147,7 @@
 						</@jp.contents>
 					</ul>
 					<ul class="Activity">
-						<@jp.contents module="huodong" typeSlug="wenhua" count="5">
+						<@jp.contents module="activity" typeSlug="wenhua" count="5">
 							<#list contents as content>
 								<li>
 									<div class="adimg">
@@ -168,7 +168,7 @@
 				<!-- 体育开始 -->
 				<div class="acbox_jh" style="display: none">
 					<ul class="Activity">
-						<@jp.contents module="jidi" typeSlug="tiyu" count="5">
+						<@jp.contents module="base" typeSlug="sport" count="5">
 							<#list contents as content>
 								<li>
 									<div class="adimg">
@@ -185,7 +185,7 @@
 						</@jp.contents>
 					</ul>
 					<ul class="Activity">
-						<@jp.contents module="huodong" typeSlug="tiyu" count="5">
+						<@jp.contents module="activity" typeSlug="tiyu" count="5">
 							<#list contents as content>
 								<li>
 									<div class="adimg">
@@ -206,7 +206,7 @@
 				<!-- 教育开始 -->
 				<div class="acbox_jh" style="display: none">
 					<ul class="Activity">
-						<@jp.contents module="jidi" typeSlug="jiaoyu" count="5">
+						<@jp.contents module="base" typeSlug="education" count="5">
 							<#list contents as content>
 								<li>
 									<div class="adimg">
@@ -223,7 +223,7 @@
 						</@jp.contents>
 					</ul>
 					<ul class="Activity">
-						<@jp.contents module="huodong" typeSlug="jiaoyu" count="5">
+						<@jp.contents module="activity" typeSlug="jiaoyu" count="5">
 							<#list contents as content>
 								<li>
 									<div class="adimg">
@@ -244,7 +244,7 @@
 				<!-- 卫生医疗开始 -->
 				<div class="acbox_jh" style="display: none">
 					<ul class="Activity">
-						<@jp.contents module="jidi" typeSlug="weishengyiliao" count="5">
+						<@jp.contents module="base" typeSlug="medication" count="5">
 							<#list contents as content>
 								<li>
 									<div class="adimg">
@@ -261,7 +261,7 @@
 						</@jp.contents>
 					</ul>
 					<ul class="Activity">
-						<@jp.contents module="huodong" typeSlug="weishengyiliao" count="5">
+						<@jp.contents module="activity" typeSlug="weishengyiliao" count="5">
 							<#list contents as content>
 								<li>
 									<div class="adimg">
@@ -282,7 +282,7 @@
 				<!-- 社区开始 -->
 				<div class="acbox_jh" style="display: none">
 					<ul class="Activity">
-						<@jp.contents module="jidi" typeSlug="shequ" count="5">
+						<@jp.contents module="base" typeSlug="social" count="5">
 							<#list contents as content>
 								<li>
 									<div class="adimg">
@@ -299,7 +299,7 @@
 						</@jp.contents>
 					</ul>
 					<ul class="Activity">
-						<@jp.contents module="huodong" typeSlug="shequ" count="5">
+						<@jp.contents module="activity" typeSlug="shequ" count="5">
 							<#list contents as content>
 								<li>
 									<div class="adimg">
@@ -320,7 +320,7 @@
 				<!-- 社会服务开始 -->
 				<div class="acbox_jh" style="display: none">
 					<ul class="Activity">
-						<@jp.contents module="jidi" typeSlug="shequfuwu" count="5">
+						<@jp.contents module="base" typeSlug="socialservice" count="5">
 							<#list contents as content>
 								<li>
 									<div class="adimg">
@@ -337,7 +337,7 @@
 						</@jp.contents>
 					</ul>
 					<ul class="Activity">
-						<@jp.contents module="huodong" typeSlug="shequfuwu" count="5">
+						<@jp.contents module="activity" typeSlug="shequfuwu" count="5">
 							<#list contents as content>
 								<li>
 									<div class="adimg">
@@ -575,9 +575,8 @@
 							<a href="JavaScript:;">政策法规</a>
 						</p>
 						<@jp.taxonomy id="1">
-							<span><a href="javascript:;">更多&gt;&gt;</a></span>
+							<span><a href="${taxonomy.url}">更多&gt;&gt;</a></span>
 						</@jp.taxonomy>
-						<!-- <span><a href="javascript:;">更多>></a></span> -->
 					</div>
 					<!--内容-->
 					<!--信息公告-->
@@ -656,15 +655,15 @@
 								<p>公益基地排行</p>
 							</div>
 							<ul>
-								<li class="clearfix"><i>1</i> <em>&nbsp;&nbsp;&nbsp;黄浦区</em> <span>1471978</span></li>
-								<li class="clearfix"><i>2</i> <em>&nbsp;&nbsp;&nbsp;徐汇区</em> <span>1134259</span></li>
-								<li class="clearfix"><i>3</i> <em>&nbsp;&nbsp;&nbsp;普陀区</em> <span>847465</span></li>
-								<li class="clearfix"><i>4</i> <em>&nbsp;&nbsp;&nbsp;长宁区</em> <span>712379</span></li>
-								<li class="clearfix"><i>5</i> <em>&nbsp;&nbsp;&nbsp;闵行区</em> <span>391594</span></li>
-								<li class="clearfix"><i>6</i> <em>&nbsp;&nbsp;&nbsp;杨浦区</em> <span>381305</span></li>
-								<li class="clearfix"><i>7</i> <em>&nbsp;&nbsp;&nbsp;虹口区</em> <span>375064</span></li>
-								<li class="clearfix"><i>8</i> <em>&nbsp;&nbsp;&nbsp;嘉定区</em> <span>333261</span></li>
-								<li class="clearfix"><i>9</i> <em>&nbsp;&nbsp;&nbsp;宝山区</em> <span>257935</span></li>
+								<li><i>1</i> <em>&nbsp;&nbsp;&nbsp;黄浦区</em> <span>1471978</span></li>
+								<li><i>2</i> <em>&nbsp;&nbsp;&nbsp;徐汇区</em> <span>1134259</span></li>
+								<li><i>3</i> <em>&nbsp;&nbsp;&nbsp;普陀区</em> <span>847465</span></li>
+								<li><i>4</i> <em>&nbsp;&nbsp;&nbsp;长宁区</em> <span>712379</span></li>
+								<li><i>5</i> <em>&nbsp;&nbsp;&nbsp;闵行区</em> <span>391594</span></li>
+								<li><i>6</i> <em>&nbsp;&nbsp;&nbsp;杨浦区</em> <span>381305</span></li>
+								<li><i>7</i> <em>&nbsp;&nbsp;&nbsp;虹口区</em> <span>375064</span></li>
+								<li><i>8</i> <em>&nbsp;&nbsp;&nbsp;嘉定区</em> <span>333261</span></li>
+								<li><i>9</i> <em>&nbsp;&nbsp;&nbsp;宝山区</em> <span>257935</span></li>
 							</ul>
 						</div>
 						<div class="newsr_conr">
@@ -673,7 +672,7 @@
 								<p>公益时长排行</p>
 							</div>
 							<ul>
-								<li class="clearfix"><i>1</i> <em>&nbsp;&nbsp;&nbsp;黄浦区</em> <span>36860254</span></li>
+								<li><i>1</i> <em>&nbsp;&nbsp;&nbsp;黄浦区</em> <span>36860254</span></li>
 								<li><i>2</i> <em>&nbsp;&nbsp;&nbsp;徐汇区</em> <span>28083452</span></li>
 								<li><i>3</i> <em>&nbsp;&nbsp;&nbsp;普陀区</em> <span>24850991</span></li>
 								<li><i>4</i> <em>&nbsp;&nbsp;&nbsp;长宁区</em> <span>13786372</span></li>

@@ -1,0 +1,109 @@
+<#include "_layout.html"/>
+<@layout>
+	<!--中间内容-->
+	<div class="list_container_box">
+		<div class="list_condition">
+			<ul class="list_condition_detail">
+				<li><a class="list_active" href="javascript:;">全部</a></li>
+				<li><a href="javascript:;">文化</a></li>
+				<li><a href="javascript:;">教育</a></li>
+				<li><a href="javascript:;">体育</a></li>
+				<li><a href="javascript:;">卫生医疗</a></li>
+				<li><a href="javascript:;">社区</a></li>
+				<li><a href="javascript:;">社区服务</a></li>
+			</ul>
+		</div>
+		<div class="list_container">
+			<!--搜索列表-->
+			<div class="list_search">
+				<ul class="list_search_class">
+					<li class="">
+						<a href="javascript:;">综合排序</a>
+					</li>
+					<li class="list_search_col">
+						<a href="javascript:;">不限状态</a>
+					</li>
+					<li class="list_search_col">
+						<a href="javascript:;">不限时间</a>
+					</li>
+					<li class="list_search_col">
+						<a href="javascript:;">不限地域</a>
+					</li>
+					<li class="list_search_col">
+						<a href="javascript:;">不限排序</a>
+					</li>
+				</ul>
+				<div class="search_box">
+					<input type="text" placeholder="搜索" />
+					<button type="button" class="list_search_botton" value="搜索">搜索</button>
+				</div>
+			</div>
+			<!--搜索列表结束-->
+			<!--列表详细-->
+			<ul class="list_detail">
+				<@jp.contentPage pagesize="10">
+					<#list page.getList() as content>
+						<li class="list_detail_li">
+							<a class="list_img" href="${content.url!}">
+								<img src="${(content.thumbnail)!}" />
+							</a>
+							<dl class="list_detail_content">
+								<dt><a class="list_detail_title clip" href="${content.url!}">${content.title!}</a></dt>
+								<dd class="list_address clip">地址：${content.metadata('_meta5')}</dd>
+								<dd>
+									<div class="list_detail_progress">
+										<span>报名截止:</span>
+										<p>
+											<span class="ldp_jdt" style="width: 20%;"></span>
+										</p>
+										<span>剩<em>300</em>天</span>
+									</div>
+								</dd>
+							</dl>
+							<a class="list_handle">联系基地</a>
+							<ul class="list_operation">
+								<li class="list_operation_li">
+									<i class="list_operation_01"></i>
+									<em>感兴趣</em>
+									<strong>2</strong>
+								</li>
+								<li class="list_operation_li">
+									<i class="list_operation_02"></i>
+									<em>活动数量</em>
+									<strong>20</strong>
+								</li>
+								<li class="list_operation_li">
+									<i class="list_operation_03"></i>
+									<em>关注</em>
+									<strong>200</strong>
+								</li>
+							</ul>
+						</li>
+					</#list>
+					<@pagination>
+						<#list pages as page>
+							<a href="${page.url}">${page.text}</a>
+						</#list>
+					</@pagination>
+				</@jp.contentPage>
+			</ul>
+			<!--列表详细结束-->
+			<!--列表分页-->
+			<!--<div class="list_paging">
+					<ul class="list_paging_ul">
+						<li class="list_paging_first">首页</li>
+						<li class="list_paging_pre">上一页</li>
+						<li class="list_paging_num">1</li>
+						<li class="list_paging_pre">下一页</li>
+						<li class="list_paging_first">尾页</li>
+					</ul>
+					<p>共<strong>1626</strong>条信息分<strong>109</strong>页 每页显示<strong>14</strong>条 当前显示第<strong>1</strong>页</p>
+				</div>-->
+			<!--列表分页结束-->
+		</div>
+	</div>
+	<!--中间内容结束-->
+	</body>
+
+	</html>
+</@layout>
