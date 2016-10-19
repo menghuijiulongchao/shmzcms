@@ -1,75 +1,64 @@
-<#include "_layout.html"/> <@layout>
-<!--头部结束-->
-<!--内容-->
-<div class="news_content clearfix">
-	<div class="news_tit_001">
-		<div class="news_001">
-			<div class="news_t">
-				<a href="${CPATH}">首页</a>> <span>${content.title!}</span>
-				<p>${content.title!}</p>
-			</div>
-			<div class="news_b clearfix">
-				<span>时间：</span><span>${content.created?string('yyyy-MM-dd')!}&nbsp;</span>
-				<span>点击：</span><span>${content.viewCount!'0'}&nbsp;</span> <span>评论：</span><span>${content.commentCount!'0'}</span>
-				<div class="news_b_r">
-					<span>分享：</span> <img src="${CTPATH}/images/QQ-hover.png" /> <img
-						src="${CTPATH}/images/wechat.png" /> <img
-						src="${CTPATH}/images/weibo-hover.png" />
+<#include "_layout.html"/>
+<@layout>
+	<!--头部结束-->
+	<!--内容-->
+	<div class="news_content clearfix">
+		<div class="news_tit_001">
+			<div class="news_001">
+				<div class="news_t">
+					<a href="${CPATH}">首页</a>> <span>${content.title!}</span>
+					<p>${content.title!}</p>
+				</div>
+				<div class="news_b clearfix">
+					<span>时间：</span><span>${content.created?string('yyyy-MM-dd')!}&nbsp;</span> <span>点击：</span><span>${content.viewCount!'0'}&nbsp;</span> <span>评论：</span><span>${content.commentCount!'0'}</span>
+					<div class="news_b_r">
+						<span>分享：</span> <img src="${CTPATH}/images/QQ-hover.png" /> <img src="${CTPATH}/images/wechat.png" /> <img src="${CTPATH}/images/weibo-hover.png" />
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="news_article clearfix">
-			<div class="news_article_content clearfix">${content.text!}</div>
+		<div class="news_article">
+			<div class="news_maincontent_wrapper">
+				<div class='articlecontent'>
+					${content.text!}
+				</div>
+				<!-- 评论 -->
+				<div class='article_comment_wrapper'>
+					<div class="dConBox">
+						<h2>评论(0)</h2>
+					</div>
+					<div class="dConBox_b clearfix">
+						<textarea class="dConBox_box"></textarea>
+						<div class="dConBox_bot">
+							<span>发表评论，请先<a href="JavaScript:;">登陆</a></span>
+							<div class='submmit'>
+								<input type='button' value='提交'>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 			<!--志愿快讯-->
 			<div class="Newsintro_tzgg">
 				<div class="TRTopTitleCon">
 					<h2>志愿快讯</h2>
 				</div>
 				<ul>
-					<@jp.contents module="huodong" count="5"> <#list contents as
-					content>
-					<li class="clearfix">
-						<div class="zyz_img">
-							<img src="${(content.thumbnail)!}"/>
-						</div>
-						<div class="zyz_cont">
-							<p>${content.title!}</p>
-							<a href="${content.url!}">阅读全文>></a>
-						</div>
-					</li> </#list> </@jp.contents>
+					<@jp.contents module="huodong" count="5">
+						<#list contents as content>
+							<li class="clearfix">
+								<div class="zyz_img">
+									<img src="${(content.thumbnail)!}" />
+								</div>
+								<div class="zyz_cont">
+									<p>${content.title!}</p>
+									<a href="${content.url!}">阅读全文>></a>
+								</div>
+							</li>
+						</#list>
+					</@jp.contents>
 				</ul>
-			</div>
-
-			<!-- 评论 -->
-			<div class="clearfix" >
-				<div class="dConBox-Bottom">
-					<div class="dConBox-Btit">
-						<h2>
-							评论<i>(0)</i>
-						</h2>
-					</div>
-					<div class="dConBox-BconBox" >
-						<form action="" method="post"
-							id="pinglunform">
-							<div class="dB-review">
-								<div class="hidden"></div>
-								<input type="hidden"
-									name="plistingReview.gdSitePageListing.pageNo"
-									value="506029372543"> <input type="hidden"
-									name="plistingReview.users.userId" value=""> <input
-									type="hidden" name="plistingReview.userName" value="">
-								<textarea id='WeiboNewContent_s' name="plistingReview.contents"
-									class="sendMsg"></textarea>
-									</br>
-								<input class="pinglun" type="submit" value="评 论">
-							</div>
-						</form>
-						<ul>
-						</ul>
-					</div>
-				</div>
 			</div>
 		</div>
 	</div>
-</div>
 </@layout>

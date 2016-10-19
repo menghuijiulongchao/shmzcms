@@ -4,6 +4,10 @@
 	clear: both;
 }
 /*-----------*/
+.article_comment_wrapper{
+	margin: 20px 0;
+	width: 100%;
+}
 .news_content .news_tit_001{
 	width: 100%;
 	height: 134px;
@@ -12,6 +16,11 @@
 }
 .news_maincontent_wrapper{
 	float: left;
+	margin: 0 0 100px 0;
+}
+.news_maincontent_wrapper .articlecontent{
+	margin: 20px 0;
+	min-height: 240px;
 }
 .news_content .news_001{
 	width: 1200px;
@@ -65,8 +74,6 @@
 /*内容*/
 .news_content .news_article{
 	width: 1200px;
-	padding-top: 50px;
-	padding-bottom: 100px;
 	margin:0 auto;
 }
 .news_content .news_article:after{
@@ -88,14 +95,12 @@
 }
 .news_content .news_article .news_ans{
 	width: 875px;
-	height: 20px;
 	margin-top: 30px;
 	padding-left: 30px;
 }
 .news_content .dConBox{
 	width: 875px;
 	height: 60px;
-	margin-top: 150px;
 	margin-left: 20px;
 	padding-left: 20px;
 	border: solid 1px #d7d4d4;
@@ -108,23 +113,23 @@
 }
 .news_content .dConBox_b{
 	width: 895px;
-	height: 200px;
 	margin-left: 20px;
-	padding-top: 30px;
+	padding: 30px 0;
 	border: solid 1px #d7d4d4;
 
 	border-top: solid 0px;
+	overflow: hidden;
 }
 .news_content .dConBox_b .dConBox_box{
 	width: 835px;
 	height: 80px;
+	max-width: 835px;
 	margin:0px 30px 0 30px;
 	border: solid 1px #d7d4d4;
 }
 .news_content .dConBox_b .dConBox_bot{
 	float: right;
-	width: 110px;
-	height: 20px;
+	width: 140px;
 	padding-top: 10px;
 	padding-right: 25px;
 }
@@ -136,7 +141,21 @@
 .news_content .dConBox_b .dConBox_bot span a{
 	color: red;
 }
-
+.news_content .dConBox_b .dConBox_bot .submmit input{
+	float: right;
+	width: 100px;
+	height: 40px;
+	background: #0b52a1;
+	color: #fff;
+	font-family: 'microsoft yahei';
+	font-size: 16px;
+	border: 0;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.news_content .dConBox_b .dConBox_bot .submmit input:active{
+	background: #032b56;
+}
 /*志愿快讯*/
 .news_content .news_article .Newsintro_tzgg{
 	float: right;

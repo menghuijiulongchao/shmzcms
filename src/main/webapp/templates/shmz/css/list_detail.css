@@ -53,11 +53,11 @@
 
 /*主体样式*/
 
-.dConBox {
+/*.dConBox {
 	width: 100%;
 	min-width: 1200px;
 	background-color: #ecf2f5;
-}
+}*/
 .dConBox .dConBox-In {
 	width: 1200px;
 	margin: 0 auto;
