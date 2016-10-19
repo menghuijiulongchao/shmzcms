@@ -92,7 +92,7 @@
 				<!-- 全部开始 -->
 				<div class="acbox_jh" style="display: inline-block">
 					<ul class="Activity">
-						<@jp.contents module="jidi" count="5">
+						<@jp.contents module="base" count="5">
 							<#list contents as content>
 								<li>
 									<div class="adimg">
@@ -109,7 +109,7 @@
 						</@jp.contents>
 					</ul>
 					<ul class="Activity">
-						<@jp.contents module="huodong" count="5">
+						<@jp.contents module="activity" count="5">
 							<#list contents as content>
 								<li>
 									<div class="adimg">
@@ -130,7 +130,7 @@
 				<!-- 文化开始 -->
 				<div class="acbox_jh" style="display: none">
 					<ul class="Activity">
-						<@jp.contents module="jidi" typeSlug="wenhua" count="5">
+						<@jp.contents module="base" typeSlug="wenhua" count="5">
 							<#list contents as content>
 								<li>
 									<div class="adimg">
@@ -574,7 +574,10 @@
 						<p class="news_nav1">
 							<a href="JavaScript:;">政策法规</a>
 						</p>
-						<span><a href="javascript:;">更多>></a></span>
+						<@jp.taxonomy id="1">
+							<a href="${taxonomy.url}">更多&gt;&gt;</a>
+						</@jp.taxonomy>
+						<!-- <span><a href="javascript:;">更多>></a></span> -->
 					</div>
 					<!--内容-->
 					<!--信息公告-->
