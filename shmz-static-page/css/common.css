@@ -168,7 +168,7 @@
 
 .com_yqlj {
 	width: 1200px;
-	padding-bottom: 20px;
+	padding: 80px;
 	margin: 0px auto;
 	text-align: center;
 	font-size: 0;
@@ -192,6 +192,7 @@
 	vertical-align: middle;
 }
 .com_yqlj .com_yqlj_right li {
+	display: inline-block;
 	margin: 0px 4px;
 }
 .com_yqlj .com_yqlj_right li:hover a {
