@@ -91,7 +91,7 @@
 			<div class="acbox">
 				<!-- 全部开始 -->
 				<div class="acbox_jh" style="display: inline-block">
-					<ul class="Activity">
+					<ul>
 						<@jp.contents module="base" typeSlug="allbases" count="5">
 							<#list contents as content>
 								<li>
@@ -102,13 +102,13 @@
 									<h3>
 							<a href="${content.url!}">${content.title!}</a>
 						</h3>
-									<p>地点：${content.metadata('_meta5')}</p>
-									<p>申报时间：${content.metadata('_meta6')}</p>
+									<p>地点：${content.metadata('_meta1')}</p>
+									<p>申报时间：${content.metadata('_meta2')}</p>
 								</li>
 							</#list>
 						</@jp.contents>
 					</ul>
-					<ul class="Activity">
+					<ul>
 						<@jp.contents module="activity" count="5">
 							<#list contents as content>
 								<li>
@@ -119,7 +119,7 @@
 									<h3>
 							<a href="${content.url!}">${content.title!}</a>
 						</h3>
-									<p style="width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: black;">地点：${content.metadata('_meta1')}</p>
+									<p>地点：${content.metadata('_meta1')}</p>
 									<p>开始时间：${content.metadata('_meta2')}</p>
 								</li>
 							</#list>
@@ -129,7 +129,7 @@
 				<!-- 全部结束 -->
 				<!-- 文化开始 -->
 				<div class="acbox_jh" style="display: none">
-					<ul class="Activity">
+					<ul>
 						<@jp.contents module="base" typeSlug="culture" count="5">
 							<#list contents as content>
 								<li>
@@ -140,13 +140,13 @@
 									<h3>
 							<a title="${content.title!}" href="${content.url!}">${content.title!}</a>
 						</h3>
-									<p>地点：${content.metadata('_meta5')}</p>
-									<p>申报时间：${content.metadata('_meta6')}</p>
+									<p>地点：${content.metadata('_meta1')}</p>
+									<p>申报时间：${content.metadata('_meta2')}</p>
 								</li>
 							</#list>
 						</@jp.contents>
 					</ul>
-					<ul class="Activity">
+					<ul>
 						<@jp.contents module="activity" typeSlug="wenhua" count="5">
 							<#list contents as content>
 								<li>
@@ -157,7 +157,7 @@
 									<h3>
 							<a title="${content.title!}" href="${content.url!}">${content.title!}</a>
 						</h3>
-									<p style="width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: black;">地点：${content.metadata('_meta1')}</p>
+									<p>地点：${content.metadata('_meta1')}</p>
 									<p>开始时间：${content.metadata('_meta2')}</p>
 								</li>
 							</#list>
@@ -167,7 +167,7 @@
 				<!-- 文化结束 -->
 				<!-- 体育开始 -->
 				<div class="acbox_jh" style="display: none">
-					<ul class="Activity">
+					<ul>
 						<@jp.contents module="base" typeSlug="sport" count="5">
 							<#list contents as content>
 								<li>
@@ -176,15 +176,15 @@
 										</a>
 									</div>
 									<h3>
-							<a href="${content.url!}">${content.title!}</a>
-						</h3>
-									<p>地点：${content.metadata('_meta5')}</p>
-									<p>申报时间：${content.metadata('_meta6')}</p>
+										<a href="${content.url!}">${content.title!}</a>
+									</h3>
+									<p>地点：${content.metadata('_meta1')}</p>
+									<p>申报时间：${content.metadata('_meta2')}</p>
 								</li>
 							</#list>
 						</@jp.contents>
 					</ul>
-					<ul class="Activity">
+					<ul>
 						<@jp.contents module="activity" typeSlug="tiyu" count="5">
 							<#list contents as content>
 								<li>
@@ -195,7 +195,7 @@
 									<h3>
 							<a href="${content.url!}">${content.title!}</a>
 						</h3>
-									<p style="width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: black;">地点：${content.metadata('_meta1')}</p>
+									<p>地点：${content.metadata('_meta1')}</p>
 									<p>开始时间：${content.metadata('_meta2')}</p>
 								</li>
 							</#list>
@@ -205,7 +205,7 @@
 				<!-- 体育结束 -->
 				<!-- 教育开始 -->
 				<div class="acbox_jh" style="display: none">
-					<ul class="Activity">
+					<ul>
 						<@jp.contents module="base" typeSlug="education" count="5">
 							<#list contents as content>
 								<li>
@@ -216,13 +216,13 @@
 									<h3>
 							<a href="${content.url!}">${content.title!}</a>
 						</h3>
-									<p>地点：${content.metadata('_meta5')}</p>
-									<p>申报时间：${content.metadata('_meta6')}</p>
+									<p>地点：${content.metadata('_meta1')}</p>
+									<p>申报时间：${content.metadata('_meta2')}</p>
 								</li>
 							</#list>
 						</@jp.contents>
 					</ul>
-					<ul class="Activity">
+					<ul>
 						<@jp.contents module="activity" typeSlug="jiaoyu" count="5">
 							<#list contents as content>
 								<li>
@@ -233,7 +233,7 @@
 									<h3>
 							<a href="${content.url!}">${content.title!}</a>
 						</h3>
-									<p style="width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: black;">地点：${content.metadata('_meta1')}</p>
+									<p>地点：${content.metadata('_meta1')}</p>
 									<p>开始时间：${content.metadata('_meta2')}</p>
 								</li>
 							</#list>
@@ -243,7 +243,7 @@
 				<!-- 教育结束 -->
 				<!-- 卫生医疗开始 -->
 				<div class="acbox_jh" style="display: none">
-					<ul class="Activity">
+					<ul>
 						<@jp.contents module="base" typeSlug="medication" count="5">
 							<#list contents as content>
 								<li>
@@ -254,13 +254,13 @@
 									<h3>
 							<a href="${content.url!}">${content.title!}</a>
 						</h3>
-									<p>地点：${content.metadata('_meta5')}</p>
-									<p>申报时间：${content.metadata('_meta6')}</p>
+									<p>地点：${content.metadata('_meta1')}</p>
+									<p>申报时间：${content.metadata('_meta2')}</p>
 								</li>
 							</#list>
 						</@jp.contents>
 					</ul>
-					<ul class="Activity">
+					<ul>
 						<@jp.contents module="activity" typeSlug="weishengyiliao" count="5">
 							<#list contents as content>
 								<li>
@@ -271,7 +271,7 @@
 									<h3>
 							<a href="${content.url!}">${content.title!}</a>
 						</h3>
-									<p style="width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: black;">地点：${content.metadata('_meta1')}</p>
+									<p>地点：${content.metadata('_meta1')}</p>
 									<p>开始时间：${content.metadata('_meta2')}</p>
 								</li>
 							</#list>
@@ -281,7 +281,7 @@
 				<!-- 卫生医疗结束 -->
 				<!-- 社区开始 -->
 				<div class="acbox_jh" style="display: none">
-					<ul class="Activity">
+					<ul>
 						<@jp.contents module="base" typeSlug="social" count="5">
 							<#list contents as content>
 								<li>
@@ -292,13 +292,13 @@
 									<h3>
 							<a href="${content.url!}">${content.title!}</a>
 						</h3>
-									<p>地点：${content.metadata('_meta5')}</p>
-									<p>申报时间：${content.metadata('_meta6')}</p>
+									<p>地点：${content.metadata('_meta1')}</p>
+									<p>申报时间：${content.metadata('_meta2')}</p>
 								</li>
 							</#list>
 						</@jp.contents>
 					</ul>
-					<ul class="Activity">
+					<ul>
 						<@jp.contents module="activity" typeSlug="shequ" count="5">
 							<#list contents as content>
 								<li>
@@ -309,7 +309,7 @@
 									<h3>
 							<a href="${content.url!}">${content.title!}</a>
 						</h3>
-									<p style="width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: black;">地点：${content.metadata('_meta1')}</p>
+									<p>地点：${content.metadata('_meta1')}</p>
 									<p>开始时间：${content.metadata('_meta2')}</p>
 								</li>
 							</#list>
@@ -319,7 +319,7 @@
 				<!-- 社区结束 -->
 				<!-- 社会服务开始 -->
 				<div class="acbox_jh" style="display: none">
-					<ul class="Activity">
+					<ul>
 						<@jp.contents module="base" typeSlug="socialservice" count="5">
 							<#list contents as content>
 								<li>
@@ -330,13 +330,13 @@
 									<h3>
 							<a href="${content.url!}">${content.title!}</a>
 						</h3>
-									<p>地点：${content.metadata('_meta5')}</p>
-									<p>申报时间：${content.metadata('_meta6')}</p>
+									<p>地点：${content.metadata('_meta1')}</p>
+									<p>申报时间：${content.metadata('_meta2')}</p>
 								</li>
 							</#list>
 						</@jp.contents>
 					</ul>
-					<ul class="Activity">
+					<ul>
 						<@jp.contents module="activity" typeSlug="shequfuwu" count="5">
 							<#list contents as content>
 								<li>
@@ -347,7 +347,7 @@
 									<h3>
 							<a href="${content.url!}">${content.title!}</a>
 						</h3>
-									<p style="width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: black;">地点：${content.metadata('_meta1')}</p>
+									<p>地点：${content.metadata('_meta1')}</p>
 									<p>开始时间：${content.metadata('_meta2')}</p>
 								</li>
 							</#list>
@@ -574,7 +574,7 @@
 						<p class="news_nav1">
 							<a href="JavaScript:;">政策法规</a>
 						</p>
-						<@jp.taxonomy id="1">
+						<@jp.taxonomy id="33">
 							<span><a href="${taxonomy.url}">更多&gt;&gt;</a></span>
 						</@jp.taxonomy>
 					</div>

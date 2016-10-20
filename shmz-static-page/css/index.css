@@ -406,10 +406,6 @@ a {
 	color: #333333;
 	text-decoration: none;
 }
-li {
-	list-style-type: none;
-	display: inline-block;
-}
 .con_sec {
 	width: 100%;
 	min-width: 1200px;
@@ -428,6 +424,7 @@ li {
 	height: 40px;
 }
 .con_sec .con_sec_in li {
+	display: inline-block;
 	font-size: 16px;
 	margin-right: 5px;
 	line-height: 40px;

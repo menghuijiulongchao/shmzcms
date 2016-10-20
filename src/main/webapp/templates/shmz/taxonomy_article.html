@@ -40,46 +40,26 @@
 				<!--搜索列表结束-->
 				<!--列表详细-->
 				<ul class="list_detail">
-				<@jp.contents module="jidi" count="10">
-						<#list contents as content>
-					<li class="list_detail_li">
-						<a class="list_img" href="${content.url!}">
-							<img src="${(content.thumbnail)!}"/>
-						</a>
-						<dl class="list_detail_content">
-								<dt><a class="list_detail_title clip" href="${content.url!}">${content.title!}</a></dt>
-								<dd class="list_address clip">地址：${content.metadata('_meta5')}</dd>
-								<dd>
-									<div class="list_detail_progress">
-										<span>报名截止:</span>
-										<p>
-											<span class="ldp_jdt" style="width: 20%;"></span>
-										</p>
-										<span>剩<em>300</em>天</span>
-									</div>
-								</dd>
-						</dl>
-						<a class="list_handle">联系基地</a>
-						<ul class="list_operation">
-							<li class="list_operation_li">
-								<i class="list_operation_01"></i>
-								<em>感兴趣</em>
-								<strong>2</strong>
-							</li>
-							<li class="list_operation_li">
-								<i class="list_operation_02"></i>
-								<em>活动数量</em>
-								<strong>20</strong>
-							</li>
-							<li class="list_operation_li">
-								<i class="list_operation_03"></i>
-								<em>关注</em>
-								<strong>200</strong>
-							</li>
-						</ul>
-					</li>
-						</#list>
-				</@jp.contents>
+				 <@jp.contentPage module="article" count="10">
+                    <#list page.getList() as content>
+                        <li class="list_detail_li">
+                            <a class="list_img" href='${content.url!}'>
+                                <img src="${(content.thumbnail)!}" />
+                            </a>
+                            <dl class="list_detail_content">
+                                <h6 class='list_detail_title'><a href="${content.url!}">${content.title!}</a></h6>
+                                <p>
+                                	${(content.summary)!}
+                                </p>
+                            </dl>
+                        </li>
+                    </#list>
+                    <@pagination>
+                        <#list pages as page>
+                            <a href="${page.url}">${page.text}</a>
+                        </#list>
+                    </@pagination>
+                </@jp.contentPage>
 				</ul>
 				
 				<!--列表详细结束-->
