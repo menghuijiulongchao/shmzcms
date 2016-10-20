@@ -25,8 +25,6 @@ $(function() {
     Num_Handle("#center_num_01");
     Num_Handle("#center_num_02");
     Num_Handle("#center_num_03");
-    //海报轮播
-    swiper();
 
     //数字处理
     function Num_Handle(NumValue) {
@@ -54,12 +52,5 @@ $(function() {
         })
     }
 
-    function swiper() {
-        var swiper = new Swiper('.banner', {
-            loop: true,
-            pagination: '.banner_icon',
-            paginationClickable: true,
-            autoplay: 5000
-        })
-    }
+    
 });

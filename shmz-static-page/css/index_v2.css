@@ -8,7 +8,7 @@
 }
 .index_shoecaselist_wrapper{
 	display: inline-block;
-	margin: 0 15px 0 0;
+	margin: 0 8px 0 0;
 	width: 260px;
 	font-size: 15px;
 	vertical-align: top;
@@ -23,69 +23,264 @@
 	font-size: 16px;
 	border: 1px solid #ccc;
 }
-.index_shoecaselist_wrapper li:hover{
+.index_shoecaselist_wrapper li a:hover{
 	border: 1px solid #3e79b8;
+	color: #3e79b8;
 	transition: all 0.3s;
+}
+.index_shoecaselist_wrapper>.active a{
+	background: #3e79b8;
+	color: #fff;
+	transition: all 0.3s;
+}
+.index_shoecaselist_wrapper>.active a:hover{
+	color: #fff;
 }
 .index_shoecaselist_wrapper li a{
 	display: block;
+	border: 1px solid transparent;
 }
 
-.index_shoecase_wrapper .maincontent{
+.index_maincontent_wrapper{
 	display: inline-block;
+	padding: 0 10px;
 	width: 900px;
 	height: 420px;
 	vertical-align: top;
 	border: 1px solid #ccc;
 }
-.index_shoecase_wrapper .basecontent{
+.index_maincontent_wrapper>li{
+	display: none;
+}
+.index_maincontent_wrapper>.active{
+	display: block;
+}
+.index_basecontent_wrapper{
 	width: 100%;
 }
-.index_shoecase_wrapper .basecontent .tab{
+.index_maincontent_wrapper .title{
 	width: 100%;
+	height: 50px;
 	font-size: 16px;
 	overflow: hidden;
 }
-.index_shoecase_wrapper .basecontent .tab ul{
+.index_maincontent_wrapper .title ul{
 	display: inline-block;
 }
-.index_shoecase_wrapper .basecontent .tab li{
+.index_maincontent_wrapper .title li{
 	display: inline-block;
 	width: 80px;
 	height: 30px;
 	text-align: center;
 }
-.index_shoecase_wrapper .basecontent .tab li a{
+.index_maincontent_wrapper .title li a{
 	display: block;
 	height: 100%;
 	line-height: 30px;
 }
-.index_shoecase_wrapper .basecontent .tab li:hover a{
+.index_maincontent_wrapper .title li:hover a{
 	background: #3e79b8;
 	color: #fff;
 	transition: all 0.3s;
 }
-.index_shoecase_wrapper .basecontent .tab .more{
+.index_maincontent_wrapper .title .more{
 	float: right;
-	margin: 3px;
-	font-size: 13px;
+	margin: 10px 20px;
+	font-size: 15px;
 }
-.index_shoecase_wrapper .basecontent li{
+.index_maincontent_wrapper .title .more:hover{
+	text-decoration: underline;
+}
+.index_basecontent_wrapper li{
 	display: inline-block;
 }
-.index_shoecase_wrapper .basecontent .list_wrpper{
+.index_basecontent_wrapper .list_wrpper{
 	width: 100%;
 }
-.index_shoecase_wrapper .basecontent .list_wrpper .type_wrapper{
-	display: none;
-}
-.index_shoecase_wrapper .basecontent .list_wrpper .type_wrapper.active{
+.index_basecontent_wrapper .list_wrpper.active{
 	display: block;
 }
-.index_shoecase_wrapper .basecontent .list_wrpper .type_wrapper li{
+.index_basecontent_wrapper .list_wrpper li{
 	display: inline-block;
-	margin:  9px;
+	padding: 5px;
+	margin: 0 6px;
 	width: 200px;
-	height: 130px;
 	border: 1px solid #ccc;
+
+	overflow: hidden;
+}
+.index_basecontent_wrapper .list_wrpper li:hover{
+	border: 1px solid #999;
+}
+.index_basecontent_wrapper .list_wrpper li a{
+	display: inline-block;
+	margin: 0 0 10px 0;
+	
+	font-size: 15px;
+	overflow: hidden;
+}
+.index_basecontent_wrapper .list_wrpper li .thumbnail{
+	height: 150px;
+}
+
+.index_basecontent_wrapper .list_wrpper li p{
+	margin: 0 0 10px 0;
+	font-size: 13px;
+	color: #333;
+}
+.index_basecontent_wrapper .list_wrpper li .desc span{
+	float: left;
+	width: 33%;
+}
+.index_basecontent_wrapper .list_wrpper li .desc label{
+	float: left;
+	width: 67%;
+}
+.index_basecontent_wrapper .list_wrpper li img{
+	display: inline-block;
+	width: 100%;
+}
+.index_pioneer_wrapper .list_wrpper{
+	padding: 30px 0;
+}
+.index_pioneer_wrapper .list_wrpper li{
+	display: inline-block;
+	margin: 10px 0 10px 25px;
+	width: 200px;
+}
+.index_pioneer_wrapper .list_wrpper li .avatar{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	vertical-align: middle;
+}
+.index_pioneer_wrapper .list_wrpper li .avatar img{
+	width: 100%;
+
+}
+.index_pioneer_wrapper .list_wrpper li .desc{
+	display: inline-block;
+	margin: 0 0 0 20px;
+	width: 130px;
+	font-size: 13px;
+	vertical-align: middle;
+}
+.index_pioneer_wrapper .list_wrpper li .desc span{
+	display: block;
+
+	color: #666;
+}
+.index_pioneer_wrapper .list_wrpper li .desc label{
+	display: block;
+	margin: 0 0 5px 0;
+}
+.index_article_wrapper .headline{
+	display: inline-block;
+	padding: 0 10px;
+	width: 80%;
+	line-height: 50px;
+}
+.index_article_wrapper .headline a:hover{
+	color: #3e79b8;
+}
+.index_article_wrapper .carousel{
+	display: inline-block;
+	margin: 50px 0;
+	width: 400px;
+	height: 260px;
+	position: relative;
+	overflow: hidden;
+}
+.index_article_wrapper .carousel ul{
+	width: 360px;
+	height: 260px;
+}
+.index_article_wrapper .carousel ul li{
+	height: 100%;
+}
+.index_article_wrapper .carousel ul li a{
+	display: block;
+}
+.index_article_wrapper .carousel ul li a img{
+	width: 100%;
+}
+.index_article_wrapper .carousel ul li a p{
+	padding: 0 5%;
+	width: 90%;
+	height: 30px;
+	line-height: 30px;
+	color: #fff;
+	font-size: 14px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+
+}
+.index_article_wrapper .carousel ul li a .desc{
+	width: 100%;
+	height: 30px;
+	background: rgba(0,0,0,15);
+	position: absolute;
+	bottom: 0;
+}
+.index_article_wrapper .carousel ul li a .desc p{
+	position: absolute;
+	left: 0;
+}
+.index_article_wrapper .carousel .pagination{
+	width: 20%;
+	position: absolute;
+	right: 0;
+	z-index: 2;
+}
+.index_articlelist_wrapper{
+	display: inline-block;
+	margin: 0 0 0 30px;
+	width: 450px;
+	height: 355px;
+	vertical-align: top;
+	font-size: 15px;
+	position: relative;
+}
+.index_articlelist_wrapper .tab li{
+	display: inline-block;
+	width: 30%;
+}
+.index_articlelist_wrapper .tab li a{
+	display: block;
+	padding: 10px 0;
+	
+	text-align: center;
+}
+.index_articlelist_wrapper .list{
+	padding: 10px;
+	height: 300px;
+	position: relative;
+}
+.index_articlelist_wrapper .list>ul{
+	padding: 10px 0;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.index_articlelist_wrapper .list li{
+	padding: 0 10px;
+}
+.index_articlelist_wrapper .list li h6{
+	padding: 5px 0;
+}
+.index_articlelist_wrapper .list li p{
+	height: 30px;
+	font-size: 12px;
+	color: #999;
+}
+.index_articlelist_wrapper .list li label{
+	color: #ddd;
+}
+.index_articlelist_wrapper .list li a:hover{
+	text-decoration: underline;
+}
+.index_articlelist_wrapper .tab .active{
+	border-bottom: solid 1px #da4453;
 }

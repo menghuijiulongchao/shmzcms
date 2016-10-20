@@ -1,4 +1,6 @@
-﻿
+﻿*{
+	font-family: 'microsoft yahei';
+}
 .container {
 	width: 100%;
 	min-width: 1200px;

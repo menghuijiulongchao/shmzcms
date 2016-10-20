@@ -1,92 +1,97 @@
-<#macro script_import> </#macro> <#macro script> </#macro> <#macro
-css_import> </#macro> <#macro css> </#macro> <#macro layout>
-<!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>${WEB_TITLE!WEB_NAME!} - ${WEB_SUBTITLE!}</title>
-<link rel="stylesheet" href="${CTPATH}/assets/css/swiper.css" />
-<link rel="stylesheet" href="${CTPATH}/css/reset.css" />
-<link rel="stylesheet" href="${CTPATH}/css/common.css" />
-<link rel="stylesheet" href="${CTPATH}/css/index.css" />
-<link rel="stylesheet" href="${CTPATH}/css/list_detail.css" />
-<link rel="stylesheet" href="${CTPATH}/css/list_news.css" />
-
-</head>
-<body>
-	<div class='common_header_container'>
-		<div class="h_header">
-			<div class="h_logo">
-				<img src="${CTPATH}/images/logo.png" alt="logo" class="logo_img" />
-			</div>
-			<div class="common_nav_wrapper">
-				<ul>
-					<li><a href="${CPATH}/">首页</a></li>
-					<@jp.menus> 
-						<#list menus as menu>
-							<li>
-								<a href="${menu.url!}"> ${menu.title!} <#if menu.isActive() > <span class="x-a-border"></span> </#if>
-								</a>
-							</li>
-						</#list> 
-					</@jp.menus>
-				</ul>
-			</div>
-			<!-- <div class="common_nav_wrapper">
-				<ul>
-					<li><a href="${CPATH}/">首页</a></li>
-					<li><a href="javascript:;">公益活动</a></li>
-					<li><a href="javascript:;">公益组织</a></li>
-					<li><a href="javascript:;">亲子体验</a></li>
-					<li><a href="javascript:;">时长公示</a></li>
-					<li><a href="javascript:;">帮助中心</a></li>
-				</ul>
-			</div> -->
-			<div class='leftside_wrapper'>
-				<div class="h_login_reg">
-					<a class="h_login" href="javascript:;">登录</a>
-					<a class="h_reg" href="javascript:;">注册</a>
-				</div>
-				<div class="h_language">
-					<div class="h_china">
-						<a href="javascript:;">
-							<p>中</p>
-						</a>
-					</div>
-					<div class="h_English">
-						<a href="javascript:;">
-							<p>EN</p>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<#nested>
-	<!--底部-->
-	<div class="footer">
-		<div class="footer_con">
-			<div class="footer_ewm">
-				<img class="footer_ewm_img01" src="${CTPATH}/images/erweima.png">
-				<p class="footer_ewm_text">扫描二维码下载App</p>
-			</div>
-			<p class="copyright">${OPTION('web_copyright')!'暂未填写版权信息'}${OPTION('web_icp_number')!}</p>
-			<ul class="enjon_icon">
-				<li><a href="javascript:;" class="icon_01"></a></li>
-				<li><a href="javascript:;" class="icon_02"></a></li>
-				<li><a href="javascript:;" class="icon_03"></a></li>
-			</ul>
-		</div>
-	</div>
-	<!--底部-->
-	<@script_import />
-	<script type="text/javascript" src="${CTPATH}/assets/js/jquery.js"></script>
-	<script type="text/javascript" src="${CTPATH}/assets/js/swiper.min.js"></script>
-	<script type="text/javascript" src="${CTPATH}/js/base.js"></script>
-	<@script />
-</body>
-
-</html>
+<#macro script_import>
 </#macro>
+<#macro script>
+</#macro>
+<#macro css_import>
+</#macro>
+<#macro css>
+</#macro>
+<#macro layout>
+	<!DOCTYPE html>
+	<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>${WEB_TITLE!WEB_NAME!} - ${WEB_SUBTITLE!}</title>
+		<link rel="stylesheet" href="${CTPATH}/assets/css/swiper.css" />
+		<link rel="stylesheet" href="${CTPATH}/css/reset.css" />
+		<link rel="stylesheet" href="${CTPATH}/css/common.css" />
+		<link rel="stylesheet" href="${CTPATH}/css/index.css" />
+		<link rel="stylesheet" href="${CTPATH}/css/list_detail.css" />
+		<link rel="stylesheet" href="${CTPATH}/css/list_news.css" />
+	</head>
+
+	<body>
+		<div class='common_header_container'>
+			<div class="h_header">
+				<div class="h_logo">
+					<img src="${CTPATH}/images/logo.png" alt="logo" class="logo_img" />
+				</div>
+				<div class="common_nav_wrapper">
+					<ul>
+						<li><a href="${CPATH}/">首页</a></li>
+						<@jp.menus>
+							<#list menus as menu>
+								<li>
+									<a href="${menu.url!}"> ${menu.title!} <#if menu.isActive() > <span class="x-a-border"></span> </#if>
+								</a>
+								</li>
+							</#list>
+						</@jp.menus>
+					</ul>
+				</div>
+				<div class='leftside_wrapper'>
+					<div class="h_login_reg">
+						<a class="h_login" href="javascript:;">登录</a>
+						<a class="h_reg" href="javascript:;">注册</a>
+					</div>
+					<div class="h_language">
+						<div class="h_china">
+							<a href="javascript:;">
+								<p>中</p>
+							</a>
+						</div>
+						<div class="h_English">
+							<a href="javascript:;">
+								<p>EN</p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<#nested>
+			<!--底部-->
+			<div class="footer">
+				<div class="footer_con">
+					<div class="footer_ewm">
+						<img class="footer_ewm_img01" src="${CTPATH}/images/erweima.png">
+						<p class="footer_ewm_text">扫描二维码下载App</p>
+					</div>
+					<p class="copyright">${OPTION('web_copyright')!'暂未填写版权信息'}${OPTION('web_icp_number')!}</p>
+					<ul class="enjon_icon">
+						<li>
+							<a href="javascript:;" class="icon_01"></a>
+						</li>
+						<li>
+							<a href="javascript:;" class="icon_02"></a>
+						</li>
+						<li>
+							<a href="javascript:;" class="icon_03"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--底部-->
+			<@script_import />
+			<script type="text/javascript" src="${CTPATH}/assets/js/jquery.js"></script>
+			<script type="text/javascript" src="${CTPATH}/assets/js/swiper.min.js"></script>
+			<script type="text/javascript" src="${CTPATH}/js/base.js"></script>
+			<@script />
+	</body>
+
+	</html>
+</#macro>
+
