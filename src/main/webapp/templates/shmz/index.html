@@ -102,14 +102,13 @@
 									<h3>
 							<a href="${content.url!}">${content.title!}</a>
 						</h3>
-									<p>地点：${content.metadata('_meta1')}</p>
-									<p>申报时间：${content.metadata('_meta2')}</p>
+									<p>地点：${content.metadata('_meta1')!}</p>
 								</li>
 							</#list>
 						</@jp.contents>
 					</ul>
 					<ul>
-						<@jp.contents module="activity" count="5">
+						<@jp.contents module="activity" typeSlug="allactivities"  count="5">
 							<#list contents as content>
 								<li>
 									<div class="adimg">
@@ -119,7 +118,7 @@
 									<h3>
 							<a href="${content.url!}">${content.title!}</a>
 						</h3>
-									<p>地点：${content.metadata('_meta1')}</p>
+									<p>地点：${content.metadata('_meta1')!}</p>
 									<p>开始时间：${content.metadata('_meta2')}</p>
 								</li>
 							</#list>
@@ -140,14 +139,14 @@
 									<h3>
 							<a title="${content.title!}" href="${content.url!}">${content.title!}</a>
 						</h3>
-									<p>地点：${content.metadata('_meta1')}</p>
+									<p>地点：${content.metadata('_meta1')!}</p>
 									<p>申报时间：${content.metadata('_meta2')}</p>
 								</li>
 							</#list>
 						</@jp.contents>
 					</ul>
 					<ul>
-						<@jp.contents module="activity" typeSlug="wenhua" count="5">
+						<@jp.contents module="activity" typeSlug="culture" count="5">
 							<#list contents as content>
 								<li>
 									<div class="adimg">
@@ -157,7 +156,7 @@
 									<h3>
 							<a title="${content.title!}" href="${content.url!}">${content.title!}</a>
 						</h3>
-									<p>地点：${content.metadata('_meta1')}</p>
+									<p>地点：${content.metadata('_meta1')!}</p>
 									<p>开始时间：${content.metadata('_meta2')}</p>
 								</li>
 							</#list>
@@ -178,14 +177,14 @@
 									<h3>
 										<a href="${content.url!}">${content.title!}</a>
 									</h3>
-									<p>地点：${content.metadata('_meta1')}</p>
+									<p>地点：${content.metadata('_meta1')!}</p>
 									<p>申报时间：${content.metadata('_meta2')}</p>
 								</li>
 							</#list>
 						</@jp.contents>
 					</ul>
 					<ul>
-						<@jp.contents module="activity" typeSlug="tiyu" count="5">
+						<@jp.contents module="activity" typeSlug="sport" count="5">
 							<#list contents as content>
 								<li>
 									<div class="adimg">
@@ -195,7 +194,7 @@
 									<h3>
 							<a href="${content.url!}">${content.title!}</a>
 						</h3>
-									<p>地点：${content.metadata('_meta1')}</p>
+									<p>地点：${content.metadata('_meta1')!}</p>
 									<p>开始时间：${content.metadata('_meta2')}</p>
 								</li>
 							</#list>
@@ -216,14 +215,14 @@
 									<h3>
 							<a href="${content.url!}">${content.title!}</a>
 						</h3>
-									<p>地点：${content.metadata('_meta1')}</p>
+									<p>地点：${content.metadata('_meta1')!}</p>
 									<p>申报时间：${content.metadata('_meta2')}</p>
 								</li>
 							</#list>
 						</@jp.contents>
 					</ul>
 					<ul>
-						<@jp.contents module="activity" typeSlug="jiaoyu" count="5">
+						<@jp.contents module="activity" typeSlug="education" count="5">
 							<#list contents as content>
 								<li>
 									<div class="adimg">
@@ -233,7 +232,7 @@
 									<h3>
 							<a href="${content.url!}">${content.title!}</a>
 						</h3>
-									<p>地点：${content.metadata('_meta1')}</p>
+									<p>地点：${content.metadata('_meta1')!}</p>
 									<p>开始时间：${content.metadata('_meta2')}</p>
 								</li>
 							</#list>
@@ -254,14 +253,14 @@
 									<h3>
 							<a href="${content.url!}">${content.title!}</a>
 						</h3>
-									<p>地点：${content.metadata('_meta1')}</p>
+									<p>地点：${content.metadata('_meta1')!}</p>
 									<p>申报时间：${content.metadata('_meta2')}</p>
 								</li>
 							</#list>
 						</@jp.contents>
 					</ul>
 					<ul>
-						<@jp.contents module="activity" typeSlug="weishengyiliao" count="5">
+						<@jp.contents module="activity" typeSlug="medication" count="5">
 							<#list contents as content>
 								<li>
 									<div class="adimg">
@@ -271,7 +270,7 @@
 									<h3>
 							<a href="${content.url!}">${content.title!}</a>
 						</h3>
-									<p>地点：${content.metadata('_meta1')}</p>
+									<p>地点：${content.metadata('_meta1')!}</p>
 									<p>开始时间：${content.metadata('_meta2')}</p>
 								</li>
 							</#list>
@@ -292,14 +291,14 @@
 									<h3>
 							<a href="${content.url!}">${content.title!}</a>
 						</h3>
-									<p>地点：${content.metadata('_meta1')}</p>
+									<p>地点：${content.metadata('_meta1')!}</p>
 									<p>申报时间：${content.metadata('_meta2')}</p>
 								</li>
 							</#list>
 						</@jp.contents>
 					</ul>
 					<ul>
-						<@jp.contents module="activity" typeSlug="shequ" count="5">
+						<@jp.contents module="activity" typeSlug="social" count="5">
 							<#list contents as content>
 								<li>
 									<div class="adimg">
@@ -307,9 +306,9 @@
 										</a>
 									</div>
 									<h3>
-							<a href="${content.url!}">${content.title!}</a>
+							<a href="${(content.url)!}">${(content.title)!}</a>
 						</h3>
-									<p>地点：${content.metadata('_meta1')}</p>
+									<p>地点：${content.metadata('_meta1')!}</p>
 									<p>开始时间：${content.metadata('_meta2')}</p>
 								</li>
 							</#list>
@@ -330,14 +329,14 @@
 									<h3>
 							<a href="${content.url!}">${content.title!}</a>
 						</h3>
-									<p>地点：${content.metadata('_meta1')}</p>
+									<p>地点：${content.metadata('_meta33')}</p>
 									<p>申报时间：${content.metadata('_meta2')}</p>
 								</li>
 							</#list>
 						</@jp.contents>
 					</ul>
 					<ul>
-						<@jp.contents module="activity" typeSlug="shequfuwu" count="5">
+						<@jp.contents module="activity" typeSlug="socialservice" count="5">
 							<#list contents as content>
 								<li>
 									<div class="adimg">
@@ -347,7 +346,7 @@
 									<h3>
 							<a href="${content.url!}">${content.title!}</a>
 						</h3>
-									<p>地点：${content.metadata('_meta1')}</p>
+									<p>地点：${content.metadata('_meta1')!}</p>
 									<p>开始时间：${content.metadata('_meta2')}</p>
 								</li>
 							</#list>
