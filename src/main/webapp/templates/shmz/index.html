@@ -84,7 +84,7 @@
 					<li class=""><a href="javascript:;">社区</a></li>
 					<li class=""><a href="javascript:;">社会服务</a></li>
 				</ul>
-				<@jp.taxonomy id="26">
+				<@jp.taxonomy id="10">
 					<a class='more' href="${taxonomy.url}">更多&gt;&gt;</a>
 				</@jp.taxonomy>
 			</div>
@@ -119,7 +119,7 @@
 							<a href="${content.url!}">${content.title!}</a>
 						</h3>
 									<p>地点：${content.metadata('_meta1')!}</p>
-									<p>开始时间：${content.metadata('_meta2')}</p>
+									
 								</li>
 							</#list>
 						</@jp.contents>
@@ -140,7 +140,7 @@
 							<a title="${content.title!}" href="${content.url!}">${content.title!}</a>
 						</h3>
 									<p>地点：${content.metadata('_meta1')!}</p>
-									<p>申报时间：${content.metadata('_meta2')}</p>
+									<p>申报时间：${content.metadata('_meta2')!}</p>
 								</li>
 							</#list>
 						</@jp.contents>
@@ -157,7 +157,7 @@
 							<a title="${content.title!}" href="${content.url!}">${content.title!}</a>
 						</h3>
 									<p>地点：${content.metadata('_meta1')!}</p>
-									<p>开始时间：${content.metadata('_meta2')}</p>
+									<p>开始时间：${content.metadata('_meta2')!}</p>
 								</li>
 							</#list>
 						</@jp.contents>
@@ -178,7 +178,7 @@
 										<a href="${content.url!}">${content.title!}</a>
 									</h3>
 									<p>地点：${content.metadata('_meta1')!}</p>
-									<p>申报时间：${content.metadata('_meta2')}</p>
+									<p>申报时间：${content.metadata('_meta2')!}</p>
 								</li>
 							</#list>
 						</@jp.contents>
@@ -195,7 +195,7 @@
 							<a href="${content.url!}">${content.title!}</a>
 						</h3>
 									<p>地点：${content.metadata('_meta1')!}</p>
-									<p>开始时间：${content.metadata('_meta2')}</p>
+									<p>开始时间：${content.metadata('_meta2')!}</p>
 								</li>
 							</#list>
 						</@jp.contents>
@@ -216,7 +216,7 @@
 							<a href="${content.url!}">${content.title!}</a>
 						</h3>
 									<p>地点：${content.metadata('_meta1')!}</p>
-									<p>申报时间：${content.metadata('_meta2')}</p>
+									<p>申报时间：${content.metadata('_meta2')!}</p>
 								</li>
 							</#list>
 						</@jp.contents>
@@ -233,7 +233,7 @@
 							<a href="${content.url!}">${content.title!}</a>
 						</h3>
 									<p>地点：${content.metadata('_meta1')!}</p>
-									<p>开始时间：${content.metadata('_meta2')}</p>
+									<p>开始时间：${content.metadata('_meta2')!}</p>
 								</li>
 							</#list>
 						</@jp.contents>
@@ -254,7 +254,7 @@
 							<a href="${content.url!}">${content.title!}</a>
 						</h3>
 									<p>地点：${content.metadata('_meta1')!}</p>
-									<p>申报时间：${content.metadata('_meta2')}</p>
+									<p>申报时间：${content.metadata('_meta2')!}</p>
 								</li>
 							</#list>
 						</@jp.contents>
@@ -271,7 +271,7 @@
 							<a href="${content.url!}">${content.title!}</a>
 						</h3>
 									<p>地点：${content.metadata('_meta1')!}</p>
-									<p>开始时间：${content.metadata('_meta2')}</p>
+									<p>开始时间：${content.metadata('_meta2')!}</p>
 								</li>
 							</#list>
 						</@jp.contents>
@@ -292,7 +292,7 @@
 							<a href="${content.url!}">${content.title!}</a>
 						</h3>
 									<p>地点：${content.metadata('_meta1')!}</p>
-									<p>申报时间：${content.metadata('_meta2')}</p>
+									<p>申报时间：${content.metadata('_meta2')!}</p>
 								</li>
 							</#list>
 						</@jp.contents>
@@ -309,7 +309,7 @@
 							<a href="${(content.url)!}">${(content.title)!}</a>
 						</h3>
 									<p>地点：${content.metadata('_meta1')!}</p>
-									<p>开始时间：${content.metadata('_meta2')}</p>
+									<p>开始时间：${content.metadata('_meta2')!}</p>
 								</li>
 							</#list>
 						</@jp.contents>
@@ -330,7 +330,7 @@
 							<a href="${content.url!}">${content.title!}</a>
 						</h3>
 									<p>地点：${content.metadata('_meta33')}</p>
-									<p>申报时间：${content.metadata('_meta2')}</p>
+									<p>申报时间：${content.metadata('_meta2')!}</p>
 								</li>
 							</#list>
 						</@jp.contents>
@@ -347,7 +347,7 @@
 							<a href="${content.url!}">${content.title!}</a>
 						</h3>
 									<p>地点：${content.metadata('_meta1')!}</p>
-									<p>开始时间：${content.metadata('_meta2')}</p>
+									<p>开始时间：${content.metadata('_meta2')!}</p>
 								</li>
 							</#list>
 						</@jp.contents>
@@ -573,7 +573,7 @@
 						<p class="news_nav1">
 							<a href="JavaScript:;">政策法规</a>
 						</p>
-						<@jp.taxonomy id="33">
+						<@jp.taxonomy id="1">
 							<span><a href="${taxonomy.url}">更多&gt;&gt;</a></span>
 						</@jp.taxonomy>
 					</div>
@@ -581,7 +581,7 @@
 					<!--信息公告-->
 					<div class="news_con">
 						<ul>
-							<@jp.contents module="article" typeSlug="information" count="3">
+							<@jp.contents module="article" typeSlug="announcement" count="10">
 								<#list contents as content>
 									<#if content?is_first>
 										<li>
