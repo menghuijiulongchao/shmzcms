@@ -1,94 +1,64 @@
-<#include "_layout.html"/> <@layout>
-<!--活动详情页  -->
-<div class="dConBox">
-	<div class="details">
-		<div class="detailsBox">
-			<h2>${content.title!}</h2>
-		</div>
-	</div>
-	<div class="details-TBox">
-		<div class="details-T">
-			<ul>
-				<li><span>分类：</span> <em class=""></em></li>
-				<!-- <li>
-					<span>组织：</span>
-					<em class="">动物园北门志愿驿站活动组</em>
-				</li> -->
-			</ul>
-		</div>
-	</div>
-	<div class='dConBox'>
-		<div class="dConBox-In">
-			<div class="ad_con_left">
-				<p align="center" class="ad_leftImg">
-					<img src="${(content.thumbnail)!}">
-				</p>
-				<div class="ad_conChange">
-					<ul class="ad_conTag">
-						<li class="ad_base ad_currentLi"><a href="javascript:;">基地简介</a></li>
-						<li class="ad_project"><a href="javascript:;">发起的项目</a></li>
-						<li class="ad_message ad_tagLast"><a href="javascript:;">留言咨询</a></li>
-					</ul>
-					
+<#include "_layout.html"/>
+<@layout>
+	<!--头部结束-->
+	<!--内容-->
+	<div class="news_content clearfix">
+		<div class="news_tit_001">
+			<div class="news_001">
+				<div class="news_t">
+					<a href="${CPATH}">首页</a>> <span>${content.title!}</span>
+					<p>${content.title!}</p>
 				</div>
-			</div>
-			<div class="dConBox-R">
-				<div class="dConBoxr03 dConBoxr_9g dConBoxr_356g">
-					<div class="title_aa">
-						<h2>专家评语</h2>
-						<a href="">详情</a>
-					</div>
-					<div class="neirong"></div>
-				</div>
-				<div class="dConBoxr03 dConBoxr_9g dConBoxr_356g ad_atten">
-					<div class="title_aa">
-						<h2>基地联系人</h2>
-						<a href="">详情</a>
-					</div>
-					<div class="neirong">
-						<div class="ad_rightCon">
-							<ul>
-								<li class="ad_rName">张三</li>
-								<li class="ad_rMobile">手机：1396564546</li>
-								<li class="ad_rPhone">电话：021-9867545</li>
-								<li class="ad_rEmail">邮编：shanghaigongyi@163.com</li>
-							</ul>
-							<a class="ad_rMail" href="javascript:;">给他发站内信</a>
-						</div>
-					</div>
-				</div>
-				<div class="dConBoxr02 dConBoxr_9g dConBoxr_356g">
-					<div class="title_aa">
-						<h2>基地分享</h2>
-						<a href="">详情</a>
-					</div>
-					<div class="neirong">
-						<div class="gzz">
-							<span id="guanzhu"> <em></em> 关注（0）
-							</span> <span id="zan"> <em></em> 赞（0）
-							</span>
-						</div>
-						<div class="share">
-							<h2>分享</h2>
-							<a class="sina" title="分享到微博"></a> <a class="qq" title="分享到腾讯微博"></a> <a class="weixin" title="分享到微信"></a>
-						</div>
-					</div>
-				</div>
-				<div class="dConBoxr02 dConBoxr_9g dConBoxr_356g ad_atten ad_position">
-					<div class="title_aa">
-						<h2>基地位置</h2>
-					</div>
-					<div class="neirong">
-						<div class="ad_rightCon">
-							<p>上海市静安区</p>
-							<a href="javascript:;">查看地图</a>
-						</div>
+				<div class="news_b clearfix">
+					<span>时间：</span><span>${content.created?string('yyyy-MM-dd')!}&nbsp;</span> <span>点击：</span><span>${content.viewCount!'0'}&nbsp;</span> <span>评论：</span><span>${content.commentCount!'0'}</span>
+					<div class="news_b_r">
+						<span>分享：</span> <img src="${CTPATH}/images/QQ-hover.png" /> <img src="${CTPATH}/images/wechat.png" /> <img src="${CTPATH}/images/weibo-hover.png" />
 					</div>
 				</div>
 			</div>
 		</div>
+		<div class="news_article">
+			<div class="news_maincontent_wrapper">
+				<div class='articlecontent'>
+					${content.text!}
+				</div>
+				<!-- 评论 -->
+				<div class='article_comment_wrapper'>
+					<div class="dConBox">
+						<h2>评论(0)</h2>
+					</div>
+					<div class="dConBox_b clearfix">
+						<textarea class="dConBox_box"></textarea>
+						<div class="dConBox_bot">
+							<span>发表评论，请先<a href="JavaScript:;">登陆</a></span>
+							<div class='submmit'>
+								<input type='button' value='提交'>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--志愿快讯-->
+			<div class="Newsintro_tzgg">
+				<div class="TRTopTitleCon">
+					<h2>志愿快讯</h2>
+				</div>
+				<ul>
+					<@jp.contents module="base" count="5">
+						<#list contents as content>
+							<li class="clearfix">
+								<div class="zyz_img">
+									<img src="${(content.thumbnail)!}" />
+								</div>
+								<div class="zyz_cont">
+									<p>${content.title!}</p>
+									<a href="${content.url!}">阅读全文>></a>
+								</div>
+							</li>
+						</#list>
+					</@jp.contents>
+				</ul>
+			</div>
+		</div>
 	</div>
-</div>
-<!--活动详情页结束-->
-<!--底部-->
 </@layout>

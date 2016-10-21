@@ -112,11 +112,11 @@
 							<#list contents as content>
 								<li>
 									<div class="adimg">
-										<a href="${content.url!}"> <img src="${(content.thumbnail)!}" width="224" height="160" />
+										<a href="${content.url}"> <img src="${(content.thumbnail)!}" width="224" height="160" />
 										</a>
 									</div>
 									<h3>
-							<a href="${content.url!}">${content.title!}</a>
+							<a href="${content.url}">${content.title!}</a>
 						</h3>
 									<p>地点：${content.metadata('_meta1')!}</p>
 									
