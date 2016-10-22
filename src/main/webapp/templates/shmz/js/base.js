@@ -58,7 +58,7 @@ $(function(){
 		var numValue=$(NumValue).html().split('');
 		var text_html="<ul style='display:table;margin:0 auto;overflow:hidden;'>";
 		for(var i=0;i<numValue.length;i++){
-			text_html+="<li style='background:#fff;color: #5e96c9;font-size:24px;float:left;width:30px;height:38px;line-height:38px;text-align: center;	margin-left:1px;'>"+numValue[i]+"</li>"
+			text_html+="<li style='background:#fff;color: #5e96c9;font-size:18px;float:left;width:20px;height:28px;line-height:28px;text-align: center;	margin-left:1px;'>"+numValue[i]+"</li>"
 		}
 		text_html+="</ul>"
 		$(NumValue).html(text_html);

@@ -11,8 +11,8 @@
 	position: relative;
 	display: block;
 	width: 100%;
-	min-width: 1200px;
-	height: 350px;
+	min-width: 1000px;
+	height: 170px;
 	margin: 0px auto;
 	overflow: hidden;
 }
@@ -31,7 +31,7 @@
 .banner_icon {
 	position: absolute;
 	bottom: 30px;
-	right: 150px;
+	right: 350px;
 }
 .banner_icon a {
 	display: inline-block;
@@ -54,49 +54,50 @@
 
 .class_img_bg {
 	width: 100%;
-	min-width: 1200px;
-	background: #fff;
+	min-width: 1200px;	
 	text-align: center;
 }
 .class_img {
+	background-color: #fff;
+    border-top: 1px solid #ecf2f5;
 	position: relative;
-	width: 1200px;
+	width: 1000px;
 	margin: 0px auto;
 }
 .left_class {
 	display: inline-block;
 	/*	float:left;*/
-	width: 440px;
+	width: 350px;
 	text-align: center;
 }
 .left_class .left_class_map {
 	display: inline-block;
-	width: 290px;
+	width: 200px;
 /*	margin: 20px;*/
 	text-align: center;
 }
 .left_class .left_class_map img {
 	display: inline-block;
-	width: 289px;
+	width: 200px;
 }
 .left_class .left_class_map span {
 	font-family: "黑体";
-	font-size: 36px;
-	font-weight: 900;
+	font-size: 32px;
+	font-weight: 700;
 	text-align: center;
-	line-height: 60px;
+	line-height: 50px;
 }
 .right_class {
 	display: inline-block;
-	margin: 0 0 0 40px;
-	/*	float:right;*/
-	width: 400px;
+	/* margin: 0 0 0 40px;
+	float:right; */
+	width: 350px;
 }
 .right_class .ci_list {
 	float: left;
-	width: 130px;
-	height: 100px;
-	margin: 25px 0px;
+	width: 100px;
+	height:58px;
+	margin: 20px 0px;
 }
 .right_class .ci_block {
 	display: block;
@@ -105,60 +106,61 @@
 }
 .right_class .ci_block img {
 	display: block;
-	width: 50px;
-	height: 50px;
+	width: 35px;
+	height: 35px;
 	margin: 0px auto;
 	text-align: center;
 }
 .right_class .ci_block span {
 	font-family: 'microsoft yahei';
 	text-align: center;
-	font-size: 18px;
-	line-height: 56px;
+	font-size: 14px;
+	line-height: 32px;
 	color: #393a3c;
 }
 .center_class {
 	display: inline-block;
-	min-width: 240px;
-	height: 300px;
+	min-width: 220px;
+	margin-left: 35px;
+	height: 220px;
 	position: relative;
 	z-index: 1;
 	vertical-align: bottom;
 }
 .center_class .content {
 	position: absolute;
-	padding: 20px 20px;
-	min-width: 200px;
+	padding: 14px 16px;
+	min-width: 170px;
 	bottom: -6px;
-	height: 300px;
+	height: 210px;
 	background: #3e79b8;
 }
 .center_class div {
 	text-align: center;
 	font-family: 'microsoft yahei';
-	margin: 5px auto;
+	margin: 3px auto;
 }
 .center_class div.center_class_03 {
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 }
 .center_class div p {
-	font-size: 14px;
+	font-size: 12px;
 	color: #fff;
 	font-family: 'microsoft yahei';
-	line-height: 34px;
+	line-height: 24px;
 }
 .center_class div span {
 	font-family: impact;
 }
 .center_class .jion_vol {
 	display: block;
-	margin-top: 20px;
+	margin-top: 18px;
 	text-align: center;
 	margin: 0 auto;
 	background: #ffa400;
 	color: #fff;
-	padding: 10px 0px;
-	border-radius: 20px;
+	padding: 7px 0px;
+	border-radius: 16px;
 }
 
 
