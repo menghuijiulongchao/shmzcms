@@ -36,7 +36,7 @@ $(function(){
 	/*卡盘效果*/
 	tabChange(".news_con",".news_nav p","currentS");
 	/*首页基地活动展示*/
-	$(".con_sec_in ul li").click(function(){
+	$(".con_sec_in ul li:not(':last')").click(function(){
 			/*换当前项*/
 			$(".con_sec_in ul li").removeClass("cur_li");
 			$(this).addClass("cur_li");
@@ -63,10 +63,31 @@ $(function(){
 			$('.dConBox .dConBox-L .dConBox-Bottom .btit_select').removeClass("btit_sl");
 			$('.dConBox .dConBox-L .dConBox-Bottom .btit_select').eq(n).addClass("btit_sl");
 		})
+	/*内容页专家评语、项目进度、支出记录的详情页面
+	 * 专家评语、项目进度、支出记录的切换*/
+		var str = window.location.search;
+		var aa = str.indexOf("?")
+		index = str.substring(aa+1,aa+2);
+		if (index!="" && index == 0 || index == 1 || index == 2) {
+			$(".project .projectBottom .proDataLabel ul li").removeClass("onhere");
+	 		$('.proNav0'+index).addClass("onhere");
+	 		$('.project .projectBottom .pro_select').hide();
+			$('.project .projectBottom .pro_select').eq(index).show();				
+		}			
+		$(".project .projectBottom .proDataLabel ul li").click(function() {
+				$(".project .projectBottom .proDataLabel ul li").removeClass("onhere");
+				$(this).addClass("onhere");
+				
+				var n = $(".project .projectBottom .proDataLabel ul li").index(this);
+				$('.project .projectBottom .pro_select').hide();
+				$('.project .projectBottom .pro_select').eq(n).show();
+			})		
+
 	//数字处理
 		Num_Handle("#center_num_01");
 		Num_Handle("#center_num_02");
 		Num_Handle("#center_num_03");
+		
 })
 
 //数字处理
@@ -74,7 +95,7 @@ $(function(){
 		var numValue=$(NumValue).html().split('');
 		var text_html="<ul style='display:table;margin:0 auto;overflow:hidden;'>";
 		for(var i=0;i<numValue.length;i++){
-			text_html+="<li style='background:#fff;color: #5e96c9;font-size:24px;float:left;width:30px;height:38px;line-height:38px;text-align: center;	margin-left:1px;'>"+numValue[i]+"</li>"
+			text_html+="<li style='background:#fff;color: #5e96c9;font-size:18px;float:left;width:20px;height:28px;line-height:28px;text-align: center;	margin-left:1px;'>"+numValue[i]+"</li>"
 		}
 		text_html+="</ul>"
 		$(NumValue).html(text_html);
